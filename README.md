@@ -18,6 +18,8 @@ make
 make install
 ```
 
+The Makefile will assume that Python 2.7 is installed in /System/Library/Frameworks/Python.framework/
+
 `make install` will copy the built dyci2lib.so to the adequate folder of the **om-dyci2** library (in *om-dyci2/lib/mac/*)
 
 ------
