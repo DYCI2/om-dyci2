@@ -10,7 +10,7 @@ This repository contains:
 ------
 ### Compile and install (libdyci2):
 
-This library was only compiuled and tested on macOS so far.
+This library was only compiled and tested on macOS so far.
 Use your Terminal and simply Make the library:
 ```
 cd libdyci2
