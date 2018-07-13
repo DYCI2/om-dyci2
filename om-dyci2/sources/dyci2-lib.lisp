@@ -42,7 +42,6 @@
 ;;; wrappers to functions exported in the C library
 (cffi::defcfun ("Dyci2Init" Dyci2Init) :pointer (pathToDyci2 :string) (filename :string))
 (cffi::defcfun ("Dyci2Quit" Dyci2Quit) :int (pyPtr :pointer))
-(cffi::defcfun ("Dyci2Quit" Dyci2Quit) :int (pyPtr :pointer))
 
 (cffi::defcfun ("Dyci2MakeList" Dyci2MakeList) :pointer (size :int))
 (cffi::defcfun ("Dyci2FreeList" Dyci2FreeList) :int (pyPtr :pointer))

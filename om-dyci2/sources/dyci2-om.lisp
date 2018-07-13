@@ -23,7 +23,12 @@
 (defvar *dyci2-dict* nil)
 
 (defun init-dyci2-lib (path)
-  (setf *dyci2-dict* (Dyci2Init (namestring path) "load")))
+  (if (and path (probe-file path))
+      (setf *dyci2-dict* (Dyci2Init (namestring path) "load"))
+    (om::om-beep-msg "Warning: DYCI2 folder not found!"))
+  (if (cffi-sys::null-pointer-p *dyci2-dict*)
+      (om::om-beep-msg "Warning: DYCI2 lib not initialized!"))
+  *dyci2-dict*)
 
 
 ;;;========================
@@ -38,16 +43,24 @@
 ;;; automatically called by the garbage-collector
 (defmethod om-api::om-cleanup ((self dyci2Generator))
   (when (pyGen self)
-     (om-lisp:om-print-format "Free DYCI2 Generator: ~A" (list (pyGen self)))
-     (dyci2freegenerator (pyGen self))
-     (setf (pyGen self) nil)))
+    (om::om-print (format nil "Free DYCI2 Generator: ~A" (list (pyGen self))))
+    (dyci2freegenerator (pyGen self))
+    (setf (pyGen self) nil)))
 
+
+#+o7
 (defmethod om::om-init-instance ((self dyci2Generator) &optional args)
-  
   (om-api::om-cleanup self) ;; just in case...
   (setf (pyGen self) (dyci2-make-generator (length (memory self)) (memory self) (labls self)))
   self)
   
+
+#+om
+(defmethod om::make-one-instance ((self dyci2Generator) &rest slots-vals)
+  (om-api::om-cleanup self) ;; just in case...
+  (setf (pyGen self) (dyci2-make-generator (length (memory self)) (memory self) (labls self)))
+  self)
+ 
 
 ; (listen *terminal-io*)
 
