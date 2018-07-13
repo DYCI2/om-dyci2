@@ -1,11 +1,11 @@
 # om-dyci2
-An adapted version of DYCI2 for the OM/o7 visual programming and computer-aided composition environment.
+An adapted version of DYCI2 for the OpenMusic ([OM](http://repmus.ircam.fr/openmusic/)/[o7](https://openmusic-project.github.io/)) visual programming and computer-aided composition environments.
 
 © Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
 
 This repository contains:
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library.
-* __om-dyci2__: a library for using DYCI2/libdyci2 in the [OM/o7 computer-aided composition environment](https://openmusic-project.github.io/).
+* __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment.
 
 ------
 ### Compile and install (libdicy2):
@@ -23,11 +23,15 @@ make install
 ------
 ### Installing om-dyci2:
 
-No need to compile. See [o7 external libraries](https://openmusic-project.github.io/pages/libraries) manual page.
+No need to compile. 
+
+**om-dyci2** can be used in either in [OM 6.13] or [o7] environments.
+  * See [o7 external libraries](https://openmusic-project.github.io/pages/libraries) manual page for o7.
+  * See [OM6 external libraries](http://repmus.ircam.fr/openmusic/libraries) manual page for OM 6.13.
 
 The **om-dyci2** source folder including libdyci2.so (or the pre-packed version distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)) must be installed in one of the library folder specified for OM/o7.
 
-Alternatively, you can just specify this repository as one of the "Libraries folder" in the o7 Preferences.
+Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM/o7 Preferences.
 
 ------
 ### Getting started
