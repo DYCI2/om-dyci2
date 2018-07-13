@@ -1,3 +1,9 @@
+# C
+*.o
+*.so
+dycitest
+
+# Lisp
 *.FASL
 *.fasl
 *.lisp-temp
