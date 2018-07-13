@@ -8,7 +8,7 @@ This repository contains:
 * __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment.
 
 ------
-### Compile and install (libdicy2):
+### Compile and install (libdyci2):
 
 This library was only compiuled and tested on macOS so far.
 Use your Terminal and simply Make the library:
