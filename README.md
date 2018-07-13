@@ -35,6 +35,10 @@ The **om-dyci2** source folder including libdyci2.so (or the pre-packed version 
 
 Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM/o7 Preferences.
 
+**Note:** om-dyci2 will isntanciate a virtual Python interpreter and run DYCI2 in it, so **the DYCI2 library must also be installed on your computer** (get the latest version [HERE]() !).
+
+After loading om-dyci2 for the first time, go to your OM/o7 Preferences/Libaries and set the correct path to the _DYCI2_Modules_ folder.
+
 ------
 ### Getting started
 
