@@ -4,6 +4,8 @@
 dycitest
 
 # Lisp
+*.*~
+*.*fasl
 *.FASL
 *.fasl
 *.lisp-temp
