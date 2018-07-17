@@ -5,8 +5,8 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2018/07/13 15:48:21"))
- (:window (:size (722 600)) (:position (504 371)))
+  (:modified "2018/07/18 0:12:53"))
+ (:window (:size (722 600)) (:position (925 294)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -143,8 +143,8 @@
    (:type :function)
    (:group-id nil)
    (:name "string+")
-   (:x 303)
-   (:y 193)
+   (:x 314)
+   (:y 198)
    (:w 72)
    (:h 30)
    (:color nil)
@@ -261,7 +261,7 @@
    (:group-id nil)
    (:name nil)
    (:x 73)
-   (:y 290)
+   (:y 310)
    (:w 278)
    (:h 78)
    (:color nil)
@@ -301,37 +301,37 @@
      (:slots
       ((:memory
         (:list
-         "C1"
-         "D2"
-         "B3"
-         "C4"
-         "D5"
-         "C6"
-         "C7"
+         "A1"
+         "C2"
+         "A3"
+         "B4"
+         "C5"
+         "D6"
+         "A7"
          "D8"
          "B9"
-         "A10"
+         "D10"
          "D11"
-         "A12"
-         "C13"
-         "D14"
+         "C12"
+         "D13"
+         "C14"
          "A15"))
        (:labls
         (:list
+         "A"
          "C"
-         "D"
+         "A"
          "B"
          "C"
          "D"
-         "C"
-         "C"
+         "A"
          "D"
          "B"
-         "A"
          "D"
-         "A"
+         "D"
          "C"
          "D"
+         "C"
          "A"))))))
    (:id 9))
   (:box
@@ -440,7 +440,7 @@
    (:type :value)
    (:group-id nil)
    (:name "value box")
-   (:x 268)
+   (:x 273)
    (:y 489)
    (:w 276)
    (:h 34)
