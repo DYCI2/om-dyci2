@@ -22,18 +22,6 @@
 (add-preference :libraries :dyci2-path "DYCI2 Modules folder" :folder nil "Point to the \"Dyci2_Modules\" folder in the DYCI2 library" 'reinit-dyci2) 
 (add-preference :libraries ::dyci2-debug "Debug (open terminal output)" :action 'debug-dyci2)
 
-;;; works for pm2...
-(defun forum-authorize (exe-path)
-  (if exe-path
-    (let ((auth-file (om-choose-file-dialog :prompt "Pleas select the .txt file provided by the ForumNet code generator")))
-      (when (and auth-file (probe-file auth-file))
-        (om-cmd-line (format nil "~s -init_key_file ~s" 
-                             (namestring (real-exec-pathname exe-path))
-                             (namestring auth-file)))
-        (print "Authorization... done")))
-    (om-beep-msg "Executable not found: ~A" exe-path)
-  ))
-
 (defmethod! debug-dyci2 ()
    (listen *terminal-io*))
 
