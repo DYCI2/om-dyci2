@@ -27,3 +27,6 @@
 
 (defmethod! reinit-dyci2 ()
   (dyci2::init-dyci2-lib (get-pref-value :libraries :dyci2-path)))
+
+;;; do it at loading the lib...
+(reinit-dyci2)
