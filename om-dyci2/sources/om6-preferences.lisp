@@ -56,10 +56,10 @@
 
 
 (defmethod save-external-prefs ((module (eql 'dyci2))) 
-  `(:pm2-path ,(om-save-pathname *DYCI2-PATH*) 
-    :pm2-options nil))
+  `(:dyci2-path ,(om-save-pathname *DYCI2-PATH*) 
+    :dyci2-options nil))
 
-(defmethod put-external-preferences ((module (eql 'pm2)) moduleprefs)
+(defmethod put-external-preferences ((module (eql 'dyci2)) moduleprefs)
   (let ((list-prefs (get-pref moduleprefs :dyci2-options)))
     (when list-prefs 
       nil ; pas d'options...
