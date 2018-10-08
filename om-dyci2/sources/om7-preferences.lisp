@@ -26,7 +26,8 @@
    (listen *terminal-io*))
 
 (defmethod! reinit-dyci2 ()
-  (dyci2::init-dyci2-lib (get-pref-value :libraries :dyci2-path)))
+  (when (file-exist-p (get-pref-value :libraries :dyci2-path))
+    (dyci2::init-dyci2-lib (get-pref-value :libraries :dyci2-path))))
 
 ;;; do it at loading the lib...
 (reinit-dyci2)

@@ -24,7 +24,7 @@
 
 (om::set-lib-release 1.0 (find-library "om-xmm"))
 
-(compile&load (merge-pathnames "sources/dyci2-lib" *load-pathname*))
+(compile&load (merge-pathnames "sources/dyci2-cl" *load-pathname*))
 (compile&load (merge-pathnames "sources/dyci2-om" *load-pathname*))
 (compile&load (merge-pathnames "sources/om6-preferences" *load-pathname*))
 

@@ -61,6 +61,93 @@
 
 (push :dyci2 *features*)
 
-;;; pour debug:
+;;; for debug:
 ;(listen *terminal-io*)
+
+(defvar *dyci2-dict* nil)
+
+(defun init-dyci2-lib (path)
+  (if (and path (probe-file path))
+      (progn
+        (princ (format nil "Loading DYCI2 from ~s~&" path))
+        (setf *dyci2-dict* (Dyci2Init (namestring path) "load"))
+        )
+    (print "Warning: DYCI2 folder not found!"))
+  (if (cffi-sys::null-pointer-p *dyci2-dict*)
+      (print "Warning: DYCI2 lib not initialized!"))
+  *dyci2-dict*)
+
+
+;;; returns a pointer to a DYCI2 genetrator
+(defun dyci2-make-generator (size seq lbls)
+
+  (if *dyci2-dict*
+
+      (let* ((seq-ptr (Dyci2MakeList size))
+             (labels-ptr (Dyci2MakeList size)))
+        
+        (unwind-protect 
+            ;;; "protected" execution
+            (progn 
+              (loop for i from 0 to (- size 1) 
+                    for seq-elt in seq 
+                    for lab-elt in lbls
+                    do
+                    (Dyci2ListAddString seq-ptr seq-elt i)
+                    (Dyci2ListAddString labels-ptr lab-elt i))
+        
+              (Dyci2MakeGenerator *dyci2-dict* size seq-ptr labels-ptr))
+        
+          ;;; cleanup
+          (Dyci2FreeList seq-ptr)
+          (Dyci2FreeList labels-ptr)
+          ))
+        
+    ;;; else
+    (progn 
+      (print "The DYCI2 library is not initialized !")
+      nil)
+    ))
+
+
+;;; queries a DYCI2 generator
+(defun dyci2-query (gen query)
+
+  ;;; make query
+  (let* ((size (length query))
+         (query-ptr (Dyci2MakeList size)))
+  
+    (loop for i from 0 to (- size 1) 
+          for query-elt in query do
+          (Dyci2ListAddString query-ptr query-elt i))
+    
+    (if (= -1 (Dyci2GenQuery *dyci2-dict* gen size query-ptr))
+        
+        (print "[!!] Error generating query !!")
+  
+      ;;; query succeeded
+      (let* ((outputsize (Dyci2GenOutputSize gen))
+             (output (loop for i from 0 to (- outputsize 1) collect
+                           (Dyci2GenNthOutput gen i))))
+        
+        ;;; free query
+        (Dyci2FreeList query-ptr)
+        
+        output))))
+
+
+#|
+;;; TESTS
+
+(listen *terminal-io*)
+
+(setq gen (dyci2-make-generator 4 '("(0 5333)" "(5333 10667)" "(10667 13333)" "(13333 16000)") '("A" "B" "C" "D")))
+
+(dyci2-query gen '("D" "A" "B"))
+
+|#
+
+
+
+
 

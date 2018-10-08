@@ -13,26 +13,13 @@
 ;   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 ;
 ;============================================================================
-; Authors: Victoire Siguret, Jean Bresson, Jérôme Nika - IRCAM/STMS 2018
+; Authors: Victoire Siguret, Jean Bresson, Jerome Nika - IRCAM/STMS 2018
 ;============================================================================
-
 
 (in-package :dyci2)
 
-
-(defvar *dyci2-dict* nil)
-
-(defun init-dyci2-lib (path)
-  (if (and path (probe-file path))
-      (setf *dyci2-dict* (Dyci2Init (namestring path) "load"))
-    (om::om-beep-msg "Warning: DYCI2 folder not found!"))
-  (if (cffi-sys::null-pointer-p *dyci2-dict*)
-      (om::om-beep-msg "Warning: DYCI2 lib not initialized!"))
-  *dyci2-dict*)
-
-
 ;;;========================
-;;; MAIN CLASS
+;;; OM INTERFACE
 ;;;========================
 
 (om::defclass! dyci2Generator (om-api:om-cleanup-mixin) 
@@ -44,11 +31,13 @@
 (defmethod om-api::om-cleanup ((self dyci2Generator))
   (when (pyGen self)
     (om::om-print (format nil "Free DYCI2 Generator: ~A" (list (pyGen self))))
-    (dyci2freegenerator (pyGen self))
+    (if (oa:om-null-pointer-p (pyGen self))
+        (print "Warning: DYCI2 Generator was allready a NULL pointer!")
+      (dyci2freegenerator (pyGen self)))
     (setf (pyGen self) nil)))
 
 
-#+o7
+#+om7
 (defmethod om::om-init-instance ((self dyci2Generator) &optional args)
   (om-api::om-cleanup self) ;; just in case...
   (setf (pyGen self) (dyci2-make-generator (length (memory self)) (memory self) (labls self)))
@@ -62,74 +51,17 @@
   self)
  
 
-; (listen *terminal-io*)
-
-(defmethod dyci2-make-generator ((size integer) (seq list) (lbls list))
-  (if *dyci2-dict*
-      ;;; then
-      (let* ((seq-ptr (Dyci2MakeList size))
-             (labels-ptr (Dyci2MakeList size)))
-        
-        (unwind-protect 
-            ;;; "protected" execution
-            (progn 
-              (loop for i from 0 to (- size 1) 
-                    for seq-elt in seq 
-                    for lab-elt in lbls
-                    do
-                    (Dyci2ListAddString seq-ptr seq-elt i)
-                    (Dyci2ListAddString labels-ptr lab-elt i))
-        
-              (Dyci2MakeGenerator *dyci2-dict* size seq-ptr labels-ptr))
-        
-          ;;; cleanup
-          (Dyci2FreeList seq-ptr)
-          (Dyci2FreeList labels-ptr)
-          ))
-        
-    ;;; else
-    (om::om-beep-msg "DYCI2 NOT INITIALIZED!!")
-    )
-  )
+(om::defmethod! dyci2query ((self dyci2Generator) (query list))
+  (dyci2-query (pyGen self) query))
 
 
-(om::defmethod! dyci2setparam ((self dyci2Generator) (parameter string) (value integer))
-  
+(om::defmethod! dyci2setparam ((self dyci2Generator) (parameter string) (value integer)) 
   ;; (Dyci2ParametersMod (pygen self))
-        
   (if (pygen self)
-        
-         (Dyci2SetParametersINT (pygen self) parameter value)
-     
-     (om::om-beep-msg "GENERATOR NOT INITIALIZED!!"))
-  
+      (Dyci2SetParametersINT (pygen self) parameter value)
+    (om::om-beep-msg "DYCI2 Generator not initialized !!"))
   self)
 
-
-
-(om::defmethod! dyci2query ((self dyci2Generator) (query list))
-
-  ;;; make query
-  (let* ((size (length query))
-         (query-ptr (Dyci2MakeList size)))
-  
-    (loop for i from 0 to (- size 1) 
-          for query-elt in query do
-          (Dyci2ListAddString query-ptr query-elt i))
-    
-    (if (= -1 (Dyci2GenQuery *dyci2-dict* (pyGen self) size query-ptr))
-        
-        (print "ERROR GENERATING QUERY...")
-  
-      ;;; query succeeded
-      (let* ((outputsize (Dyci2GenOutputSize (pyGen self)))
-             (output (loop for i from 0 to (- outputsize 1) collect
-                           (Dyci2GenNthOutput (pyGen self) i))))
-        
-        ;;; free query
-        (Dyci2FreeList query-ptr)
-        
-        output))))
 
 
 ;;; TODO
