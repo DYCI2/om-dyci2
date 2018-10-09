@@ -21,7 +21,7 @@
 ;============================================================================
 
 (:om-lib
- (:version 1.0)
+ (:version 1.1)
  (:source-files 
   (:pathname (:directory (:relative "sources")) (:name "dyci2-cl"))
   (:pathname (:directory (:relative "sources")) (:name "dyci2-om"))

@@ -22,7 +22,7 @@
 
 (in-package :om)
 
-(om::set-lib-release 1.0 (find-library "om-xmm"))
+(om::set-lib-release 1.1 (find-library "om-dyci2"))
 
 (compile&load (merge-pathnames "sources/dyci2-cl" *load-pathname*))
 (compile&load (merge-pathnames "sources/dyci2-om" *load-pathname*))
