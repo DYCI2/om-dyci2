@@ -5,7 +5,7 @@
  (:doc "")
  (:info
   (:created "2018/06/28 10:51:03")
-  (:modified "2018/07/18 0:20:08"))
+  (:modified "2018/10/09 17:05:31"))
  (:window (:size (1094 754)) (:position (573 242)))
  (:grid nil)
  (:lock nil)
@@ -37,6 +37,7 @@
    (:showname nil)
    (:group-id nil)
    (:lock nil)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -65,175 +66,175 @@
      (:slots
       ((:memory
         (:list
-         "((202 C) (1903 G))"
-         "((1903 G) (3569 A mineur))"
-         "((3569 A mineur) (5217 F))"
-         "((5217 F) (6866 C))"
-         "((6866 C) (8520 G))"
-         "((8520 G) (10175 C))"
-         "((10175 C) (11405 C))"
-         "((11405 C) (11829 C))"
-         "((11829 C) (13472 C))"
-         "((13472 C) (15144 G))"
-         "((15144 G) (16792 A mineur))"
-         "((16792 A mineur) (18424 F))"
-         "((18424 F) (20049 C))"
-         "((20049 C) (21680 G))"
-         "((21680 G) (23323 F))"
-         "((23323 F) (24147 E))"
-         "((24147 E) (24565 D))"
-         "((24565 D) (24977 C))"
-         "((24977 C) (26655 C))"
-         "((26655 C) (28321 G))"
-         "((28321 G) (29941 A mineur))"
-         "((29941 A mineur) (31584 F))"
-         "((31584 F) (33197 C))"
-         "((33197 C) (34788 G))"
-         "((34788 G) (36407 F))"
-         "((36407 F) (37220 E))"
-         "((37220 E) (37627 D))"
-         "((37627 D) (38027 C))"
-         "((38027 C) (39629 A mineur))"
-         "((39629 A mineur) (41231 G))"
-         "((41231 G) (42799 F))"
-         "((42799 F) (44424 C))"
-         "((44424 C) (46009 C))"
-         "((46009 C) (47582 G))"
-         "((47582 G) (49178 F))"
-         "((49178 F) (50014 E))"
-         "((50014 E) (50421 D))"
-         "((50421 D) (50827 C))"
-         "((50827 C) (54119 G))"
-         "((54119 G) (55738 A mineur))"
-         "((55738 A mineur) (57364 F))"
-         "((57364 F) (58966 C))"
-         "((58966 C) (60550 G))"
-         "((60550 G) (62158 F))"
-         "((62158 F) (62965 E))"
-         "((62965 E) (63366 D))"
-         "((63366 D) (63772 C))"
-         "((63772 C) (67040 G))"
-         "((67040 G) (68660 A mineur))"
-         "((68660 A mineur) (70297 F))"
-         "((70297 F) (71922 C))"
-         "((71922 C) (73530 G))"
-         "((73530 G) (75150 F))"
-         "((75150 F) (75972 E))"
-         "((75972 E) (76375 D))"
-         "((76375 D) (76787 C))"
-         "((76787 C) (78453 A mineur))"
-         "((78453 A mineur) (80061 G))"
-         "((80061 G) (81704 F))"
-         "((81704 F) (83283 C))"
-         "((83283 C) (86458 G))"
-         "((86458 G) (88054 F))"
-         "((88054 F) (88856 E))"
-         "((88856 E) (89256 D))"
-         "((89256 D) (89651 C))"
-         "((89651 C) (91236 A mineur))"
-         "((91236 A mineur) (92803 G))"
-         "((92803 G) (94382 F))"
-         "((94382 F) (95955 C))"
-         "((95955 C) (99101 G))"
-         "((99101 G) (100680 F))"
-         "((100680 F) (101470 E))"
-         "((101470 E) (101859 D))"
-         "((101859 D) (102253 C))"
-         "((102253 C) (103830 F))"
-         "((103830 F) (104628 E))"
-         "((104628 E) (105028 D))"
-         "((105028 D) (105423 C))"
-         "((105423 C) (106212 Bb))"
-         "((106212 Bb) (106607 A mineur))"
-         "((106607 A mineur) (107002 G))"
-         "((107002 G) (107751 F))"
-         "((107751 F) (108529 C))"
-         "((108529 C) (110150 F))"
-         "((110150 F) (110891 E))"
-         "((110891 E) (111292 D))"
-         "((111292 D) (111681 C))"
-         "((111681 C) (112464 Bb))"
-         "((112464 Bb) (112859 A mineur))"
-         "((112859 A mineur) (113254 G))"
-         "((113254 G) (114055 F))"
-         "((114055 F) (114868 C))"
-         "((114868 C) (118066 G))"
-         "((118066 G) (119564 A mineur))"
-         "((119564 A mineur) (121085 F))"
-         "((121085 F) (122612 C))"
-         "((122612 C) (124138 G))"
-         "((124138 G) (125665 F))"
-         "((125665 F) (126425 E))"
-         "((126425 E) (126809 D))"
-         "((126809 D) (127145 C))"
-         "((127145 C) (130222 G))"
-         "((130222 G) (131749 A mineur))"
-         "((131749 A mineur) (133264 F))"
-         "((133264 F) (134779 C))"
-         "((134779 C) (136356 G))"
-         "((136356 G) (137861 F))"
-         "((137861 F) (138651 E))"
-         "((138651 E) (139046 D))"
-         "((139046 D) (139434 C))"
-         "((139434 C) (141037 A mineur))"
-         "((141037 A mineur) (142654 G))"
-         "((142654 G) (144218 F))"
-         "((144218 F) (145785 C))"
-         "((145785 C) (148943 G))"
-         "((148943 G) (150516 F))"
-         "((150516 F) (151317 E))"
-         "((151317 E) (151718 D))"
-         "((151718 D) (152124 C))"
-         "((152124 C) (155375 G))"
-         "((155375 G) (157018 A mineur))"
-         "((157018 A mineur) (158666 F))"
-         "((158666 F) (160309 C))"
-         "((160309 C) (161911 G))"
-         "((161911 G) (163508 F))"
-         "((163508 F) (164309 E))"
-         "((164309 E) (164742 D))"
-         "((164742 D) (165116 C))"
-         "((165116 C) (168384 G))"
-         "((168384 G) (170009 A mineur))"
-         "((170009 A mineur) (171623 F))"
-         "((171623 F) (173219 C))"
-         "((173219 C) (174798 G))"
-         "((174798 G) (176401 F))"
-         "((176401 F) (177207 E))"
-         "((177207 E) (177620 D))"
-         "((177620 D) (178038 C))"
-         "((178038 C) (179663 A mineur))"
-         "((179663 A mineur) (181271 G))"
-         "((181271 G) (182891 F))"
-         "((182891 F) (184475 C))"
-         "((184475 C) (187680 G))"
-         "((187680 G) (189235 F))"
-         "((189235 F) (190025 E))"
-         "((190025 E) (190431 D))"
-         "((190431 D) (190832 C))"
-         "((190832 C) (192434 A mineur))"
-         "((192434 A mineur) (194030 G))"
-         "((194030 G) (195633 F))"
-         "((195633 F) (197194 C))"
-         "((197194 C) (200323 G))"
-         "((200323 G) (201896 F))"
-         "((201896 F) (202686 E))"
-         "((202686 E) (203075 D))"
-         "((203075 D) (203469 C))"
-         "((203469 C) (205107 F))"
-         "((205107 F) (205873 E))"
-         "((205873 E) (206279 D))"
-         "((206279 D) (206685 C))"
-         "((206685 C) (207498 Bb))"
-         "((207498 Bb) (207910 A mineur))"
-         "((207910 A mineur) (208392 G))"
-         "((208392 G) (209245 F))"
-         "((209245 F) (210122 C))"))
+         "(202 1903)"
+         "(1903 3569)"
+         "(3569 5217)"
+         "(5217 6866)"
+         "(6866 8520)"
+         "(8520 10175)"
+         "(10175 11405)"
+         "(11405 11829)"
+         "(11829 13472)"
+         "(13472 15144)"
+         "(15144 16792)"
+         "(16792 18424)"
+         "(18424 20049)"
+         "(20049 21680)"
+         "(21680 23323)"
+         "(23323 24147)"
+         "(24147 24565)"
+         "(24565 24977)"
+         "(24977 26655)"
+         "(26655 28321)"
+         "(28321 29941)"
+         "(29941 31584)"
+         "(31584 33197)"
+         "(33197 34788)"
+         "(34788 36407)"
+         "(36407 37220)"
+         "(37220 37627)"
+         "(37627 38027)"
+         "(38027 39629)"
+         "(39629 41231)"
+         "(41231 42799)"
+         "(42799 44424)"
+         "(44424 46009)"
+         "(46009 47582)"
+         "(47582 49178)"
+         "(49178 50014)"
+         "(50014 50421)"
+         "(50421 50827)"
+         "(50827 54119)"
+         "(54119 55738)"
+         "(55738 57364)"
+         "(57364 58966)"
+         "(58966 60550)"
+         "(60550 62158)"
+         "(62158 62965)"
+         "(62965 63366)"
+         "(63366 63772)"
+         "(63772 67040)"
+         "(67040 68660)"
+         "(68660 70207)"
+         "(70207 71922)"
+         "(71922 73530)"
+         "(73530 75150)"
+         "(75150 75972)"
+         "(75972 76375)"
+         "(76375 76787)"
+         "(76787 78453)"
+         "(78453 80061)"
+         "(80061 81704)"
+         "(81704 83283)"
+         "(83283 86458)"
+         "(86458 88054)"
+         "(88054 88856)"
+         "(88856 89256)"
+         "(89256 89651)"
+         "(89651 91236)"
+         "(91236 92803)"
+         "(92803 94382)"
+         "(94382 95955)"
+         "(95955 99101)"
+         "(99101 100680)"
+         "(100680 101470)"
+         "(101470 101859)"
+         "(101859 102253)"
+         "(102253 103830)"
+         "(103830 104628)"
+         "(104628 105028)"
+         "(105028 105423)"
+         "(105423 106212)"
+         "(106212 106607)"
+         "(106607 107002)"
+         "(107002 107751)"
+         "(107751 108529)"
+         "(108529 110150)"
+         "(110150 110891)"
+         "(110891 111292)"
+         "(111292 111681)"
+         "(111681 112464)"
+         "(112464 112859)"
+         "(112859 113254)"
+         "(113254 114055)"
+         "(114055 114868)"
+         "(114868 118066)"
+         "(118066 119564)"
+         "(119564 121085)"
+         "(121085 122612)"
+         "(122612 124138)"
+         "(124138 125665)"
+         "(125665 126425)"
+         "(126425 126809)"
+         "(126809 127145)"
+         "(127145 130222)"
+         "(130222 131749)"
+         "(131749 133264)"
+         "(133264 134779)"
+         "(134779 136356)"
+         "(136356 137861)"
+         "(137861 138651)"
+         "(138651 139046)"
+         "(139046 139434)"
+         "(139434 141037)"
+         "(141037 142654)"
+         "(142654 144218)"
+         "(144218 145785)"
+         "(145785 148943)"
+         "(148943 150516)"
+         "(150516 151317)"
+         "(151317 151718)"
+         "(151718 152124)"
+         "(152124 155375)"
+         "(155375 157018)"
+         "(157018 158666)"
+         "(158666 160309)"
+         "(160309 161911)"
+         "(161911 163508)"
+         "(163508 164309)"
+         "(164309 164742)"
+         "(164742 165116)"
+         "(165116 168384)"
+         "(168384 170009)"
+         "(170009 171623)"
+         "(171623 173219)"
+         "(173219 174798)"
+         "(174798 176401)"
+         "(176401 177207)"
+         "(177207 177620)"
+         "(177620 178038)"
+         "(178038 179663)"
+         "(179663 181271)"
+         "(181271 182891)"
+         "(182891 184475)"
+         "(184475 187680)"
+         "(187680 189235)"
+         "(189235 190025)"
+         "(190025 190431)"
+         "(190431 190832)"
+         "(190832 192434)"
+         "(192434 194030)"
+         "(194030 195633)"
+         "(195633 197194)"
+         "(197194 200323)"
+         "(200323 201896)"
+         "(201896 202686)"
+         "(202686 203075)"
+         "(203075 203469)"
+         "(203469 205107)"
+         "(205107 205873)"
+         "(205873 206279)"
+         "(206279 206685)"
+         "(206685 207498)"
+         "(207498 207910)"
+         "(207910 208392)"
+         "(208392 209245)"
+         "(209245 210122)"))
        (:labls
         (:list
          "C"
          "G"
-         "A mineur"
+         "A"
          "F"
          "C"
          "G"
@@ -242,17 +243,7 @@
          "C"
          "C"
          "G"
-         "A mineur"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "C"
-         "G"
-         "A mineur"
+         "A"
          "F"
          "C"
          "G"
@@ -260,7 +251,17 @@
          "E"
          "D"
          "C"
-         "A mineur"
+         "C"
+         "G"
+         "A"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "A"
          "G"
          "F"
          "C"
@@ -271,61 +272,7 @@
          "D"
          "C"
          "G"
-         "A mineur"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "G"
-         "A mineur"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "A mineur"
-         "G"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "A mineur"
-         "G"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "F"
-         "E"
-         "D"
-         "C"
-         "Bb"
-         "A mineur"
-         "G"
-         "F"
-         "C"
-         "F"
-         "E"
-         "D"
-         "C"
-         "Bb"
-         "A mineur"
-         "G"
-         "F"
-         "C"
-         "G"
-         "A mineur"
+         "A"
          "F"
          "C"
          "G"
@@ -334,7 +281,7 @@
          "D"
          "C"
          "G"
-         "A mineur"
+         "A"
          "F"
          "C"
          "G"
@@ -342,34 +289,7 @@
          "E"
          "D"
          "C"
-         "A mineur"
-         "G"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "G"
-         "A mineur"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "G"
-         "A mineur"
-         "F"
-         "C"
-         "G"
-         "F"
-         "E"
-         "D"
-         "C"
-         "A mineur"
+         "A"
          "G"
          "F"
          "C"
@@ -378,7 +298,7 @@
          "E"
          "D"
          "C"
-         "A mineur"
+         "A"
          "G"
          "F"
          "C"
@@ -391,8 +311,89 @@
          "E"
          "D"
          "C"
-         "Bb"
-         "A mineur"
+         "B"
+         "A"
+         "G"
+         "F"
+         "C"
+         "F"
+         "E"
+         "D"
+         "C"
+         "B"
+         "A"
+         "G"
+         "F"
+         "C"
+         "G"
+         "A"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "G"
+         "A"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "A"
+         "G"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "G"
+         "A"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "G"
+         "A"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "A"
+         "G"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "A"
+         "G"
+         "F"
+         "C"
+         "G"
+         "F"
+         "E"
+         "D"
+         "C"
+         "F"
+         "E"
+         "D"
+         "C"
+         "B"
+         "A"
          "G"
          "F"
          "C"))))))
@@ -456,7 +457,8 @@
    (:showname nil)
    (:show-markers t)
    (:group-id nil)
-   (:lock nil)
+   (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -465,7 +467,7 @@
      (:reactive nil))
     (:input
      (:type :key)
-     (:name "MARKERS")
+     (:name "markers")
      (:value nil)
      (:reactive nil)))
    (:outputs
@@ -937,9 +939,9 @@
           (:class marker-frame)
           (:slots
            ((:item-time nil)
-            (:item-internal-time 70297)
-            (:item-type 70297)
-            (:date 70297)
+            (:item-internal-time 70207)
+            (:item-type 70207)
+            (:date 70207)
             (:attributes nil)
             (:label "F"))))
          (:object
@@ -2027,7 +2029,7 @@
          (:list 63772 "C")
          (:list 67040 "G")
          (:list 68660 "A mineur")
-         (:list 70297 "F")
+         (:list 70207 "F")
          (:list 71922 "C")
          (:list 73530 "G")
          (:list 75150 "F")
@@ -2147,7 +2149,7 @@
          (:directory
           (:absolute "Users" "bresson" "Desktop" "om-dyci2-patches"))
          (:device :unspecific)
-         (:host :unspecific)
+         (:host nil)
          (:name "The Beatles - Let It Be (piano cover)")
          (:type "wav")))
        (:sample-rate 44100)
@@ -2189,7 +2191,7 @@
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:lock nil)
+   (:lock :locked)
    (:inputs
     (:input
      (:type :optional)
@@ -2202,7 +2204,7 @@
      (:directory
       (:absolute "Users" "bresson" "Desktop" "om-dyci2-patches"))
      (:device :unspecific)
-     (:host :unspecific)
+     (:host nil)
      (:name "The Beatles - Let It Be (piano cover)")
      (:type "wav")))
    (:id 4))
@@ -2279,7 +2281,7 @@
      (:name "markers->segments")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size (500 500)) (:position (1029 428)))
+     (:window (:size (500 500)) (:position (747 526)))
      (:grid nil)
      (:lock nil)
      (:boxes
@@ -2333,6 +2335,33 @@
        (:outputs)
        (:id 1))
       (:box
+       (:reference
+        (:out (:type omout) (:name "labels") (:index 2) (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "labels")
+       (:x 325)
+       (:y 260)
+       (:w 53)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "out-value")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs)
+       (:id 2))
+      (:box
        (:reference cdr)
        (:type :function)
        (:group-id nil)
@@ -2355,7 +2384,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 2))
+       (:id 3))
       (:box
        (:reference butlast)
        (:type :function)
@@ -2379,7 +2408,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 3))
+       (:id 4))
       (:box
        (:reference mat-trans)
        (:type :function)
@@ -2403,7 +2432,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 4))
+       (:id 5))
       (:box
        (:reference list)
        (:type :function)
@@ -2432,7 +2461,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 5))
+       (:id 6))
       (:box
        (:reference mapcar)
        (:type :function)
@@ -2461,33 +2490,6 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 6))
-      (:box
-       (:reference
-        (:out (:type omout) (:name "labels") (:index 2) (:doc "")))
-       (:type :io)
-       (:group-id nil)
-       (:name "labels")
-       (:x 330)
-       (:y 188)
-       (:w 53)
-       (:h 42)
-       (:color
-        (:color-or-nil
-         (:color (:color 1.0 1.0 1.0 0.0))
-         (:t-or-nil t)))
-       (:border 0)
-       (:roundness 0)
-       (:text-font nil)
-       (:align :center)
-       (:icon :top)
-       (:inputs
-        (:input
-         (:type :standard)
-         (:name "out-value")
-         (:value nil)
-         (:reactive nil)))
-       (:outputs)
        (:id 7))
       (:box
        (:reference mat-trans)
@@ -2562,30 +2564,131 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 10)))
+       (:id 10))
+      (:box
+       (:reference mapcar)
+       (:type :function)
+       (:group-id nil)
+       (:name "mapcar")
+       (:x 345)
+       (:y 156)
+       (:w 75)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "FUNCTION")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "LIST")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 11))
+      (:box
+       (:reference subseq)
+       (:type :function)
+       (:group-id nil)
+       (:name "subseq")
+       (:x 333)
+       (:y 80)
+       (:w 72)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda :lambda)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "SEQUENCE")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "START")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :optional)
+         (:name "end")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 12))
+      (:box
+       (:reference fixnum)
+       (:type :value)
+       (:group-id nil)
+       (:name "value box")
+       (:x 344)
+       (:y 44)
+       (:w 32)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 0)
+       (:id 13))
+      (:box
+       (:reference fixnum)
+       (:type :value)
+       (:group-id nil)
+       (:name "value box")
+       (:x 365)
+       (:y 45)
+       (:w 32)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 1)
+       (:id 14)))
      (:connections
       (:connection
        (:from (:box 0 :out 0))
        (:to (:box 8 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
-       (:from (:box 2 :out 0))
-       (:to (:box 5 :in 1))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
        (:from (:box 3 :out 0))
-       (:to (:box 5 :in 0))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 4 :out 0))
        (:to (:box 6 :in 1))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
+       (:from (:box 4 :out 0))
+       (:to (:box 6 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
        (:from (:box 5 :out 0))
-       (:to (:box 4 :in 0))
+       (:to (:box 7 :in 1))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 6 :out 0))
+       (:to (:box 5 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 7 :out 0))
        (:to (:box 1 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
@@ -2594,19 +2697,35 @@
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 9 :out 0))
-       (:to (:box 3 :in 0))
+       (:to (:box 4 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 9 :out 0))
-       (:to (:box 2 :in 0))
+       (:to (:box 3 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 9 :out 1))
-       (:to (:box 7 :in 0))
+       (:to (:box 11 :in 1))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 10 :out 0))
-       (:to (:box 6 :in 0))
+       (:to (:box 7 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 11 :out 0))
+       (:to (:box 2 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 12 :out 0))
+       (:to (:box 11 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 13 :out 0))
+       (:to (:box 12 :in 1))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 14 :out 0))
+       (:to (:box 12 :in 2))
        (:attributes (:color nil :style nil :modif nil))))))
    (:type :patch)
    (:group-id nil)
@@ -3181,6 +3300,7 @@
    (:show-markers t)
    (:group-id nil)
    (:lock nil)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -3200,7 +3320,7 @@
        (:default-frame-type marker-frame)
        (:frames nil)
        (:buffer nil)
-       (:n-samples 780174)
+       (:n-samples 952342)
        (:n-channels 2)
        (:sample-rate 44100)
        (:smpl-type :float)
@@ -3210,7 +3330,7 @@
        (:file-pathname nil)
        (:sample-rate 44100)
        (:n-channels 2)
-       (:n-samples 780174)
+       (:n-samples 952342)
        (:gain 1.0)
        (:access-from-file nil)))))
    (:id 10))
@@ -3232,6 +3352,7 @@
    (:showname nil)
    (:group-id nil)
    (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -3245,7 +3366,7 @@
      (:reactive nil))
     (:input
      (:type :key)
-     (:name "READ-MODE")
+     (:name "read-mode")
      (:value :list)
      (:reactive nil)))
    (:outputs
@@ -3262,8 +3383,8 @@
         (:list
          "A A E E A A E E"
          "D D D D E E E E "
-         "A A A7 A7 E E E E "
-         "D D D D E E A7 A7"
+         "A A A A E E E E "
+         "D D D D E E A A"
          ""))))
      (:add-slots ((:input-mode :lines-cols)))))
    (:id 11))
@@ -3357,6 +3478,7 @@
    (:showname nil)
    (:group-id nil)
    (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -3370,7 +3492,7 @@
      (:reactive nil))
     (:input
      (:type :key)
-     (:name "INPUT-MODE")
+     (:name "input-mode")
      (:value :lines)
      (:reactive nil)))
    (:outputs
@@ -5875,6 +5997,7 @@
    (:showname nil)
    (:group-id nil)
    (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -5900,7 +6023,7 @@
            "DYCI2"
            "FILES"))
          (:device :unspecific)
-         (:host :unspecific)
+         (:host nil)
          (:name "LetItBeMarkers")
          (:type "sdif")))))))
    (:id 16))
@@ -6119,6 +6242,7 @@
    (:showname nil)
    (:group-id nil)
    (:lock nil)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -6132,7 +6256,7 @@
      (:reactive nil))
     (:input
      (:type :key)
-     (:name "INPUT-MODE")
+     (:name "input-mode")
      (:value :value)
      (:reactive nil)))
    (:outputs

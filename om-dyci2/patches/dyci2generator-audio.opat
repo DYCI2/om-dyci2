@@ -5,8 +5,8 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2018/07/17 23:51:59"))
- (:window (:size (1142 1042)) (:position (444 52)))
+  (:modified "2018/10/09 17:05:52"))
+ (:window (:size (1476 1082)) (:position (304 52)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -25,13 +25,14 @@
    (:roundness nil)
    (:text-font
     (:font-or-nil
-     (:font (:font (:face "Calibri") (:size 12.0D0) (:style :bold)))
+     (:font (:font (:face "Calibri") (:size 12) (:style :bold)))
      (:t-or-nil t)))
    (:name "DYCI2GENERATOR")
    (:display :text)
    (:showname t)
    (:group-id nil)
-   (:lock nil)
+   (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -161,6 +162,7 @@
    (:show-markers t)
    (:group-id nil)
    (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -169,7 +171,7 @@
      (:reactive nil))
     (:input
      (:type :key)
-     (:name "MARKERS")
+     (:name "markers")
      (:value nil)
      (:reactive nil)))
    (:outputs
@@ -557,7 +559,7 @@
    (:type :function)
    (:group-id nil)
    (:name "file-chooser")
-   (:x 167)
+   (:x 172)
    (:y 197)
    (:w 96)
    (:h 30)
@@ -572,7 +574,7 @@
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 7))
   (:box
-   (:reference pathname)
+   (:reference null)
    (:type :value)
    (:group-id nil)
    (:name "value box")
@@ -1372,6 +1374,7 @@
    (:show-markers t)
    (:group-id nil)
    (:lock nil)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -1423,6 +1426,7 @@
    (:showname nil)
    (:group-id nil)
    (:lock :locked)
+   (:lambda nil)
    (:inputs
     (:input
      (:type :standard)
@@ -1436,7 +1440,7 @@
      (:reactive nil))
     (:input
      (:type :key)
-     (:name "READ-MODE")
+     (:name "read-mode")
      (:value :list)
      (:reactive nil)))
    (:outputs
@@ -1730,7 +1734,7 @@
    (:roundness nil)
    (:text-font
     (:font-or-nil
-     (:font (:font (:face "Calibri") (:size 14.0D0) (:style :italic)))
+     (:font (:font (:face "Calibri") (:size 14) (:style :italic)))
      (:t-or-nil t)))
    (:align nil)
    (:text "times")
@@ -1746,7 +1750,7 @@
    (:roundness nil)
    (:text-font
     (:font-or-nil
-     (:font (:font (:face "Calibri") (:size 14.0D0) (:style :italic)))
+     (:font (:font (:face "Calibri") (:size 14) (:style :italic)))
      (:t-or-nil t)))
    (:align nil)
    (:text "labels")
@@ -1762,7 +1766,7 @@
    (:roundness nil)
    (:text-font
     (:font-or-nil
-     (:font (:font (:face "Calibri") (:size 14.0D0) (:style :italic)))
+     (:font (:font (:face "Calibri") (:size 14) (:style :italic)))
      (:t-or-nil t)))
    (:align nil)
    (:text "get-segments (t1 t2)")
@@ -1800,6 +1804,10 @@
    (:from (:box 1 :out 0))
    (:to (:box 17 :in 1))
    (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 2 :out 0))
+   (:to (:box 19 :in 1))
+   (:attributes (:color nil :style nil :modif (0 -0.45))))
   (:connection
    (:from (:box 2 :out 1))
    (:to (:box 31 :in 0))
