@@ -1,5 +1,5 @@
 # om-dyci2
-An adapted version of DYCI2 for the OpenMusic ([OM](http://repmus.ircam.fr/openmusic/)/[o7](https://openmusic-project.github.io/)) visual programming and computer-aided composition environments.
+DYCI2 for the OpenMusic ([OM6](http://repmus.ircam.fr/openmusic/)/[om7](https://openmusic-project.github.io/)) visual programming and computer-aided composition environments.
 
 © Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
 
@@ -33,12 +33,12 @@ The Makefile will assume that Python 2.7 is installed in /System/Library/Framewo
 No need to compile. 
 
 **om-dyci2** can be used in either in [OM 6.13] or [o7] environments.
-  * See [o7 external libraries](https://openmusic-project.github.io/pages/libraries) manual page for o7.
-  * See [OM6 external libraries](http://repmus.ircam.fr/openmusic/libraries) manual page for OM 6.13.
+  * See [om7 external libraries](https://openmusic-project.github.io/pages/libraries) manual page for om7.
+  * See [OM6 external libraries](http://repmus.ircam.fr/openmusic/libraries) manual page for OM 6.13/6.14.
 
-The **om-dyci2** source folder including libdyci2.so (or the pre-packed version distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)) must be installed in one of the OM/o7 library folders.
+The **om-dyci2** source folder including libdyci2.so (or the pre-packed version distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)) must be installed in one of the OM library folders.
 
-Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM/o7 Preferences.
+Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM Preferences.
 
 **Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the DYCI2 library must also be installed on your computer** (get the latest version [HERE]() !).
 
