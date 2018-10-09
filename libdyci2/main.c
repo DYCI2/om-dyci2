@@ -31,7 +31,7 @@
 
 // SET THE PATH TO /DYCI2_library/DYCI2_Modules/
 
-#define PATH_TO_DYCI2 "/Users/bresson/SRC/DYCI2_library/DYCI2_Modules/"
+#define PATH_TO_DYCI2 "/Users/bresson/SRC/Dyci2Lib/Python_library/DYCI2_Modules/"
 //#define PATH_TO_DYCI2 "/Users/siguret/DYCI2_library/DYCI2_Modules/"
 
 
@@ -69,30 +69,40 @@ int main(int argc, char **argv)
 		
 		printf("================== Create generator...\n");
 		void* Gen = Dyci2MakeGenerator( pyPtr, size, pSeq, pLab );
-
-		int querySize = 15;
-		char *cHandle[] = {"C", "A", "B", "B", "C", "D", "C", "C", "D", "A", "A", "A", "A", "C", "B"} ;
-
 		printf("================== GENERATOR: %p \n", Gen);	
 
-		void* pHandle = Dyci2MakeList( querySize );
-		for (int i=0 ; i < querySize ; i++) 
-		{ 
-			Dyci2ListAddString(pHandle, cHandle[i], i );
-		}
-		
-		err = Dyci2GenQuery(pyPtr, Gen, querySize, pHandle );
-
-		int l = Dyci2GenOutputSize( Gen );
-		
-		printf( "OUTPUT [size=%d]:\n", l);
-		for ( int i = 0; i < l ; i++ ) 
+		for ( int n = 1; n < 10 ; n++ )
 		{
-			printf( "%s ", Dyci2GenNthOutput( Gen , i ));
-		}
+			
+			printf("======================================================================== QUERY #%d\n", n);
 
-		err = Dyci2ParametersMod(Gen);
-		Dyci2SetParametersINT(Gen, "max_continuity", 5);
+			int querySize = 15;
+			char *cHandle[] = {"C", "A", "B", "B", "C", "D", "C", "C", "D", "A", "A", "A", "A", "C", "B"} ;
+
+			void* queryHandle = Dyci2MakeList( querySize );
+			for (int i=0 ; i < querySize ; i++) 
+			{ 
+				Dyci2ListAddString(queryHandle, cHandle[i], i );
+			}
+		
+			printf("================== Call Dyci2GenQuery...\n");
+			err = Dyci2GenQuery(pyPtr, Gen, querySize, queryHandle );
+
+			Dyci2FreeList ( queryHandle );
+
+			int l = Dyci2GenOutputSize( Gen );
+		
+			printf( "================== OUTPUT [size=%d]:\n", l);
+			for ( int i = 0; i < l ; i++ ) 
+			{
+				printf( "%s ", Dyci2GenNthOutput( Gen , i ));
+			}
+			printf("\n\n\n");
+			sleep(3);
+		}
+			
+		//err = Dyci2ParametersMod(Gen);
+		//Dyci2SetParametersINT(Gen, "max_continuity", 5);
 		
 		printf("\n================== DONE\n");
 		

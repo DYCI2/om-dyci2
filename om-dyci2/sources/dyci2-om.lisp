@@ -31,7 +31,7 @@
 (defmethod om-api::om-cleanup ((self dyci2Generator))
   (when (pyGen self)
     (om::om-print (format nil "Free DYCI2 Generator: ~A" (list (pyGen self))))
-    (if (oa:om-null-pointer-p (pyGen self))
+    (if (cffi-sys::null-pointer-p (pyGen self))
         (print "Warning: DYCI2 Generator was allready a NULL pointer!")
       (dyci2freegenerator (pyGen self)))
     (setf (pyGen self) nil)))

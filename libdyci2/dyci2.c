@@ -142,11 +142,11 @@ void * CallPyFunction ( void* pyDict, const char* fName, int nb_arg, void *pArgs
     PyObject *pyRep = NULL;
 
     //pDict = PyModule_GetDict(pModule); 
- 	// printf("dyci2lib >>>>>>> function pointer: %p\n", pFunc);
+ 	printf("dyci2lib >>>>>>> function pointer: %p\n", pFunc);
           		
     if ( PyCallable_Check( pFunc ) ) 
     {
-        // printf("dyci2lib >>>>>>> function check (%s) => ok\n", fName);
+        printf("dyci2lib >>>>>>> function check (%s) => ok\n", fName);
         pyRep = PyObject_CallObject(pFunc, pArgs );
         printf("dyci2lib >>>>>>> return value from %s: %p\n", fName, pyRep);
         if ( pyRep == NULL ) { PyErr_Print(); }
@@ -231,21 +231,21 @@ int Dyci2GenQuery( void *pyPtr, void *Generator, int size, void *pyLabels )
 	PyObject *args=PyTuple_New(1);
 	PyTuple_SetItem(args, 0, pyLabels);
 
-	printf("dyci2lib >>>>>>> gen query \n");	
+	printf("dyci2lib >>>>>>> create new query \n");	
 	PyObject *pyQuery = CallPyFunction(pyPtr, "new_temporal_query_sequence_of_events", 1, args);
-	printf("dyci2lib >>>>>>> gen query returned!\n");
+	printf("dyci2lib >>>>>>> create new query returned!\n");
 		
 	Py_DECREF(args);
 	
 	if (pyQuery==NULL)
 	{
-		printf("dyci2lib >>>>>>>  Error generating Query:\n");
+		printf("dyci2lib >>>>>>>  Error creating Query:\n");
 		PyErr_Print();
 		return -1;
 	}
 	else
 	{
-		printf("dyci2lib >>>>>>>  send query \n");
+		printf("dyci2lib >>>>>>> send query \n");
 		PyObject *pyRep = CallPyMethod( Generator, "receive_query", pyQuery );
 		printf("dyci2lib >>>>>>> send query returned\n");
 		
