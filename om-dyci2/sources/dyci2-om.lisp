@@ -47,8 +47,9 @@
 #+om
 (defmethod om::make-one-instance ((self dyci2Generator) &rest slots-vals)
   (om-api::om-cleanup self) ;; just in case...
-  (setf (pyGen self) (dyci2-make-generator (length (memory self)) (memory self) (labls self)))
-  self)
+  (let ((rep (call-next-method)))
+    (setf (pyGen rep) (dyci2-make-generator (length (memory rep)) (memory rep) (labls rep)))
+    rep))
  
 
 (om::defmethod! dyci2query ((self dyci2Generator) (query list))
