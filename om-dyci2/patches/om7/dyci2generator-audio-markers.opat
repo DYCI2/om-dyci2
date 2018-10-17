@@ -5,7 +5,7 @@
  (:doc "")
  (:info
   (:created "2018/06/28 10:51:03")
-  (:modified "2018/10/09 17:05:31"))
+  (:modified "2018/10/12 21:25:41"))
  (:window (:size (1094 754)) (:position (573 242)))
  (:grid nil)
  (:lock nil)
@@ -2761,103 +2761,10 @@
      (:name "remix")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size nil) (:position nil))
+     (:window (:size (611 719)) (:position (277 131)))
      (:grid nil)
      (:lock nil)
      (:boxes
-      (:box
-       (:reference
-        (:in (:type omin) (:index 1) (:name "SEGMENTS") (:doc "")))
-       (:type :io)
-       (:group-id nil)
-       (:name "SEGMENTS")
-       (:x 154)
-       (:y 59)
-       (:w 81)
-       (:h 42)
-       (:color
-        (:color-or-nil
-         (:color (:color 1.0 1.0 1.0 0.0))
-         (:t-or-nil t)))
-       (:border 0)
-       (:roundness 0)
-       (:text-font nil)
-       (:align :center)
-       (:icon :top)
-       (:inputs)
-       (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 0))
-      (:box
-       (:reference
-        (:out (:type omout) (:name "out") (:index 1) (:doc "")))
-       (:type :io)
-       (:group-id nil)
-       (:name "out")
-       (:x 268)
-       (:y 569)
-       (:w 40)
-       (:h 42)
-       (:color
-        (:color-or-nil
-         (:color (:color 1.0 1.0 1.0 0.0))
-         (:t-or-nil t)))
-       (:border 0)
-       (:roundness 0)
-       (:text-font nil)
-       (:align :center)
-       (:icon :top)
-       (:inputs
-        (:input
-         (:type :standard)
-         (:name "out-value")
-         (:value nil)
-         (:reactive nil)))
-       (:outputs)
-       (:id 1))
-      (:box
-       (:reference
-        (:in (:type omin) (:index 2) (:name "SOUND") (:doc "")))
-       (:type :io)
-       (:group-id nil)
-       (:name "SOUND")
-       (:x 91)
-       (:y 206)
-       (:w 61)
-       (:h 42)
-       (:color
-        (:color-or-nil
-         (:color (:color 1.0 1.0 1.0 0.0))
-         (:t-or-nil t)))
-       (:border 0)
-       (:roundness 0)
-       (:text-font nil)
-       (:align :center)
-       (:icon :top)
-       (:inputs)
-       (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 2))
-      (:box
-       (:reference
-        (:in (:type omin) (:index 3) (:name "CROSSFADE") (:doc "")))
-       (:type :io)
-       (:group-id nil)
-       (:name "CROSSFADE")
-       (:x 320)
-       (:y 144)
-       (:w 84)
-       (:h 42)
-       (:color
-        (:color-or-nil
-         (:color (:color 1.0 1.0 1.0 0.0))
-         (:t-or-nil t)))
-       (:border 0)
-       (:roundness 0)
-       (:text-font nil)
-       (:align :center)
-       (:icon :top)
-       (:inputs)
-       (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 3))
       (:box
        (:reference
         (:object
@@ -2890,7 +2797,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs)
-       (:id 4))
+       (:id 0))
       (:box
        (:reference
         (:object
@@ -2923,7 +2830,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "i") (:reactive nil)))
-       (:id 5))
+       (:id 1))
       (:box
        (:reference
         (:object
@@ -2965,13 +2872,13 @@
         (:output (:name "collect") (:reactive nil))
         (:output (:name "data-out") (:reactive nil))
         (:output (:name "init") (:reactive nil)))
-       (:id 6))
+       (:id 2))
       (:box
        (:reference split)
        (:type :function)
        (:group-id nil)
        (:name "split")
-       (:x 170)
+       (:x 168)
        (:y 169)
        (:w 59)
        (:h 30)
@@ -2991,7 +2898,7 @@
        (:outputs
         (:output (:name "out") (:reactive nil))
         (:output (:name "out1") (:reactive nil)))
-       (:id 7))
+       (:id 3))
       (:box
        (:reference sound-cut)
        (:type :function)
@@ -3025,7 +2932,7 @@
          (:value 1.0)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 8))
+       (:id 4))
       (:box
        (:reference sound-seq)
        (:type :function)
@@ -3059,7 +2966,7 @@
          (:value 0)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 9))
+       (:id 5))
       (:box
        (:reference reduce)
        (:type :function)
@@ -3088,7 +2995,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 10))
+       (:id 6))
       (:box
        (:reference om+)
        (:type :function)
@@ -3117,7 +3024,7 @@
          (:value 0)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 11))
+       (:id 7))
       (:box
        (:reference om-)
        (:type :function)
@@ -3146,7 +3053,7 @@
          (:value 0)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 12))
+       (:id 8))
       (:box
        (:reference sound-fade)
        (:type :function)
@@ -3180,71 +3087,164 @@
          (:value 0.1)
          (:reactive nil)))
        (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 9))
+      (:box
+       (:reference
+        (:in (:type omin) (:index 1) (:name "SEGMENTS") (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "SEGMENTS")
+       (:x 154)
+       (:y 59)
+       (:w 81)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs)
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 10))
+      (:box
+       (:reference
+        (:out (:type omout) (:name "out") (:index 1) (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "out")
+       (:x 268)
+       (:y 569)
+       (:w 40)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "out-value")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs)
+       (:id 11))
+      (:box
+       (:reference
+        (:in (:type omin) (:index 2) (:name "SOUND") (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "SOUND")
+       (:x 91)
+       (:y 206)
+       (:w 61)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs)
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 12))
+      (:box
+       (:reference
+        (:in (:type omin) (:index 3) (:name "CROSSFADE") (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "CROSSFADE")
+       (:x 335)
+       (:y 140)
+       (:w 84)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs)
+       (:outputs (:output (:name "out") (:reactive nil)))
        (:id 13)))
      (:connections
       (:connection
-       (:from (:box 0 :out 0))
-       (:to (:box 5 :in 0))
+       (:from (:box 1 :out 0))
+       (:to (:box 3 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 2 :out 0))
+       (:to (:box 0 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 2 :out 1))
+       (:to (:box 6 :in 1))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 3 :out 0))
        (:to (:box 8 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
-       (:from (:box 3 :out 0))
-       (:to (:box 11 :in 1))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 3 :out 0))
-       (:to (:box 12 :in 1))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 3 :out 0))
-       (:to (:box 9 :in 2))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 5 :out 0))
+       (:from (:box 3 :out 1))
        (:to (:box 7 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
-       (:from (:box 6 :out 0))
-       (:to (:box 4 :in 0))
+       (:from (:box 4 :out 0))
+       (:to (:box 2 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
-       (:from (:box 6 :out 1))
-       (:to (:box 10 :in 1))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 7 :out 0))
-       (:to (:box 12 :in 0))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 7 :out 1))
-       (:to (:box 11 :in 0))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 8 :out 0))
+       (:from (:box 5 :out 0))
        (:to (:box 6 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
+       (:from (:box 6 :out 0))
+       (:to (:box 9 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 7 :out 0))
+       (:to (:box 4 :in 2))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 8 :out 0))
+       (:to (:box 4 :in 1))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
        (:from (:box 9 :out 0))
-       (:to (:box 10 :in 0))
+       (:to (:box 11 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 10 :out 0))
-       (:to (:box 13 :in 0))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 11 :out 0))
-       (:to (:box 8 :in 2))
+       (:to (:box 1 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 12 :out 0))
+       (:to (:box 4 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 13 :out 0))
+       (:to (:box 7 :in 1))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 13 :out 0))
        (:to (:box 8 :in 1))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 13 :out 0))
-       (:to (:box 1 :in 0))
+       (:to (:box 5 :in 2))
        (:attributes (:color nil :style nil :modif nil))))))
    (:type :patch)
    (:group-id nil)

@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 		void* Gen = Dyci2MakeGenerator( pyPtr, size, pSeq, pLab );
 		printf("================== GENERATOR: %p \n", Gen);	
 
-		for ( int n = 1; n < 10 ; n++ )
+		for ( int n = 1; n <= 10 ; n++ )
 		{
 			
 			printf("======================================================================== QUERY #%d\n", n);
@@ -98,7 +98,7 @@ int main(int argc, char **argv)
 				printf( "%s ", Dyci2GenNthOutput( Gen , i ));
 			}
 			printf("\n\n\n");
-			sleep(3);
+			sleep(1);
 		}
 			
 		//err = Dyci2ParametersMod(Gen);
