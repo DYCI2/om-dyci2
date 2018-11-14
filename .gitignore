@@ -4,6 +4,7 @@
 dycitest
 *.zip
 .DS_Store
+**/Results/**/*
 
 
 # Lisp
