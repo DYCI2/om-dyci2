@@ -1,0 +1,8 @@
+README
+
+0- Download the last version of DYCI2lib here: https://github.com/DYCI2/Dyci2Lib, 
+and OM7 here: https://github.com/openmusic-project/om7/
+1- Move this directory to your desktop (or change the main path when using the patchs !)
+2- In OM7/Preferences/Libraries, give the path to this tutorial directory in "Search folder" (and Autoload)
+3- When opening the first tutorial, in OM7/Preferences/Libraries give the path to your directory "Dyci2Lib/Python_library/DYCI2_Modules/"
+4- Use the tutorials !
