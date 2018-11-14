@@ -3,6 +3,7 @@
 *.so
 dycitest
 *.zip
+.DS_Store
 
 
 # Lisp
