@@ -22,7 +22,7 @@ http://repmus.ircam.fr/downloads/docs/DYCI2_library/
 
 __Tutorials__ are available in om-dyci2/patches/.
 
-You can use the pre-packed version of the **om-dyci2** source folder distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)), or compile the source code available on this github repository (see below).
+You can use the pre-packed version of the **om-dyci2** source folder distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases), or compile the source code available on this github repository (see below).
 
 The **om-dyci2** source folder including the compiled wrapper (libdyci2/libdyci2.so) and the DYCI2 python modules (omdyci2/lib/python) must be installed in one of the OM library folders.
 Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM Preferences.
