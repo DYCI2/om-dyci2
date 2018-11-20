@@ -33,9 +33,7 @@ __Tutorials__ are available in om-dyci2/patches/.
 
 This library was only compiled and tested on macOS so far.
 
-Download the last version of DYCI2lib [HERE](https://github.com/DYCI2/Dyci2Lib), move om-dyci2 and DYCI2lib in a same parent directory, and compile libdyci2: 
-
-Use your Terminal in [parent_directory]/om-dyci2/libdicy2/ and simply Make the library:
+Download the last version of DYCI2lib [HERE](https://github.com/DYCI2/Dyci2Lib), move om-dyci2 and DYCI2lib in a same parent directory, and compile libdyci2. Use your Terminal in [parent_directory]/om-dyci2/libdicy2/ and simply Make the library:
 ```
 cd libdyci2
 make
