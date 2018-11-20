@@ -5,8 +5,8 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2018/11/20 16:12:03"))
- (:window (:size (1420 821)) (:position (-1475 157)))
+  (:modified "2018/11/20 17:14:14"))
+ (:window (:size (1653 811)) (:position (-1912 181)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -110,7 +110,7 @@
    (:lock nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value 100)
+   (:value 40)
    (:id 4))
   (:box
    (:reference cons)
@@ -4022,7 +4022,7 @@
     (:object
      (:class ompatchiterator)
      (:slots
-      ((:name "iterate") (:protected-p nil) (:icon nil) (:n-iter 2)))))
+      ((:name "iterate") (:protected-p nil) (:icon nil) (:n-iter 1)))))
    (:type :special)
    (:group-id nil)
    (:name "iterate")
@@ -4108,313 +4108,51 @@
      (:slots
       ((:memory
         (:list
-         "(-1 -1 -1 hi nv)"
+         "(-1 -1 -1 hi v)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 me nv)"
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 me v)"
+         "(-1 -1 -1 me v)"
+         "(-1 -1 -1 lo none)"
          "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 me none)"
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 hi none)"
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 lo nv)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo v)"
+         "(-1 -1 -1 none none)"
          "(-1 -1 -1 x x)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 none none)"
          "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo nv)"
-         "(-1 -1 -1 lo mv)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo mv)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo mv)"
          "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me v)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 me v)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me nv)"
          "(-1 -1 -1 me v)"
          "(-1 -1 -1 me v)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo v)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me nv)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me nv)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
@@ -4423,10 +4161,14 @@
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 lo none)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 none none)"
+         "(-1 -1 -1 hi nv)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 x x)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 me mv)"
          "(-1 -1 -1 x x)"
@@ -4459,316 +4201,60 @@
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 me nv)"
          "(-1 -1 -1 me v)"
-         "(-1 -1 -1 me none)"))
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 lo none)"
+         "(-1 -1 -1 lo mv)"
+         "(-1 -1 -1 lo none)"
+         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 x x)"))
        (:labls
         (:list
-         "(-1 -1 -1 hi nv)"
+         "(-1 -1 -1 hi v)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 me nv)"
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 me v)"
+         "(-1 -1 -1 me v)"
+         "(-1 -1 -1 lo none)"
          "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 me none)"
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 hi none)"
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 lo nv)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo v)"
+         "(-1 -1 -1 none none)"
          "(-1 -1 -1 x x)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 none none)"
          "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo nv)"
-         "(-1 -1 -1 lo mv)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo mv)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo mv)"
          "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me v)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 me v)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me mv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me nv)"
          "(-1 -1 -1 me v)"
          "(-1 -1 -1 me v)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo v)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 me nv)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi mv)"
-         "(-1 -1 -1 hi nv)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 x x)"
-         "(-1 -1 -1 hi v)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 hi none)"
-         "(-1 -1 -1 me nv)"
-         "(-1 -1 -1 me none)"
-         "(-1 -1 -1 none none)"
-         "(-1 -1 -1 x x)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
          "(-1 -1 -1 hi none)"
@@ -4777,10 +4263,14 @@
          "(-1 -1 -1 me none)"
          "(-1 -1 -1 lo none)"
          "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
-         "(-1 -1 -1 lo none)"
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 none none)"
+         "(-1 -1 -1 hi nv)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 hi none)"
+         "(-1 -1 -1 x x)"
          "(-1 -1 -1 none none)"
          "(-1 -1 -1 me mv)"
          "(-1 -1 -1 x x)"
@@ -4813,7 +4303,13 @@
          "(-1 -1 -1 x x)"
          "(-1 -1 -1 me nv)"
          "(-1 -1 -1 me v)"
-         "(-1 -1 -1 me none)"))))))
+         "(-1 -1 -1 me none)"
+         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 lo none)"
+         "(-1 -1 -1 lo mv)"
+         "(-1 -1 -1 lo none)"
+         "(-1 -1 -1 none none)"
+         "(-1 -1 -1 x x)"))))))
    (:id 16))
   (:box
    (:reference format)
@@ -5103,7 +4599,7 @@
      (:name "make-local-dyci2-path")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size (500 500)) (:position (-1009 265)))
+     (:window (:size (500 500)) (:position (-1243 196)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -7871,7 +7367,7 @@
      (:name "make-local-dyci2-path")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size (500 500)) (:position (-1200 313)))
+     (:window (:size (500 500)) (:position (-742 194)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -8057,78 +7553,6 @@
      (:lock nil)
      (:boxes
       (:box
-       (:reference mypathname)
-       (:type :function)
-       (:group-id nil)
-       (:name "mypathname")
-       (:x 97)
-       (:y 136)
-       (:w 107)
-       (:h 30)
-       (:color nil)
-       (:border nil)
-       (:roundness nil)
-       (:text-font nil)
-       (:align nil)
-       (:lock nil)
-       (:lambda nil)
-       (:inputs
-        (:input
-         (:type :standard)
-         (:name "OMPERSISTANTOBJECT")
-         (:value nil)
-         (:reactive nil)))
-       (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 0))
-      (:box
-       (:reference container)
-       (:type :function)
-       (:group-id nil)
-       (:name "container")
-       (:x 107)
-       (:y 103)
-       (:w 87)
-       (:h 30)
-       (:color nil)
-       (:border nil)
-       (:roundness nil)
-       (:text-font nil)
-       (:align nil)
-       (:lock nil)
-       (:lambda nil)
-       (:inputs
-        (:input
-         (:type :standard)
-         (:name "OMBOX")
-         (:value nil)
-         (:reactive nil)))
-       (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 1))
-      (:box
-       (:reference directory-namestring)
-       (:type :function)
-       (:group-id nil)
-       (:name "directory-namestring")
-       (:x 77)
-       (:y 193)
-       (:w 147)
-       (:h 30)
-       (:color nil)
-       (:border nil)
-       (:roundness nil)
-       (:text-font nil)
-       (:align nil)
-       (:lock nil)
-       (:lambda nil)
-       (:inputs
-        (:input
-         (:type :standard)
-         (:name "P")
-         (:value nil)
-         (:reactive nil)))
-       (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 2))
-      (:box
        (:reference
         (:in (:type omselfin) (:index 0) (:name "BOX") (:doc "")))
        (:type :io)
@@ -8149,7 +7573,7 @@
        (:icon :top)
        (:inputs)
        (:outputs (:output (:name "out") (:reactive nil)))
-       (:id 3))
+       (:id 0))
       (:box
        (:reference
         (:out
@@ -8180,15 +7604,83 @@
          (:value nil)
          (:reactive nil)))
        (:outputs)
+       (:id 1))
+      (:box
+       (:reference mypathname)
+       (:type :function)
+       (:group-id nil)
+       (:name "mypathname")
+       (:x 97)
+       (:y 136)
+       (:w 107)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "OMPERSISTANTOBJECT")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 2))
+      (:box
+       (:reference container)
+       (:type :function)
+       (:group-id nil)
+       (:name "container")
+       (:x 107)
+       (:y 103)
+       (:w 87)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "OMBOX")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 3))
+      (:box
+       (:reference directory-namestring)
+       (:type :function)
+       (:group-id nil)
+       (:name "directory-namestring")
+       (:x 77)
+       (:y 193)
+       (:w 147)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "P")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
        (:id 4)))
      (:connections
       (:connection
        (:from (:box 0 :out 0))
-       (:to (:box 2 :in 0))
-       (:attributes (:color nil :style nil :modif nil)))
-      (:connection
-       (:from (:box 1 :out 0))
-       (:to (:box 0 :in 0))
+       (:to (:box 3 :in 0))
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 2 :out 0))
@@ -8196,6 +7688,10 @@
        (:attributes (:color nil :style nil :modif nil)))
       (:connection
        (:from (:box 3 :out 0))
+       (:to (:box 2 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 4 :out 0))
        (:to (:box 1 :in 0))
        (:attributes (:color nil :style nil :modif nil))))))
    (:type :patch)
@@ -8218,7 +7714,20 @@
    (:inputs)
    (:outputs
     (:output (:name "this_patch_parent_directory") (:reactive nil)))
-   (:id 41)))
+   (:id 41))
+  (:comment
+   (:x 540)
+   (:y 655)
+   (:w 112)
+   (:h 25)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "Crossfade (ms)")
+   (:id 42)))
  (:connections
   (:connection
    (:from (:box 0 :out 0))

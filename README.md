@@ -22,8 +22,9 @@ http://repmus.ircam.fr/downloads/docs/DYCI2_library/
 
 The **om-dyci2** source folder including the compiled wrapper (libdyci2/libdyci2.so) must be installed in one of the OM library folders.
 Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM Preferences.
-
 This can be achieved using the pre-packed version distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)), or by compiling the source code (see below).
+
+__Tutorials__ are available in om-dyci2/patches/.
 
 **Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 2.7 and the dependencies of DYCI2 library must also be installed on your computer** (get the latest version [HERE](https://github.com/DYCI2/Dyci2Lib) !).
 
