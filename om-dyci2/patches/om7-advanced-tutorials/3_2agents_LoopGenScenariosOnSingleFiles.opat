@@ -5,7 +5,7 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2018/11/20 17:14:14"))
+  (:modified "2018/11/20 17:46:21"))
  (:window (:size (1653 811)) (:position (-1912 181)))
  (:grid nil)
  (:lock nil)
@@ -4648,7 +4648,7 @@
      (:name "loop-process-dataset")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size nil) (:position nil))
+     (:window (:size (500 500)) (:position (105 138)))
      (:grid nil)
      (:lock nil)
      (:boxes
@@ -4708,7 +4708,7 @@
        (:id 1))
       (:box
        (:reference
-        (:out (:type omout) (:name "mem") (:index 2) (:doc "")))
+        (:out (:type omout) (:name "mem") (:index 1) (:doc "")))
        (:type :io)
        (:group-id nil)
        (:name "mem")
@@ -4737,7 +4737,7 @@
        (:reference
         (:in
          (:type omin)
-         (:index 2)
+         (:index 1)
          (:name "list_activation_labels")
          (:doc "")))
        (:type :io)
@@ -4766,7 +4766,7 @@
        (:id 3))
       (:box
        (:reference
-        (:out (:type omout) (:name "labels") (:index 3) (:doc "")))
+        (:out (:type omout) (:name "labels") (:index 1) (:doc "")))
        (:type :io)
        (:group-id nil)
        (:name "labels")
@@ -4795,7 +4795,7 @@
        (:reference
         (:in
          (:type omin)
-         (:index 3)
+         (:index 1)
          (:name "extension_audio_files")
          (:doc "")))
        (:type :io)
@@ -4826,7 +4826,7 @@
        (:reference
         (:in
          (:type omin)
-         (:index 4)
+         (:index 1)
          (:name "function_process_label")
          (:doc "")))
        (:type :io)
@@ -4943,476 +4943,22 @@
          (:class sound)
          (:slots
           ((:onset 0)
-           (:duration 22405)
+           (:duration 0)
            (:interpol (:number-or-nil (:number 50) (:t-or-nil nil)))
            (:default-frame-type marker-frame)
-           (:frames
-            (:list
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 1283)
-                (:item-type :master)
-                (:date 1283)
-                (:attributes nil)
-                (:label "344.03482"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 1605)
-                (:item-type 1605)
-                (:date 1605)
-                (:attributes nil)
-                (:label "360.98315"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 1956)
-                (:item-type 1956)
-                (:date 1956)
-                (:attributes nil)
-                (:label "368.14105"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 2300)
-                (:item-type 2300)
-                (:date 2300)
-                (:attributes nil)
-                (:label "405.74377"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 2646)
-                (:item-type 2646)
-                (:date 2646)
-                (:attributes nil)
-                (:label "440.8704"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 3402)
-                (:item-type 3402)
-                (:date 3402)
-                (:attributes nil)
-                (:label "407.1426"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 4039)
-                (:item-type 4039)
-                (:date 4039)
-                (:attributes nil)
-                (:label "357.69327"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 4480)
-                (:item-type 4480)
-                (:date 4480)
-                (:attributes nil)
-                (:label "442.83597"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 4726)
-                (:item-type 4726)
-                (:date 4726)
-                (:attributes nil)
-                (:label "407.36063"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 5157)
-                (:item-type 5157)
-                (:date 5157)
-                (:attributes nil)
-                (:label "408.29163"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 5541)
-                (:item-type 5541)
-                (:date 5541)
-                (:attributes nil)
-                (:label "368.75424"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 6783)
-                (:item-type 6783)
-                (:date 6783)
-                (:attributes nil)
-                (:label "338.27142"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 7235)
-                (:item-type 7235)
-                (:date 7235)
-                (:attributes nil)
-                (:label "362.39304"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 7566)
-                (:item-type 7566)
-                (:date 7566)
-                (:attributes nil)
-                (:label "367.6528"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 7821)
-                (:item-type 7821)
-                (:date 7821)
-                (:attributes nil)
-                (:label "407.26498"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 8173)
-                (:item-type 8173)
-                (:date 8173)
-                (:attributes nil)
-                (:label "443.17642"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 8965)
-                (:item-type 8965)
-                (:date 8965)
-                (:attributes nil)
-                (:label "405.31497"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 9744)
-                (:item-type 9744)
-                (:date 9744)
-                (:attributes nil)
-                (:label "355.4367"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 10063)
-                (:item-type 10063)
-                (:date 10063)
-                (:attributes nil)
-                (:label "446.91348"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 10414)
-                (:item-type 10414)
-                (:date 10414)
-                (:attributes nil)
-                (:label "399.5007"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 10766)
-                (:item-type 10766)
-                (:date 10766)
-                (:attributes nil)
-                (:label "385.93787"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 11155)
-                (:item-type 11155)
-                (:date 11155)
-                (:attributes nil)
-                (:label "360.14172"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 12539)
-                (:item-type 12539)
-                (:date 12539)
-                (:attributes nil)
-                (:label "385.6235"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 12940)
-                (:item-type 12940)
-                (:date 12940)
-                (:attributes nil)
-                (:label "402.8018"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 13250)
-                (:item-type 13250)
-                (:date 13250)
-                (:attributes nil)
-                (:label "402.3017"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 13592)
-                (:item-type 13592)
-                (:date 13592)
-                (:attributes nil)
-                (:label "362.85397"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 13945)
-                (:item-type 13945)
-                (:date 13945)
-                (:attributes nil)
-                (:label "300.17593"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 14649)
-                (:item-type 14649)
-                (:date 14649)
-                (:attributes nil)
-                (:label "308.91782"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 15431)
-                (:item-type 15431)
-                (:date 15431)
-                (:attributes nil)
-                (:label "395.55444"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 15761)
-                (:item-type 15761)
-                (:date 15761)
-                (:attributes nil)
-                (:label "357.94183"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 16078)
-                (:item-type 16078)
-                (:date 16078)
-                (:attributes nil)
-                (:label "345.48544"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 16395)
-                (:item-type 16395)
-                (:date 16395)
-                (:attributes nil)
-                (:label "291.36243"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 16798)
-                (:item-type 16798)
-                (:date 16798)
-                (:attributes nil)
-                (:label "273.35764"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 18134)
-                (:item-type 18134)
-                (:date 18134)
-                (:attributes nil)
-                (:label "366.02545"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 18493)
-                (:item-type 18493)
-                (:date 18493)
-                (:attributes nil)
-                (:label "368.7896"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 18797)
-                (:item-type 18797)
-                (:date 18797)
-                (:attributes nil)
-                (:label "374.9257"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 19111)
-                (:item-type 19111)
-                (:date 19111)
-                (:attributes nil)
-                (:label "417.79523"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 19451)
-                (:item-type 19451)
-                (:date 19451)
-                (:attributes nil)
-                (:label "448.42453"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 20197)
-                (:item-type 20197)
-                (:date 20197)
-                (:attributes nil)
-                (:label "407.8274"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 20962)
-                (:item-type 20962)
-                (:date 20962)
-                (:attributes nil)
-                (:label "365.45566"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 21244)
-                (:item-type 21244)
-                (:date 21244)
-                (:attributes nil)
-                (:label "435.86902"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 21576)
-                (:item-type 21576)
-                (:date 21576)
-                (:attributes nil)
-                (:label "411.72525"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 22013)
-                (:item-type 22013)
-                (:date 22013)
-                (:attributes nil)
-                (:label "409.5289"))))
-             (:object
-              (:class marker-frame)
-              (:slots
-               ((:item-time nil)
-                (:item-internal-time 22405)
-                (:item-type :master)
-                (:date 22405)
-                (:attributes nil)
-                (:label "367.59894"))))))
+           (:frames nil)
            (:buffer nil)
-           (:n-samples 1069056)
-           (:n-channels 1)
-           (:sample-rate 44100)
+           (:n-samples nil)
+           (:n-channels nil)
+           (:sample-rate nil)
            (:smpl-type :float)
-           (:sample-size 24)))
+           (:sample-size 16)))
          (:add-slots
-          ((:markers
-            (:list
-             (:list 1283 "344.03482")
-             (:list 1605 "360.98315")
-             (:list 1956 "368.14105")
-             (:list 2300 "405.74377")
-             (:list 2646 "440.8704")
-             (:list 3402 "407.1426")
-             (:list 4039 "357.69327")
-             (:list 4480 "442.83597")
-             (:list 4726 "407.36063")
-             (:list 5157 "408.29163")
-             (:list 5541 "368.75424")
-             (:list 6783 "338.27142")
-             (:list 7235 "362.39304")
-             (:list 7566 "367.6528")
-             (:list 7821 "407.26498")
-             (:list 8173 "443.17642")
-             (:list 8965 "405.31497")
-             (:list 9744 "355.4367")
-             (:list 10063 "446.91348")
-             (:list 10414 "399.5007")
-             (:list 10766 "385.93787")
-             (:list 11155 "360.14172")
-             (:list 12539 "385.6235")
-             (:list 12940 "402.8018")
-             (:list 13250 "402.3017")
-             (:list 13592 "362.85397")
-             (:list 13945 "300.17593")
-             (:list 14649 "308.91782")
-             (:list 15431 "395.55444")
-             (:list 15761 "357.94183")
-             (:list 16078 "345.48544")
-             (:list 16395 "291.36243")
-             (:list 16798 "273.35764")
-             (:list 18134 "366.02545")
-             (:list 18493 "368.7896")
-             (:list 18797 "374.9257")
-             (:list 19111 "417.79523")
-             (:list 19451 "448.42453")
-             (:list 20197 "407.8274")
-             (:list 20962 "365.45566")
-             (:list 21244 "435.86902")
-             (:list 21576 "411.72525")
-             (:list 22013 "409.5289")
-             (:list 22405 "367.59894")))
-           (:file-pathname
-            (:pathname
-             (:directory
-              (:absolute
-               "Users"
-               "bresson"
-               "Desktop"
-               "OM-DYCI2_Tests"
-               "SDIF"))
-             (:device nil)
-             (:host nil)
-             (:name "Au clair de la lune - 01")
-             (:type "wav")))
-           (:sample-rate 44100)
-           (:n-channels 1)
-           (:n-samples 1069056)
+          ((:markers nil)
+           (:file-pathname nil)
+           (:sample-rate nil)
+           (:n-channels nil)
+           (:n-samples nil)
            (:gain 1.0)
            (:access-from-file nil)))))
        (:id 8))
@@ -7738,6 +7284,22 @@
    (:to (:box 8 :in 1))
    (:attributes (:color nil :style nil :modif (0 40/99))))
   (:connection
+   (:from (:box 0 :out 0))
+   (:to (:box 8 :in 1))
+   (:attributes (:color nil :style nil :modif (0 40/99))))
+  (:connection
+   (:from (:box 0 :out 0))
+   (:to (:box 8 :in 1))
+   (:attributes (:color nil :style nil :modif (0 40/99))))
+  (:connection
+   (:from (:box 4 :out 0))
+   (:to (:box 8 :in 6))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 4 :out 0))
+   (:to (:box 8 :in 6))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
    (:from (:box 4 :out 0))
    (:to (:box 8 :in 6))
    (:attributes (:color nil :style nil :modif nil)))
@@ -7754,6 +7316,14 @@
    (:to (:box 8 :in 2))
    (:attributes (:color nil :style nil :modif (0 145/374))))
   (:connection
+   (:from (:box 5 :out 0))
+   (:to (:box 8 :in 2))
+   (:attributes (:color nil :style nil :modif (0 145/374))))
+  (:connection
+   (:from (:box 5 :out 0))
+   (:to (:box 8 :in 2))
+   (:attributes (:color nil :style nil :modif (0 145/374))))
+  (:connection
    (:from (:box 7 :out 0))
    (:to (:box 8 :in 3))
    (:attributes (:color nil :style nil :modif (0 5/21))))
@@ -7761,6 +7331,22 @@
    (:from (:box 7 :out 0))
    (:to (:box 8 :in 3))
    (:attributes (:color nil :style nil :modif (0 5/21))))
+  (:connection
+   (:from (:box 7 :out 0))
+   (:to (:box 8 :in 3))
+   (:attributes (:color nil :style nil :modif (0 5/21))))
+  (:connection
+   (:from (:box 7 :out 0))
+   (:to (:box 8 :in 3))
+   (:attributes (:color nil :style nil :modif (0 5/21))))
+  (:connection
+   (:from (:box 8 :out 0))
+   (:to (:box 15 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 8 :out 0))
+   (:to (:box 15 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 8 :out 0))
    (:to (:box 15 :in 0))
@@ -7776,6 +7362,18 @@
   (:connection
    (:from (:box 9 :out 0))
    (:to (:box 16 :in 2))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 9 :out 0))
+   (:to (:box 16 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 9 :out 0))
+   (:to (:box 16 :in 2))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 10 :out 0))
+   (:to (:box 40 :in 1))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 10 :out 0))
@@ -7814,6 +7412,54 @@
    (:to (:box 10 :in 1))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 10 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 12 :out 0))
+   (:to (:box 10 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 12 :out 0))
+   (:to (:box 10 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 12 :out 0))
+   (:to (:box 10 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 12 :out 0))
+   (:to (:box 10 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
    (:from (:box 12 :out 0))
    (:to (:box 10 :in 4))
    (:attributes (:color nil :style nil :modif nil)))
@@ -7877,6 +7523,62 @@
    (:from (:box 13 :out 0))
    (:to (:box 12 :in 0))
    (:attributes (:color nil :style nil :modif (0 11120/28987))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 12 :in 0))
+   (:attributes (:color nil :style nil :modif (0 11120/28987))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 12 :in 0))
+   (:attributes (:color nil :style nil :modif (0 11120/28987))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 12 :in 0))
+   (:attributes (:color nil :style nil :modif (0 11120/28987))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -0.40283018))))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 12 :in 0))
+   (:attributes (:color nil :style nil :modif (0 11120/28987))))
+  (:connection
+   (:from (:box 14 :out 0))
+   (:to (:box 9 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 14 :out 0))
+   (:to (:box 9 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 14 :out 0))
    (:to (:box 9 :in 0))
@@ -7890,9 +7592,33 @@
    (:to (:box 8 :in 0))
    (:attributes (:color nil :style nil :modif (0 -9661/110580))))
   (:connection
+   (:from (:box 16 :out 0))
+   (:to (:box 8 :in 0))
+   (:attributes (:color nil :style nil :modif (0 -9661/110580))))
+  (:connection
    (:from (:box 17 :out 0))
    (:to (:box 10 :in 3))
    (:attributes (:color nil :style nil :modif (0 -55/207))))
+  (:connection
+   (:from (:box 17 :out 0))
+   (:to (:box 10 :in 3))
+   (:attributes (:color nil :style nil :modif (0 -55/207))))
+  (:connection
+   (:from (:box 18 :out 0))
+   (:to (:box 19 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 18 :out 0))
+   (:to (:box 19 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 18 :out 0))
+   (:to (:box 9 :in 1))
+   (:attributes (:color nil :style nil :modif (0 0.43058252))))
+  (:connection
+   (:from (:box 18 :out 0))
+   (:to (:box 22 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 18 :out 0))
    (:to (:box 19 :in 0))
@@ -7922,6 +7648,22 @@
    (:to (:box 17 :in 2))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
+   (:from (:box 19 :out 0))
+   (:to (:box 17 :in 2))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 0))
+   (:to (:box 17 :in 2))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 1))
+   (:to (:box 17 :in 3))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 1))
+   (:to (:box 17 :in 3))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
    (:from (:box 19 :out 1))
    (:to (:box 17 :in 3))
    (:attributes (:color nil :style nil :modif nil)))
@@ -7938,12 +7680,36 @@
    (:to (:box 17 :in 4))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
+   (:from (:box 19 :out 2))
+   (:to (:box 17 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 2))
+   (:to (:box 17 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
    (:from (:box 19 :out 3))
    (:to (:box 17 :in 5))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 19 :out 3))
    (:to (:box 17 :in 5))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 3))
+   (:to (:box 17 :in 5))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 3))
+   (:to (:box 17 :in 5))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 4))
+   (:to (:box 17 :in 6))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 19 :out 4))
+   (:to (:box 17 :in 6))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 19 :out 4))
@@ -7957,6 +7723,14 @@
    (:from (:box 21 :out 0))
    (:to (:box 10 :in 2))
    (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 21 :out 0))
+   (:to (:box 10 :in 2))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 22 :out 0))
+   (:to (:box 9 :in 2))
+   (:attributes (:color nil :style nil :modif (0 23/70))))
   (:connection
    (:from (:box 22 :out 0))
    (:to (:box 9 :in 2))
@@ -7972,6 +7746,14 @@
   (:connection
    (:from (:box 25 :out 0))
    (:to (:box 24 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 25 :out 0))
+   (:to (:box 24 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 26 :out 0))
+   (:to (:box 24 :in 0))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 26 :out 0))
@@ -7998,12 +7780,28 @@
    (:to (:box 10 :in 5))
    (:attributes (:color nil :style nil :modif (0 0.45))))
   (:connection
+   (:from (:box 28 :out 0))
+   (:to (:box 26 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 28 :out 0))
+   (:to (:box 10 :in 5))
+   (:attributes (:color nil :style nil :modif (0 0.45))))
+  (:connection
    (:from (:box 29 :out 0))
    (:to (:box 27 :in 2))
    (:attributes (:color nil :style nil :modif (0 5/19))))
   (:connection
    (:from (:box 30 :out 0))
    (:to (:box 8 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 30 :out 0))
+   (:to (:box 8 :in 4))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 31 :out 0))
+   (:to (:box 17 :in 1))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 31 :out 0))
@@ -8014,12 +7812,28 @@
    (:to (:box 13 :in 0))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
+   (:from (:box 33 :out 0))
+   (:to (:box 13 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 34 :out 0))
+   (:to (:box 33 :in 1))
+   (:attributes (:color nil :style nil :modif (0 6/25))))
+  (:connection
    (:from (:box 34 :out 0))
    (:to (:box 33 :in 1))
    (:attributes (:color nil :style nil :modif (0 6/25))))
   (:connection
    (:from (:box 35 :out 0))
    (:to (:box 33 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 35 :out 0))
+   (:to (:box 33 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 36 :out 0))
+   (:to (:box 35 :in 1))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 36 :out 0))
@@ -8030,9 +7844,29 @@
    (:to (:box 8 :in 7))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
+   (:from (:box 39 :out 0))
+   (:to (:box 8 :in 7))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
    (:from (:box 40 :out 0))
    (:to (:box 39 :in 0))
    (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 40 :out 0))
+   (:to (:box 39 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 41 :out 0))
+   (:to (:box 35 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 41 :out 0))
+   (:to (:box 26 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 41 :out 0))
+   (:to (:box 40 :in 0))
+   (:attributes (:color nil :style nil :modif (0 0.41666666))))
   (:connection
    (:from (:box 41 :out 0))
    (:to (:box 35 :in 0))
