@@ -19,11 +19,14 @@
 (in-package :om)
 
 (add-preference-section :libraries "DYCI2" nil '(:dyci2-path :dyci2-debug))
-(add-preference :libraries :dyci2-path "DYCI2 Modules folder" :folder nil "Point to the \"Dyci2_Modules\" folder in the DYCI2 library" 'reinit-dyci2) 
+(add-preference :libraries :dyci2-path "DYCI2 Modules folder" :folder 
+                (merge-pathnames "lib/python/" (mypathname (find-library "om-dyci2"))) 
+                "Point to the \"Dyci2_Modules\" folder in the DYCI2 library" 'reinit-dyci2) 
 (add-preference :libraries ::dyci2-debug "Debug (open terminal output)" :action 'debug-dyci2)
 
 (defmethod! debug-dyci2 ()
    (listen *terminal-io*))
+
 
 (defmethod! reinit-dyci2 ()
   (when (file-exist-p (get-pref-value :libraries :dyci2-path))

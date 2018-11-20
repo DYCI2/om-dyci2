@@ -5,8 +5,8 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2018/11/14 20:10:26"))
- (:window (:size (1420 821)) (:position (241 23)))
+  (:modified "2018/11/20 16:09:45"))
+ (:window (:size (1420 821)) (:position (-1718 138)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -5213,7 +5213,7 @@
      (:name "make-local-dyci2-path")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size (500 500)) (:position (369 116)))
+     (:window (:size (500 500)) (:position (-1397 393)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -5221,8 +5221,9 @@
        "(lambda (folder corpus_subfolder) "
        "  (namestring "
        "   (merge-pathnames "
-       "    (string+ folder \"/Corpus/\" corpus_subfolder \"/\") "
-       "    (om-user-home))))"
+       "    (string+ folder \"Corpus/\" corpus_subfolder \"/\") "
+       "    ;(om-user-home)"
+       "    )))"
        "  "))))
    (:type :textfun)
    (:group-id nil)
@@ -7980,7 +7981,7 @@
      (:name "make-local-dyci2-path")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size nil) (:position nil))
+     (:window (:size (500 500)) (:position (-1301 336)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -7988,8 +7989,9 @@
        "(lambda (folder corpus_subfolder) "
        "  (namestring "
        "   (merge-pathnames "
-       "    (string+ folder \"/Corpus/\" corpus_subfolder \"/\") "
-       "    (om-user-home))))"
+       "    (string+ folder \"Corpus/\" corpus_subfolder \"/\") "
+       "    ;(om-user-home)"
+       "    )))"
        "  "))))
    (:type :textfun)
    (:group-id nil)
@@ -8048,41 +8050,6 @@
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value "All_files")
    (:id 33))
-  (:box
-   (:reference simple-base-string)
-   (:type :value)
-   (:group-id nil)
-   (:name "value box")
-   (:x 8)
-   (:y 63)
-   (:w 374)
-   (:h 32)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:lock nil)
-   (:inputs)
-   (:outputs (:output (:name "value") (:reactive nil)))
-   (:value "Desktop/OM-DYCI2_Tutorials")
-   (:id 34))
-  (:comment
-   (:x 9)
-   (:y 43)
-   (:w 307)
-   (:h 21)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font
-    (:font-or-nil
-     (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
-     (:t-or-nil t)))
-   (:align nil)
-   (:text "0) SET THE PATH OF THE TUTORIAL DIRECTORY")
-   (:id 35))
   (:comment
    (:x 410)
    (:y 840)
@@ -8098,7 +8065,7 @@
      (:t-or-nil t)))
    (:align nil)
    (:text "5) EVALUATE")
-   (:id 36))
+   (:id 34))
   (:comment
    (:x 403)
    (:y 736)
@@ -8114,7 +8081,7 @@
      (:t-or-nil t)))
    (:align nil)
    (:text "7) EVALUATE")
-   (:id 37))
+   (:id 35))
   (:box
    (:reference
     (:textfun
@@ -8122,7 +8089,7 @@
      (:name "make-local-dyci2-path")
      (:doc "")
      (:info (:created nil) (:modified nil))
-     (:window (:size nil) (:position nil))
+     (:window (:size (500 500)) (:position (-1041 313)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -8130,8 +8097,9 @@
        "(lambda (folder results_subfolder) "
        "  (namestring "
        "   (merge-pathnames "
-       "   (string+ folder \"/Results/\" results_subfolder \"/\") "
-       "    (om-user-home))))"
+       "   (string+ folder \"Results/\" results_subfolder \"/\") "
+       "    ;(om-user-home)"
+       "    )))"
        ""))))
    (:type :textfun)
    (:group-id nil)
@@ -8162,7 +8130,181 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 38)))
+   (:id 36))
+  (:box
+   (:reference
+    (:patch
+     (:om-version 0.010501999)
+     (:name "this_patch_parent_directory")
+     (:doc "")
+     (:info (:created nil) (:modified nil))
+     (:window (:size nil) (:position nil))
+     (:grid nil)
+     (:lock nil)
+     (:boxes
+      (:box
+       (:reference mypathname)
+       (:type :function)
+       (:group-id nil)
+       (:name "mypathname")
+       (:x 97)
+       (:y 136)
+       (:w 107)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "OMPERSISTANTOBJECT")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 0))
+      (:box
+       (:reference container)
+       (:type :function)
+       (:group-id nil)
+       (:name "container")
+       (:x 107)
+       (:y 103)
+       (:w 87)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "OMBOX")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 1))
+      (:box
+       (:reference directory-namestring)
+       (:type :function)
+       (:group-id nil)
+       (:name "directory-namestring")
+       (:x 77)
+       (:y 193)
+       (:w 147)
+       (:h 30)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:lambda nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "P")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 2))
+      (:box
+       (:reference
+        (:in (:type omselfin) (:index 0) (:name "BOX") (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "BOX")
+       (:x 127)
+       (:y 58)
+       (:w 49)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs)
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 3))
+      (:box
+       (:reference
+        (:out
+         (:type omout)
+         (:name "this_patch_parent_directory")
+         (:index 1)
+         (:doc "")))
+       (:type :io)
+       (:group-id nil)
+       (:name "this_patch_parent_directory")
+       (:x 60)
+       (:y 247)
+       (:w 182)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "out-value")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs)
+       (:id 4)))
+     (:connections
+      (:connection
+       (:from (:box 0 :out 0))
+       (:to (:box 2 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 1 :out 0))
+       (:to (:box 0 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 2 :out 0))
+       (:to (:box 4 :in 0))
+       (:attributes (:color nil :style nil :modif nil)))
+      (:connection
+       (:from (:box 3 :out 0))
+       (:to (:box 1 :in 0))
+       (:attributes (:color nil :style nil :modif nil))))))
+   (:type :patch)
+   (:group-id nil)
+   (:name "this_patch_parent_directory")
+   (:x 101)
+   (:y 95)
+   (:w 186)
+   (:h 28)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:group-id nil)
+   (:lock nil)
+   (:lambda nil)
+   (:pre-delay 0)
+   (:inputs)
+   (:outputs
+    (:output (:name "this_patch_parent_directory") (:reactive nil)))
+   (:id 37)))
  (:connections
   (:connection
    (:from (:box 0 :out 0))
@@ -8214,7 +8356,7 @@
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 11 :out 0))
-   (:to (:box 38 :in 1))
+   (:to (:box 36 :in 1))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
    (:from (:box 12 :out 0))
@@ -8393,18 +8535,18 @@
    (:to (:box 11 :in 4))
    (:attributes (:color nil :style nil :modif nil)))
   (:connection
-   (:from (:box 34 :out 0))
-   (:to (:box 23 :in 0))
-   (:attributes (:color nil :style nil :modif (0 20/59))))
-  (:connection
-   (:from (:box 34 :out 0))
-   (:to (:box 32 :in 0))
-   (:attributes (:color nil :style nil :modif (0 19/61))))
-  (:connection
-   (:from (:box 34 :out 0))
-   (:to (:box 38 :in 0))
-   (:attributes (:color nil :style nil :modif (0 0.33014306))))
-  (:connection
-   (:from (:box 38 :out 0))
+   (:from (:box 36 :out 0))
    (:to (:box 7 :in 0))
-   (:attributes (:color nil :style nil :modif nil)))))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 37 :out 0))
+   (:to (:box 23 :in 0))
+   (:attributes (:color nil :style nil :modif (0 8/31))))
+  (:connection
+   (:from (:box 37 :out 0))
+   (:to (:box 32 :in 0))
+   (:attributes (:color nil :style nil :modif (0 2/11))))
+  (:connection
+   (:from (:box 37 :out 0))
+   (:to (:box 36 :in 0))
+   (:attributes (:color nil :style nil :modif (0 173/531))))))

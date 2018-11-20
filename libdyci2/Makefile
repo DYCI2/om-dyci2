@@ -12,7 +12,11 @@ clean:
 		rm -rf *.o
 
 install:
+		mkdir -p ../om-dyci2/lib/mac/
+		mkdir -p ../om-dyci2/lib/python/
 		cp libdyci2.so ../om-dyci2/lib/mac/
+		cp -R ../../Dyci2Lib/Python_library/DYCI2_Modules/* ../om-dyci2/lib/python/
+
 
 mrproper:
 		rm -rf libdyci2.so

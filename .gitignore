@@ -6,6 +6,7 @@ dycitest
 .DS_Store
 **/Results/**/*
 
+**/lib/python/*
 
 # Lisp
 *.*~
