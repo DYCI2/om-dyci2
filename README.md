@@ -26,7 +26,16 @@ This can be achieved using the pre-packed version distributed in this project's 
 
 __Tutorials__ are available in om-dyci2/patches/.
 
-**Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 2.7 and the dependencies of DYCI2 library must also be installed on your computer** (get the latest version [HERE](https://github.com/DYCI2/Dyci2Lib) !).
+**Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 2.7 and the dependencies of DYCI2 library must also be installed on your computer** 
+:
+
+1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
+
+2. Use your terminal to install the dependencies:
+
+    $ pip install -r python-requirements.txt
+
+(If _pip_ is not installed: `sudo easy-install pip`.)
 
 ------
 ### Compile and install the C wrapper (libdyci2):
