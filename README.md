@@ -30,7 +30,7 @@ Alternatively, you can just specify this repository as one of the "Libraries fol
 **Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 2.7 and the dependencies of DYCI2 library must also be installed on your computer** 
 :
 
-1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
+1. Download and install the **last** version of Python 2 (https://www.python.org/downloads)
 
 2. Use your terminal to install the dependencies:
 
@@ -43,7 +43,12 @@ Alternatively, you can just specify this repository as one of the "Libraries fol
 
 This library was only compiled and tested on macOS so far.
 
-Download the last version of DYCI2lib [HERE](https://github.com/DYCI2/Dyci2Lib), move om-dyci2 and DYCI2lib in a same parent directory, and compile libdyci2. Use your Terminal in [parent_directory]/om-dyci2/libdicy2/ and simply Make the library:
+1. Download the last version of DYCI2lib [HERE](https://github.com/DYCI2/Dyci2Lib)
+
+2. Move om-dyci2 and DYCI2lib in a same parent directory
+
+3. Compile libdyci2: use your Terminal in [parent_directory]/om-dyci2/libdicy2/ and simply Make the library:
+
 ```
 cd libdyci2
 make
