@@ -1,5 +1,5 @@
 # om-dyci2
-DYCI2 for the OpenMusic ([OM6](http://repmus.ircam.fr/openmusic/)/[om7](https://openmusic-project.github.io/)) visual programming and computer-aided composition environments.
+[DYCI2](https://github.com/DYCI2/Dyci2Lib) for the OpenMusic ([OM6](http://repmus.ircam.fr/openmusic/)/[om7](https://openmusic-project.github.io/)) visual programming and computer-aided composition environments.
 
 © Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
 
