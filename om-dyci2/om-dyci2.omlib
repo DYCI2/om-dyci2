@@ -25,6 +25,7 @@
  (:source-files 
   (:pathname (:directory (:relative "sources")) (:name "dyci2-cl"))
   (:pathname (:directory (:relative "sources")) (:name "dyci2-om"))
+  (:pathname (:directory (:relative "sources")) (:name "dyci2-utils"))
   (:pathname (:directory (:relative "sources")) (:name "om7-preferences"))
   )
  (:symbols 
