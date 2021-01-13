@@ -26,7 +26,7 @@
   (:pathname (:directory (:relative "sources")) (:name "dyci2-cl"))
   (:pathname (:directory (:relative "sources")) (:name "dyci2-om"))
   (:pathname (:directory (:relative "sources")) (:name "dyci2-utils"))
-  (:pathname (:directory (:relative "sources")) (:name "om7-preferences"))
+  (:pathname (:directory (:relative "sources")) (:name "omsharp-preferences"))
   )
  (:symbols 
   (:functions "dyci2::dyci2query" "dyci2::dyci2setparam")
