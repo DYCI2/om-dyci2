@@ -29,7 +29,7 @@
 
 
 (defmethod! reinit-dyci2 ()
-  (when (file-exist-p (get-pref-value :libraries :dyci2-path))
+  (when (file-exists-p (get-pref-value :libraries :dyci2-path))
     (dyci2::init-dyci2-lib (get-pref-value :libraries :dyci2-path))))
 
 ;;; do it at loading the lib...
