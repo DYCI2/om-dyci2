@@ -1,11 +1,11 @@
 # om-dyci2
-[DYCI2](https://github.com/DYCI2/Dyci2Lib) for the OpenMusic ([OM6](http://repmus.ircam.fr/openmusic/)/[om7](https://openmusic-project.github.io/)) visual programming and computer-aided composition environments.
+[DYCI2](https://github.com/DYCI2/Dyci2Lib) for the OpenMusic ([OM6](http://repmus.ircam.fr/openmusic/)/[OM#](https://cac-t-u-s.github.io/om-sharp/)) visual programming and computer-aided composition environments.
 
 © Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
 
 This repository contains:
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library.
-* __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment.
+* __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/OM# computer-aided composition environment.
 
 ------
 ### About DYCI2:
@@ -16,9 +16,9 @@ http://repmus.ircam.fr/downloads/docs/DYCI2_library/
 
 ### Installing and using om-dyci2:
 
-**om-dyci2** can be used in either in [OM 6.13] or [o7] environments.
-  * See [om7 external libraries](https://openmusic-project.github.io/pages/libraries) manual page for om7.
-  * See [OM6 external libraries](http://repmus.ircam.fr/openmusic/libraries) manual page for OM 6.13/6.14.
+**om-dyci2** can be used in either in [OM 6.x] or [OM#] environments.
+  * See [OM# external libraries](https://cac-t-u-s.github.io/om-sharp/pages/libraries) manual page for OM#.
+  * See [OM6 external libraries](https://openmusic-project.github.io/libraries) manual page for OM.
 
 __Tutorials__ are available in om-dyci2/patches/.
 
