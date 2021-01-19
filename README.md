@@ -34,9 +34,11 @@ Alternatively, you can just specify this repository as one of the "Libraries fol
 
 2. Use your terminal to install the dependencies:
 
-    $ pip install -r python-requirements.txt
+```
+$ pip install -r python-requirements.txt
+```
 
-(If _pip_ is not installed: `sudo easy-install pip`.)
+(If _pip_ is not installed: `sudo easy_install install pip`.)
 
 ------
 ### Compile and install the C wrapper (libdyci2):
