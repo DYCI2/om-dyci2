@@ -37,7 +37,7 @@
     (setf (pyGen self) nil)))
 
 
-#+om7
+#+om-sharp
 (defmethod om::om-init-instance ((self dyci2Generator) &optional args)
   (om-api::om-cleanup self) ;; just in case...
   (setf (pyGen self) (dyci2-make-generator (length (memory self)) (memory self) (labls self)))
