@@ -45,14 +45,13 @@ $ pip install -r python-requirements.txt
 
 This library was only compiled and tested on macOS so far.
 
-1. Download the last version of DYCI2lib [HERE](https://github.com/DYCI2/Dyci2Lib)
+1. Clone or download the last version of DYCI2lib: (https://github.com/DYCI2/Dyci2Lib)
 
 2. Move om-dyci2 and DYCI2lib in a same parent directory
 
-3. Compile libdyci2: use your Terminal in [parent_directory]/om-dyci2/libdicy2/ and simply Make the library:
+3. Compile libdyci2: set your Terminal in `om-dyci2/libdicy2/` and simply Make the library:
 
 ```
-cd libdyci2
 make
 make install
 ```
@@ -68,4 +67,4 @@ The Makefile will assume that Python 2.7 is installed in /System/Library/Framewo
 ------
 ### Getting started
 
-See the user manual page and examples in this projesct's [wiki pages](https://github.com/DYCI2/om-dyci2/wiki)
+See the user manual page and examples in this projesct's [wiki pages](https://github.com/DYCI2/om-dyci2/wiki).
