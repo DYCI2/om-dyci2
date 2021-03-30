@@ -39,16 +39,15 @@
   *DYCI2-PATH*)
 
 ;;;=====================
-;;; DYCI2 PREFS
+;;; PREFERENCES
+;;;=====================
 
 (add-external-pref-module 'dyci2)
 
 (defmethod get-external-name ((module (eql 'dyci2))) "DYCI2")
-;; (defmethod get-external-icon ((module (eql 'dyci2))) (and (exist-lib-p "om-dyci2") (list 953 (exist-lib-p "om-dyci2"))))
 
-;; (defmethod get-external-module-vals ((module (eql 'dyci2)) modulepref) (get-pref modulepref :dyci2-options))
-(defmethod get-external-module-path ((module (eql 'dyci2)) modulepref) (get-pref modulepref :dyci2-path))
-;; (defmethod set-external-module-vals ((module (eql 'dyci2)) modulepref vals) (set-pref modulepref :dyci2-options vals))
+(defmethod get-external-module-path ((module (eql 'dyci2)) modulepref)
+  (get-pref modulepref :dyci2-path))
 
 (defmethod set-external-module-path ((module (eql 'dyci2)) modulepref path)
   (set-pref modulepref :dyci2-path path))
@@ -61,7 +60,7 @@
 (defmethod put-external-preferences ((module (eql 'dyci2)) moduleprefs)
   (let ((list-prefs (get-pref moduleprefs :dyci2-options)))
     (when list-prefs
-      nil ; pas d'options...
+      nil ; no options (yet..)
       )
     (when (get-pref moduleprefs :dyci2-path)
       (setf *DYCI2-PATH* (om-make-pathname :directory (get-pref moduleprefs :dyci2-path)))
