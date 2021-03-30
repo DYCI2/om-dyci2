@@ -5,12 +5,12 @@
 ;;;
 ;;;===================================================
 ;
-;   This program is free software. For information on usage 
+;   This program is free software. For information on usage
 ;   and redistribution, see the "LICENSE" file in this distribution.
 ;
 ;   This program is distributed in the hope that it will be useful,
 ;   but WITHOUT ANY WARRANTY; without even the implied warranty of
-;   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+;   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ;
 ;============================================================================
 ; Authors: Victoire Siguret, Jean Bresson, Jérôme Nika - IRCAM/STMS 2018
@@ -20,18 +20,18 @@
 (in-package :cl-user)
 
 ;;; DYCI2 Lisp package
-(defpackage :dyci2 
+(defpackage :dyci2
   (:use :common-lisp :cl-user))
 
 ;;; define and load the foreign C library
 (defun load-dyci2-lib ()
-  (let ((libpath (merge-pathnames 
-                  "lib/mac/libdyci2.so" 
+  (let ((libpath (merge-pathnames
+                  "lib/mac/libdyci2.so"
                   (om::mypathname (om::find-library "om-dyci2")))))
     (om-fi::om-load-foreign-library
-           "LIBDYCI2"
-           `((:macosx ,libpath)
-             (t (:default "libdyci2"))))
+     "LIBDYCI2"
+     `((:macosx ,libpath)
+       (t (:default "libdyci2"))))
     ))
 
 (load-dyci2-lib)
@@ -85,26 +85,26 @@
 
       (let* ((seq-ptr (Dyci2MakeList size))
              (labels-ptr (Dyci2MakeList size)))
-        
-        (unwind-protect 
+
+        (unwind-protect
             ;;; "protected" execution
-            (progn 
-              (loop for i from 0 to (- size 1) 
-                    for seq-elt in seq 
+            (progn
+              (loop for i from 0 to (- size 1)
+                    for seq-elt in seq
                     for lab-elt in lbls
                     do
                     (Dyci2ListAddString seq-ptr seq-elt i)
                     (Dyci2ListAddString labels-ptr lab-elt i))
-        
+
               (Dyci2MakeGenerator *dyci2-dict* size seq-ptr labels-ptr))
-        
+
           ;;; cleanup
           (Dyci2FreeList seq-ptr)
           (Dyci2FreeList labels-ptr)
           ))
-        
+
     ;;; else
-    (progn 
+    (progn
       (print "The DYCI2 library is not initialized !")
       nil)
     ))
@@ -116,24 +116,24 @@
   ;;; make query
   (let* ((size (length query))
          (query-ptr (Dyci2MakeList size)))
-  
-    (loop for i from 0 to (- size 1) 
+
+    (loop for i from 0 to (- size 1)
           for query-elt in query do
           (Dyci2ListAddString query-ptr query-elt i))
-    
+
     (if (= -1 (Dyci2GenQuery *dyci2-dict* gen size query-ptr))
-        
+
         (print "[!!] Error generating query !!")
-  
+
       ;;; query succeeded
       (let* ((outputsize (Dyci2GenOutputSize gen))
              (output (loop for i from 0 to (- outputsize 1) collect
                            (Dyci2GenNthOutput gen i))))
-        
+
         ;;; free query
         (Dyci2FreeList query-ptr)
-        
         output))))
+
 
 
 #|
@@ -146,8 +146,3 @@
 (dyci2-query gen '("D" "A" "B"))
 
 |#
-
-
-
-
-
