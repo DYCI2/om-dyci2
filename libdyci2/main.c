@@ -29,7 +29,7 @@
 
 #include "dyci2.h"
 
-#define PATH_TO_DYCI2 "/Users/bresson/SRC/Dyci2Lib/Python_library/DYCI2_Modules/"
+const char* PATH_TO_DYCI2 = "/Users/bresson/SRC/Dyci2Lib/Python_library/";
 
 
 int main(int argc, char **argv)

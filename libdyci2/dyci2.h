@@ -19,11 +19,12 @@
  *  Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "Python.h"
+#define PY_SSIZE_T_CLEAN
+#include <Python.h>
 
 
 // initializes Python / loads module / returns the pDict required to make Python calls to DYCI2
-void* Dyci2Init(char *chemin, const char *fichier);
+void* Dyci2Init(const char *dyci2_path, const char *init_file);
 
 // clears memory
 int Dyci2Quit(void *pObj);
@@ -49,4 +50,4 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value);
 // returns the size of the current output
 int Dyci2GenOutputSize(void *Generator);
 // return a strings corresponding to Nth element in current output
-char* Dyci2GenNthOutput(void *Generator, int n);
+const char* Dyci2GenNthOutput(void *Generator, int n);
