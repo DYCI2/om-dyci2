@@ -19,9 +19,9 @@
 (in-package :om)
 
 (add-preference-section :libraries "DYCI2" nil '(:dyci2-path :dyci2-debug))
-(add-preference :libraries :dyci2-path "DYCI2 Modules folder" :folder
+(add-preference :libraries :dyci2-path "DYCI2 Modules folder" :file
                 (merge-pathnames "lib/python/" (mypathname (find-library "om-dyci2")))
-                "Point to the \"Dyci2_Modules\" folder in the DYCI2 library" 'reinit-dyci2)
+                "Locate load.py in DYCI2 Python Library" 'reinit-dyci2)
 (add-preference :libraries ::dyci2-debug "Debug (open terminal output)" :action 'debug-dyci2)
 
 

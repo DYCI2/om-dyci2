@@ -32,7 +32,7 @@
   (reinit-dyci2))
 
 (defmethod! set-dyci2-path ((path null))
-  (setf *DYCI2-PATH* (om-choose-file-dialog :prompt "Please locate the DYCI2 Modules loader")))
+  (setf *DYCI2-PATH* (om-choose-file-dialog :prompt "Please locate the DYCI2 load module.")))
 
 (defmethod! dyci2-path ()
   :icon '(186)
@@ -63,7 +63,7 @@
       nil ; no options (yet..)
       )
     (when (get-pref moduleprefs :dyci2-path)
-      (setf *DYCI2-PATH* (om-make-pathname :directory (get-pref moduleprefs :dyci2-path)))
+      (setf *DYCI2-PATH* (get-pref moduleprefs :dyci2-path))
       (reinit-dyci2))
     ))
 
