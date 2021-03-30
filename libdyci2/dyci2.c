@@ -149,7 +149,10 @@ void * CallPyFunction (void* pyDict, const char* fName, int nb_arg, void *pArgs)
     printf("dyci2lib >>>>>>> function check (%s) => ok\n", fName);
     pyRep = PyObject_CallObject(pFunc, pArgs);
     printf("dyci2lib >>>>>>> return value from %s: %p\n", fName, pyRep);
-    if (pyRep == NULL) { PyErr_Print(); }
+    if (pyRep == NULL)
+    {
+      PyErr_Print();
+    }
   }
   else
   {
@@ -169,7 +172,10 @@ void * CallPyMethod (void* pyObject, const char* mName, void *pArg)
 
   printf("dyci2lib >>>>>>> return value from %s: %p\n", mName, pyRep);
 
-  if (pyRep == NULL) {  PyErr_Print(); }
+  if (pyRep == NULL)
+  {
+    PyErr_Print();
+  }
 
   return pyRep;
 }
@@ -195,7 +201,9 @@ void* Dyci2MakeGenerator(void *pyPtr, int size,  void *pySeq, void *pyLabels)
   if (pyGen == NULL)
   {
     PyErr_Print();
-  } else {
+  }
+  else
+  {
     Py_INCREF(pyGen);
   }
 
@@ -253,7 +261,8 @@ int Dyci2GenQuery(void *pyPtr, void *Generator, int size, void *pyLabels)
     {
       printf("dyci2lib >>>>>>>  Error processing Query:\n");
       return -1;
-    } else
+    }
+    else
     {
       Py_DECREF(pyRep);
     }
@@ -306,7 +315,7 @@ int Dyci2ParametersMod(void *Generator)
   PyObject *item;
   char *res;
 
-  PyObject *pyElem=PyObject_GetAttrString(Generator, "memory");
+  PyObject *pyElem = PyObject_GetAttrString(Generator, "memory");
 
   if (pyElem == NULL)
   {
