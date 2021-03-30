@@ -19,12 +19,13 @@
  *  Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
- #include "dyci2.h"
+#include "dyci2.h"
 
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 
 /*********************************
  * API ENTRY:
@@ -98,6 +99,7 @@ void* Dyci2MakeList( int size )
   return PyList_New( size );
 }
 
+
 /*********************************
  *
  * Util: free a PyList
@@ -128,7 +130,6 @@ int Dyci2ListAddString( void* pyList, char* item, int pos )
 }
 
 
-
 /***************************************
  * Utils: call Python functions from C
  ***************************************/
@@ -138,25 +139,25 @@ void * CallPyFunction ( void* pyDict, const char* fName, int nb_arg, void *pArgs
   // printf("dict: %p\n", pyDict);
 
   PyObject *pFunc = PyDict_GetItemString(pyDict, fName); // pFunc is a borrowed reference: no cleanup
-    PyObject *pyRep = NULL;
+  PyObject *pyRep = NULL;
 
-    //pDict = PyModule_GetDict(pModule);
-   printf("dyci2lib >>>>>>> function pointer: %p\n", pFunc);
+  //pDict = PyModule_GetDict(pModule);
+  printf("dyci2lib >>>>>>> function pointer: %p\n", pFunc);
 
-    if ( PyCallable_Check( pFunc ) )
-    {
-        printf("dyci2lib >>>>>>> function check (%s) => ok\n", fName);
-        pyRep = PyObject_CallObject(pFunc, pArgs );
-        printf("dyci2lib >>>>>>> return value from %s: %p\n", fName, pyRep);
-        if ( pyRep == NULL ) { PyErr_Print(); }
-    }
-    else
-    {
-        PyErr_Print();
-    }
+  if ( PyCallable_Check( pFunc ) )
+  {
+    printf("dyci2lib >>>>>>> function check (%s) => ok\n", fName);
+    pyRep = PyObject_CallObject(pFunc, pArgs );
+    printf("dyci2lib >>>>>>> return value from %s: %p\n", fName, pyRep);
+    if ( pyRep == NULL ) { PyErr_Print(); }
+  }
+  else
+  {
+    PyErr_Print();
+  }
 
   // printf( "dyci2lib >>>>>>> return from call: %s...\n", fName);
-    return pyRep;
+  return pyRep;
 }
 
 
@@ -171,8 +172,8 @@ void * CallPyMethod ( void* pyObject, const char* mName, void *pArg)
   if ( pyRep == NULL ) {  PyErr_Print(); }
 
   return pyRep;
-
 }
+
 
 /*********************************
  * API ENTRY:
@@ -181,10 +182,8 @@ void * CallPyMethod ( void* pyObject, const char* mName, void *pArg)
  * Creates a generator
  *
  ***********************************/
-
 void* Dyci2MakeGenerator( void *pyPtr, int size,  void *pySeq, void *pyLabels )
 {
-
   PyObject *pyGen;
   PyObject *args = PyTuple_New(2);
   PyTuple_SetItem(args, 0, pySeq);
@@ -201,8 +200,10 @@ void* Dyci2MakeGenerator( void *pyPtr, int size,  void *pySeq, void *pyLabels )
   }
 
   Py_DECREF( args );
+
   return pyGen;
 }
+
 
 /*********************************
  * API ENTRY:
@@ -268,7 +269,6 @@ int Dyci2GenQuery( void *pyPtr, void *Generator, int size, void *pyLabels )
 /*
 void * Dyci2GenFreeQuery( void *pyPtr, void * Generator, int length )
 {
-
   PyObject *pyLength, pyQuery;
 
   pyLength = PyLong_FromLong( length );
@@ -293,9 +293,7 @@ void * Dyci2GenFreeQuery( void *pyPtr, void * Generator, int length )
   Py_DECREF(pyLength);
   return Generator;
 }
-
 */
-
 
 
 /*********************************
@@ -305,11 +303,11 @@ void * Dyci2GenFreeQuery( void *pyPtr, void * Generator, int length )
  ***********************************/
 int Dyci2ParametersMod(void *Generator)
 {
-
   PyObject *item;
   char *res;
 
   PyObject *pyElem=PyObject_GetAttrString(Generator, "memory");
+
   if (pyElem == NULL)
   {
     PyErr_Print();
@@ -330,6 +328,7 @@ int Dyci2ParametersMod(void *Generator)
     res = PyString_AsString(item);
     printf("%s \n", res);
   }
+
   return 0;
 }
 
@@ -347,6 +346,7 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
     PyErr_Print();
     return NULL;
   }
+
   PyObject *pValue=PyLong_FromLong((long) value);
   int output = PyObject_SetAttrString( pyElem , parameter, pValue);
   if (output==-1)
@@ -357,8 +357,6 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
 
   return Generator;
 }
-
-
 
 
 /*********************************
@@ -423,23 +421,3 @@ char * Dyci2GenNthOutput( void * Generator, int n )
     return res;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

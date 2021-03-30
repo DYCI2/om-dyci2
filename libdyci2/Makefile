@@ -17,7 +17,6 @@ install:
 	cp libdyci2.so ../om-dyci2/lib/mac/
 	cp -R ../../Dyci2Lib/Python_library/DYCI2_Modules/* ../om-dyci2/lib/python/
 
-
 mrproper:
 	rm -rf libdyci2.so
 	rm -rf ../om-dyci2/lib/mac/libdyci2.so
