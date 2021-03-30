@@ -35,19 +35,20 @@
 int main(int argc, char **argv)
 {
   int err;
-  printf("================== Start DYCI2 TEST n");
+  printf("[START DYCI2 TEST]\n");
+  printf("[INITIALIZING...]\n");
 
   void *pyPtr = Dyci2Init(PATH_TO_DYCI2, "load");
 
   if ( pyPtr == NULL )
   {
-    printf("================== ERROR INITAILIZING DYCI2: %p\n", pyPtr);
+    printf("[=> ERROR: %p]\n", pyPtr);
     Dyci2Quit( pyPtr );
     return -1;
   }
   else
   {
-    printf("================== DYCI2 init ok: %p\n", pyPtr);
+    printf("[=> OK: %p]\n", pyPtr);
 
     int size = 11;
 
@@ -63,13 +64,13 @@ int main(int argc, char **argv)
       Dyci2ListAddString(pLab, cLabels[i], i );
     }
 
-    printf("================== Create generator...\n");
+    printf("[CREATING GENERATOR...]\n");
     void* Gen = Dyci2MakeGenerator( pyPtr, size, pSeq, pLab );
-    printf("================== GENERATOR: %p \n", Gen);
+    printf("[=> %p]\n", Gen);
 
     for ( int n = 1; n <= 10 ; n++ )
     {
-      printf("======================================================================== QUERY #%d\n", n);
+      printf("\n[QUERY #%d]\n", n);
 
       int querySize = 15;
       char *cHandle[] = {"C", "A", "B", "B", "C", "D", "C", "C", "D", "A", "A", "A", "A", "C", "B"} ;
@@ -80,26 +81,25 @@ int main(int argc, char **argv)
         Dyci2ListAddString(queryHandle, cHandle[i], i );
       }
 
-      printf("================== Call Dyci2GenQuery...\n");
+      printf("[CALL Dyci2GenQuery...]\n");
       err = Dyci2GenQuery(pyPtr, Gen, querySize, queryHandle );
 
       Dyci2FreeList ( queryHandle );
 
       int l = Dyci2GenOutputSize( Gen );
 
-      printf( "================== OUTPUT [size=%d]:\n", l);
+      printf( "[OUTPUT - size=%d]:\n", l);
       for ( int i = 0; i < l ; i++ )
       {
         printf( "%s ", Dyci2GenNthOutput( Gen , i ));
       }
-      printf("\n\n\n");
       sleep(1);
     }
 
     //err = Dyci2ParametersMod(Gen);
     //Dyci2SetParametersINT(Gen, "max_continuity", 5);
 
-    printf("\n================== DONE\n");
+    printf("\n[DONE]\n");
 
     Dyci2Quit( pyPtr);
 
