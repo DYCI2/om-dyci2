@@ -113,27 +113,33 @@
 ;;; queries a DYCI2 generator
 (defun dyci2-query (gen query)
 
-  ;;; make query
-  (let* ((size (length query))
-         (query-ptr (Dyci2MakeList size)))
+  (if *dyci2-dict*
+      ;;; make query
+      (let* ((size (length query))
+             (query-ptr (Dyci2MakeList size)))
 
-    (loop for i from 0 to (- size 1)
-          for query-elt in query do
-          (Dyci2ListAddString query-ptr query-elt i))
+        (loop for i from 0 to (- size 1)
+              for query-elt in query do
+              (Dyci2ListAddString query-ptr query-elt i))
 
-    (if (= -1 (Dyci2GenQuery *dyci2-dict* gen size query-ptr))
+        (if (= -1 (Dyci2GenQuery *dyci2-dict* gen size query-ptr))
 
-        (print "[!!] Error generating query !!")
+            (print "[!!] Error generating query !!")
 
-      ;;; query succeeded
-      (let* ((outputsize (Dyci2GenOutputSize gen))
-             (output (loop for i from 0 to (- outputsize 1) collect
-                           (Dyci2GenNthOutput gen i))))
+          ;;; query succeeded
+          (let* ((outputsize (Dyci2GenOutputSize gen))
+                 (output (loop for i from 0 to (- outputsize 1) collect
+                               (Dyci2GenNthOutput gen i))))
 
-        ;;; free query
-        (Dyci2FreeList query-ptr)
-        output))))
+            ;;; free query
+            (Dyci2FreeList query-ptr)
 
+            output)))
+
+    (progn
+      (print "The DYCI2 library is not initialized !")
+      nil)
+    ))
 
 
 #|
