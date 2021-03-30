@@ -93,7 +93,7 @@ int main(int argc, char **argv)
       {
         printf( "%s ", Dyci2GenNthOutput( Gen , i ));
       }
-      sleep(1);
+      //sleep(1);
     }
 
     //err = Dyci2ParametersMod(Gen);
