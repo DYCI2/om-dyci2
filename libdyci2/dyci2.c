@@ -365,7 +365,6 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
 int Dyci2GenOutputSize(void * Generator)
 {
   PyObject *pyOutput = PyObject_GetAttrString(Generator, "current_generation_output");
-  int rep;
 
   if (pyOutput == NULL)
   {
