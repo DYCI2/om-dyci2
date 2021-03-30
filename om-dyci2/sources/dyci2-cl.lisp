@@ -73,7 +73,8 @@
         (setf *dyci2-dict* (Dyci2Init (namestring path) "load"))
         )
     (print "Warning: DYCI2 folder not found!"))
-  (if (cffi-sys::null-pointer-p *dyci2-dict*)
+  (if (or (null *dyci2-dict*)
+          (cffi-sys::null-pointer-p *dyci2-dict*))
       (print "Warning: DYCI2 lib not initialized!"))
   *dyci2-dict*)
 
