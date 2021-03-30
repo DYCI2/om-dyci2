@@ -33,8 +33,7 @@
  * Init Python interpreter
  * Load DYCI2 module
  * Retrns a DICT containing all function objects references
- * pathToDyci2 must point to the DYCI2_Modules folder
- *
+ * dyci2_path must point to the DYCI2_Modules folder
  *********************************/
 void* Dyci2Init(char *pathToDyci2, const char *fileName)
 {
@@ -54,10 +53,8 @@ void* Dyci2Init(char *pathToDyci2, const char *fileName)
 
   pName = PyString_FromString(fileName);
   pModule = PyImport_Import(pName);
-  // pName not needed anymore
   Py_DECREF(pName);
 
-  //pModule = PyImport_ImportModule("DYCI2_Modules.GeneratorBuilder"); // ?
 
   printf("dyci2lib >>>>>>> Loaded module: %p\n", pModule);
 
@@ -78,9 +75,7 @@ void* Dyci2Init(char *pathToDyci2, const char *fileName)
 
 
 /*********************************
- *
  * Quit Dyci2 / Python interpreter
- *
  *********************************/
 int Dyci2Quit (void* pyPtr)
 {
@@ -90,9 +85,7 @@ int Dyci2Quit (void* pyPtr)
 
 
 /*********************************
- *
- * Util: create a PyList
- *
+ * Util: Create PyList
  *********************************/
 void* Dyci2MakeList(int size)
 {
@@ -101,9 +94,7 @@ void* Dyci2MakeList(int size)
 
 
 /*********************************
- *
- * Util: free a PyList
- *
+ * Util: Free PyList
  *********************************/
 int Dyci2FreeList(void* pylist)
 {
@@ -119,9 +110,7 @@ int Dyci2FreeList(void* pylist)
 }
 
 /*********************************
- *
- * Util: adds tring in a PyList
- *
+ * Util: Add string in a PyList
  *********************************/
 int Dyci2ListAddString(void* pyList, char* item, int pos)
 {
@@ -131,17 +120,15 @@ int Dyci2ListAddString(void* pyList, char* item, int pos)
 
 
 /***************************************
- * Utils: call Python functions from C
+ * Util: Call Python functions from C
  ***************************************/
 void * CallPyFunction (void* pyDict, const char* fName, int nb_arg, void *pArgs) // , void *KW)
 {
   printf("dyci2lib >>>>>>> enter function call for %s...\n", fName);
-  // printf("dict: %p\n", pyDict);
 
   PyObject *pFunc = PyDict_GetItemString(pyDict, fName); // pFunc is a borrowed reference: no cleanup
   PyObject *pyRep = NULL;
 
-  //pDict = PyModule_GetDict(pModule);
   printf("dyci2lib >>>>>>> function pointer: %p\n", pFunc);
 
   if (PyCallable_Check(pFunc))
@@ -159,7 +146,6 @@ void * CallPyFunction (void* pyDict, const char* fName, int nb_arg, void *pArgs)
     PyErr_Print();
   }
 
-  // printf("dyci2lib >>>>>>> return from call: %s...\n", fName);
   return pyRep;
 }
 
@@ -345,7 +331,9 @@ int Dyci2ParametersMod(void *Generator)
 /*********************************
  * API ENTRY:
  *********************************
+ *
  * Set a Generator parameter of type int
+ *
  ***********************************/
 void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
 {
@@ -377,8 +365,6 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
  **********************************/
 int Dyci2GenOutputSize(void * Generator)
 {
-  // printf("======================= ENTER GEN OUTPUT SIZE:\n");
-
   PyObject *pyOutput = PyObject_GetAttrString(Generator, "current_generation_output");
   int rep;
 
@@ -405,8 +391,6 @@ int Dyci2GenOutputSize(void * Generator)
  *********************************/
 char * Dyci2GenNthOutput(void * Generator, int n)
 {
-  // printf("======================= ENTER GEN NTH OUTPUT: %d\n", n);
-
   PyObject *pyOutput, *elem;
 
   pyOutput = PyObject_GetAttrString(Generator, "current_generation_output");
@@ -426,7 +410,6 @@ char * Dyci2GenNthOutput(void * Generator, int n)
   else
   {
     char * res = PyString_AsString(elem);
-    // printf("OUTPUT %s\n", res);
     return res;
   }
 }
