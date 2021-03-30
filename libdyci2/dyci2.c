@@ -36,24 +36,24 @@
  * pathToDyci2 must point to the DYCI2_Modules folder
  *
  *********************************/
-void* Dyci2Init( char *pathToDyci2 , const char *fileName)
+void* Dyci2Init(char *pathToDyci2, const char *fileName)
 {
   PyObject *pName, *pModule, *pDict;
 
-  if( ! Py_IsInitialized() )
+  if(! Py_IsInitialized())
   {
     Py_Initialize();
   }
 
-  PySys_SetPath( pathToDyci2 );
+  PySys_SetPath(pathToDyci2);
 
   // char *path = Py_GetPath();
   // printf("PyPath: %s\n\n", path);
   //PyObject *sys_path = PySys_GetObject("path");
-  //PyList_Append( sys_path, PyString_FromString( pathToDyci2 ) );
+  //PyList_Append(sys_path, PyString_FromString(pathToDyci2));
 
-  pName = PyString_FromString( fileName );
-  pModule = PyImport_Import( pName );
+  pName = PyString_FromString(fileName);
+  pModule = PyImport_Import(pName);
   // pName not needed anymore
   Py_DECREF(pName);
 
@@ -94,9 +94,9 @@ int Dyci2Quit (void* pyPtr)
  * Util: create a PyList
  *
  *********************************/
-void* Dyci2MakeList( int size )
+void* Dyci2MakeList(int size)
 {
-  return PyList_New( size );
+  return PyList_New(size);
 }
 
 
@@ -105,16 +105,16 @@ void* Dyci2MakeList( int size )
  * Util: free a PyList
  *
  *********************************/
-int Dyci2FreeList( void* pylist )
+int Dyci2FreeList(void* pylist)
 {
   /*
-  for (int i = 0 ; i < PyList_Size( pylist ) ; i++)
+  for (int i = 0 ; i < PyList_Size(pylist) ; i++)
   {
-    Py_DECREF( PyList_GetItem( pylist , i) );
+    Py_DECREF(PyList_GetItempylist, i));
   }
   */
 
-  Py_DECREF( pylist );
+  Py_DECREF(pylist);
   return 0;
 }
 
@@ -123,9 +123,9 @@ int Dyci2FreeList( void* pylist )
  * Util: adds tring in a PyList
  *
  *********************************/
-int Dyci2ListAddString( void* pyList, char* item, int pos )
+int Dyci2ListAddString(void* pyList, char* item, int pos)
 {
-  PyList_SetItem( pyList , pos, PyString_FromString( item ) );
+  PyList_SetItem(pyList, pos, PyUnicode_FromString(item));
   return pos;
 }
 
@@ -133,7 +133,7 @@ int Dyci2ListAddString( void* pyList, char* item, int pos )
 /***************************************
  * Utils: call Python functions from C
  ***************************************/
-void * CallPyFunction ( void* pyDict, const char* fName, int nb_arg, void *pArgs) // , void *KW)
+void * CallPyFunction (void* pyDict, const char* fName, int nb_arg, void *pArgs) // , void *KW)
 {
   printf("dyci2lib >>>>>>> enter function call for %s...\n", fName);
   // printf("dict: %p\n", pyDict);
@@ -144,32 +144,32 @@ void * CallPyFunction ( void* pyDict, const char* fName, int nb_arg, void *pArgs
   //pDict = PyModule_GetDict(pModule);
   printf("dyci2lib >>>>>>> function pointer: %p\n", pFunc);
 
-  if ( PyCallable_Check( pFunc ) )
+  if (PyCallable_Check(pFunc))
   {
     printf("dyci2lib >>>>>>> function check (%s) => ok\n", fName);
-    pyRep = PyObject_CallObject(pFunc, pArgs );
+    pyRep = PyObject_CallObject(pFunc, pArgs);
     printf("dyci2lib >>>>>>> return value from %s: %p\n", fName, pyRep);
-    if ( pyRep == NULL ) { PyErr_Print(); }
+    if (pyRep == NULL) { PyErr_Print(); }
   }
   else
   {
     PyErr_Print();
   }
 
-  // printf( "dyci2lib >>>>>>> return from call: %s...\n", fName);
+  // printf("dyci2lib >>>>>>> return from call: %s...\n", fName);
   return pyRep;
 }
 
 
-void * CallPyMethod ( void* pyObject, const char* mName, void *pArg)
+void * CallPyMethod (void* pyObject, const char* mName, void *pArg)
 {
   printf("dyci2lib >>>>>>> enter method call for %s...\n", mName);
 
-  PyObject *pyRep = PyObject_CallMethodObjArgs( pyObject , PyString_FromString(mName) , pArg , NULL );
+  PyObject *pyRep = PyObject_CallMethodObjArgs(pyObject, PyUnicode_FromString(mName), pArg, NULL);
 
   printf("dyci2lib >>>>>>> return value from %s: %p\n", mName, pyRep);
 
-  if ( pyRep == NULL ) {  PyErr_Print(); }
+  if (pyRep == NULL) {  PyErr_Print(); }
 
   return pyRep;
 }
@@ -182,7 +182,7 @@ void * CallPyMethod ( void* pyObject, const char* mName, void *pArg)
  * Creates a generator
  *
  ***********************************/
-void* Dyci2MakeGenerator( void *pyPtr, int size,  void *pySeq, void *pyLabels )
+void* Dyci2MakeGenerator(void *pyPtr, int size,  void *pySeq, void *pyLabels)
 {
   PyObject *pyGen;
   PyObject *args = PyTuple_New(2);
@@ -196,10 +196,10 @@ void* Dyci2MakeGenerator( void *pyPtr, int size,  void *pySeq, void *pyLabels )
   {
     PyErr_Print();
   } else {
-    Py_INCREF( pyGen );
+    Py_INCREF(pyGen);
   }
 
-  Py_DECREF( args );
+  Py_DECREF(args);
 
   return pyGen;
 }
@@ -212,9 +212,9 @@ void* Dyci2MakeGenerator( void *pyPtr, int size,  void *pySeq, void *pyLabels )
  * Free a generator
  *
  ***********************************/
-int Dyci2FreeGenerator( void *pyGen )
+int Dyci2FreeGenerator(void *pyGen)
 {
-  Py_DECREF( pyGen );
+  Py_DECREF(pyGen);
   return 0;
 }
 
@@ -226,7 +226,7 @@ int Dyci2FreeGenerator( void *pyGen )
  * Query generator (returns err flag)
  *
  ***********************************/
-int Dyci2GenQuery( void *pyPtr, void *Generator, int size, void *pyLabels )
+int Dyci2GenQuery(void *pyPtr, void *Generator, int size, void *pyLabels)
 {
   PyObject *args=PyTuple_New(1);
   PyTuple_SetItem(args, 0, pyLabels);
@@ -246,7 +246,7 @@ int Dyci2GenQuery( void *pyPtr, void *Generator, int size, void *pyLabels )
   else
   {
     printf("dyci2lib >>>>>>> send query \n");
-    PyObject *pyRep = CallPyMethod( Generator, "receive_query", pyQuery );
+    PyObject *pyRep = CallPyMethod(Generator, "receive_query", pyQuery);
     printf("dyci2lib >>>>>>> send query returned\n");
 
     if (pyRep==NULL)
@@ -267,11 +267,11 @@ int Dyci2GenQuery( void *pyPtr, void *Generator, int size, void *pyLabels )
 
 // TODO
 /*
-void * Dyci2GenFreeQuery( void *pyPtr, void * Generator, int length )
+void * Dyci2GenFreeQuery(void *pyPtr, void * Generator, int length)
 {
   PyObject *pyLength, pyQuery;
 
-  pyLength = PyLong_FromLong( length );
+  pyLength = PyLong_FromLong(length);
 
   PyObject *args=PyTuple_New(2);
   PyTuple_SetItem(args, 0, pyLength);
@@ -287,7 +287,7 @@ void * Dyci2GenFreeQuery( void *pyPtr, void * Generator, int length )
   }
   else
   {
-    PyObject_CallMethodObjArgs(Generator, PyString_FromString("receive_query") , pyQuery);
+    PyObject_CallMethodObjArgs(Generator, PyString_FromString("receive_query"), pyQuery);
   }
 
   Py_DECREF(pyLength);
@@ -314,7 +314,7 @@ int Dyci2ParametersMod(void *Generator)
     return 1;
   }
 
-  PyObject *pyOutput = PyObject_GetAttrString( pyElem , "control_parameters");
+  PyObject *pyOutput = PyObject_GetAttrString(pyElem, "control_parameters");
   if (pyOutput == NULL)
   {
     PyErr_Print();
@@ -324,7 +324,7 @@ int Dyci2ParametersMod(void *Generator)
   Py_ssize_t len = PySequence_Size(pyOutput);
   for (int i=0; i< (int)len; i++)
   {
-    item = PySequence_GetItem( pyOutput, i);
+    item = PySequence_GetItem(pyOutput, i);
     res = PyString_AsString(item);
     printf("%s \n", res);
   }
@@ -348,7 +348,7 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
   }
 
   PyObject *pValue=PyLong_FromLong((long) value);
-  int output = PyObject_SetAttrString( pyElem , parameter, pValue);
+  int output = PyObject_SetAttrString(pyElem, parameter, pValue);
   if (output==-1)
   {
     PyErr_Print();
@@ -366,7 +366,7 @@ void *Dyci2SetParametersINT(void *Generator, char *parameter, int value)
  * Returns the size of the current output
  *
  **********************************/
-int Dyci2GenOutputSize( void * Generator )
+int Dyci2GenOutputSize(void * Generator)
 {
   // printf("======================= ENTER GEN OUTPUT SIZE:\n");
 
@@ -381,7 +381,7 @@ int Dyci2GenOutputSize( void * Generator )
   else
   {
     Py_ssize_t len = PySequence_Size(pyOutput);
-    // rep = PyLong_AsLong( len );
+    // rep = PyLong_AsLong(len);
     return (int) len;
   }
 }
@@ -394,13 +394,13 @@ int Dyci2GenOutputSize( void * Generator )
  * Return a strings corresponding to Nth element in current output
  *
  *********************************/
-char * Dyci2GenNthOutput( void * Generator, int n )
+char * Dyci2GenNthOutput(void * Generator, int n)
 {
   // printf("======================= ENTER GEN NTH OUTPUT: %d\n", n);
 
   PyObject *pyOutput, *elem;
 
-  pyOutput = PyObject_GetAttrString( Generator , "current_generation_output");
+  pyOutput = PyObject_GetAttrString(Generator, "current_generation_output");
 
   if (pyOutput == NULL)
   {
@@ -408,7 +408,7 @@ char * Dyci2GenNthOutput( void * Generator, int n )
     return "ERROR";
   }
 
-  elem = PySequence_GetItem( pyOutput, n);
+  elem = PySequence_GetItem(pyOutput, n);
   if (elem == NULL)
   {
     PyErr_Print();
