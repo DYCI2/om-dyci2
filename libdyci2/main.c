@@ -35,81 +35,81 @@
 //#define PATH_TO_DYCI2 "/Users/siguret/DYCI2_library/DYCI2_Modules/"
 
 
-int main(int argc, char **argv) 
+int main(int argc, char **argv)
 {
-	int err;
-	printf("================== Start DYCI2 TEST n");
+  int err;
+  printf("================== Start DYCI2 TEST n");
 
-	void *pyPtr = Dyci2Init(PATH_TO_DYCI2, "load");
-	
-	if ( pyPtr == NULL ) 
-	{
-		printf("================== ERROR INITAILIZING DYCI2: %p\n", pyPtr);
-		Dyci2Quit( pyPtr );	
-		return -1;
-	}
-	else 
-	{	
-		printf("================== DYCI2 init ok: %p\n", pyPtr);
+  void *pyPtr = Dyci2Init(PATH_TO_DYCI2, "load");
 
-		int size = 11;
+  if ( pyPtr == NULL )
+  {
+    printf("================== ERROR INITAILIZING DYCI2: %p\n", pyPtr);
+    Dyci2Quit( pyPtr );
+    return -1;
+  }
+  else
+  {
+    printf("================== DYCI2 init ok: %p\n", pyPtr);
 
-		char *cSequence[] = {"A1", "B1", "B2", "C1", "A2", "B3", "C2", "D1", "A3", "B4", "C3"};
-		char *cLabels[] = {"A", "B", "B", "C", "A", "B", "C", "D", "A", "B", "C"};
+    int size = 11;
 
-		void* pSeq = Dyci2MakeList( size );
-		void* pLab = Dyci2MakeList( size );
+    char *cSequence[] = {"A1", "B1", "B2", "C1", "A2", "B3", "C2", "D1", "A3", "B4", "C3"};
+    char *cLabels[] = {"A", "B", "B", "C", "A", "B", "C", "D", "A", "B", "C"};
 
-		for (int i=0 ; i < size ; i++) 
-		{ 
-			Dyci2ListAddString(pSeq, cSequence[i], i );
-			Dyci2ListAddString(pLab, cLabels[i], i );
-		}
-		
-		
-		printf("================== Create generator...\n");
-		void* Gen = Dyci2MakeGenerator( pyPtr, size, pSeq, pLab );
-		printf("================== GENERATOR: %p \n", Gen);	
+    void* pSeq = Dyci2MakeList( size );
+    void* pLab = Dyci2MakeList( size );
 
-		for ( int n = 1; n <= 10 ; n++ )
-		{
-			
-			printf("======================================================================== QUERY #%d\n", n);
+    for (int i=0 ; i < size ; i++)
+    {
+      Dyci2ListAddString(pSeq, cSequence[i], i );
+      Dyci2ListAddString(pLab, cLabels[i], i );
+    }
 
-			int querySize = 15;
-			char *cHandle[] = {"C", "A", "B", "B", "C", "D", "C", "C", "D", "A", "A", "A", "A", "C", "B"} ;
 
-			void* queryHandle = Dyci2MakeList( querySize );
-			for (int i=0 ; i < querySize ; i++) 
-			{ 
-				Dyci2ListAddString(queryHandle, cHandle[i], i );
-			}
-		
-			printf("================== Call Dyci2GenQuery...\n");
-			err = Dyci2GenQuery(pyPtr, Gen, querySize, queryHandle );
+    printf("================== Create generator...\n");
+    void* Gen = Dyci2MakeGenerator( pyPtr, size, pSeq, pLab );
+    printf("================== GENERATOR: %p \n", Gen);
 
-			Dyci2FreeList ( queryHandle );
+    for ( int n = 1; n <= 10 ; n++ )
+    {
 
-			int l = Dyci2GenOutputSize( Gen );
-		
-			printf( "================== OUTPUT [size=%d]:\n", l);
-			for ( int i = 0; i < l ; i++ ) 
-			{
-				printf( "%s ", Dyci2GenNthOutput( Gen , i ));
-			}
-			printf("\n\n\n");
-			sleep(1);
-		}
-			
-		//err = Dyci2ParametersMod(Gen);
-		//Dyci2SetParametersINT(Gen, "max_continuity", 5);
-		
-		printf("\n================== DONE\n");
-		
-		Dyci2Quit( pyPtr);	
-		
-		return 0;
-	}
+      printf("======================================================================== QUERY #%d\n", n);
+
+      int querySize = 15;
+      char *cHandle[] = {"C", "A", "B", "B", "C", "D", "C", "C", "D", "A", "A", "A", "A", "C", "B"} ;
+
+      void* queryHandle = Dyci2MakeList( querySize );
+      for (int i=0 ; i < querySize ; i++)
+      {
+        Dyci2ListAddString(queryHandle, cHandle[i], i );
+      }
+
+      printf("================== Call Dyci2GenQuery...\n");
+      err = Dyci2GenQuery(pyPtr, Gen, querySize, queryHandle );
+
+      Dyci2FreeList ( queryHandle );
+
+      int l = Dyci2GenOutputSize( Gen );
+
+      printf( "================== OUTPUT [size=%d]:\n", l);
+      for ( int i = 0; i < l ; i++ )
+      {
+        printf( "%s ", Dyci2GenNthOutput( Gen , i ));
+      }
+      printf("\n\n\n");
+      sleep(1);
+    }
+
+    //err = Dyci2ParametersMod(Gen);
+    //Dyci2SetParametersINT(Gen, "max_continuity", 5);
+
+    printf("\n================== DONE\n");
+
+    Dyci2Quit( pyPtr);
+
+    return 0;
+  }
 }
 
 

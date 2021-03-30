@@ -50,4 +50,4 @@ void *Dyci2SetParametersINT( void *Generator, char *parameter, int value );
 int Dyci2GenOutputSize( void * Generator );
 // return a strings corresponding to Nth element in current output
 char * Dyci2GenNthOutput( void * Generator , int n );
-		
+
