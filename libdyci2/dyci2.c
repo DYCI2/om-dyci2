@@ -35,7 +35,7 @@
  * Retrns a DICT containing all function objects references
  * dyci2_path must point to the DYCI2_Modules folder
  *********************************/
-void* Dyci2Init(char *pathToDyci2, const char *fileName)
+void* Dyci2Init(const char* dyci2_path, const char* init_file)
 {
   PyObject *pName, *pModule, *pDict;
 
@@ -44,14 +44,14 @@ void* Dyci2Init(char *pathToDyci2, const char *fileName)
     Py_Initialize();
   }
 
-  PySys_SetPath(pathToDyci2);
+  // char* to wchar_t*
+  size_t path_str_size = strlen(dyci2_path) + 1;
+  wchar_t wcstring[path_str_size];
+  mbstowcs(wcstring, dyci2_path, path_str_size);
 
-  // char *path = Py_GetPath();
-  // printf("PyPath: %s\n\n", path);
-  //PyObject *sys_path = PySys_GetObject("path");
-  //PyList_Append(sys_path, PyString_FromString(pathToDyci2));
+  PySys_SetPath(wcstring);
 
-  pName = PyString_FromString(fileName);
+  pName = PyUnicode_DecodeFSDefault(init_file);
   pModule = PyImport_Import(pName);
   Py_DECREF(pName);
 
@@ -269,7 +269,7 @@ void * Dyci2GenFreeQuery(void *pyPtr, void * Generator, int length)
 
   PyObject *args=PyTuple_New(2);
   PyTuple_SetItem(args, 0, pyLength);
-  PyTuple_SetItem(args, 1, PyString_FromString("Label"));
+  PyTuple_SetItem(args, 1, PyUnicode_FromString("Label"));
 
   pyQuery = Dyci2Call(pyPtr, "new_temporal_query_free_sequence_of_events", 1, args);
 
@@ -281,7 +281,7 @@ void * Dyci2GenFreeQuery(void *pyPtr, void * Generator, int length)
   }
   else
   {
-    PyObject_CallMethodObjArgs(Generator, PyString_FromString("receive_query"), pyQuery);
+    PyObject_CallMethodObjArgs(Generator, PyUnicode_FromString("receive_query"), pyQuery);
   }
 
   Py_DECREF(pyLength);
@@ -298,7 +298,6 @@ void * Dyci2GenFreeQuery(void *pyPtr, void * Generator, int length)
 int Dyci2ParametersMod(void *Generator)
 {
   PyObject *item;
-  char *res;
 
   PyObject *pyElem = PyObject_GetAttrString(Generator, "memory");
 
@@ -319,8 +318,7 @@ int Dyci2ParametersMod(void *Generator)
   for (int i=0; i< (int)len; i++)
   {
     item = PySequence_GetItem(pyOutput, i);
-    res = PyString_AsString(item);
-    printf("%s \n", res);
+    printf("%s \n", PyUnicode_AsUTF8(item));
   }
 
   return 0;
@@ -387,7 +385,7 @@ int Dyci2GenOutputSize(void * Generator)
  * Return a strings corresponding to Nth element in current output
  *
  *********************************/
-char * Dyci2GenNthOutput(void * Generator, int n)
+const char * Dyci2GenNthOutput(void * Generator, int n)
 {
   PyObject *pyOutput, *elem;
 
@@ -407,7 +405,6 @@ char * Dyci2GenNthOutput(void * Generator, int n)
   }
   else
   {
-    char * res = PyString_AsString(elem);
-    return res;
+    return PyUnicode_AsUTF8(elem);
   }
 }
