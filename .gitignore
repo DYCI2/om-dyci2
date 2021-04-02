@@ -5,6 +5,7 @@ dycitest
 *.zip
 .DS_Store
 **/Results/**/*
+*.dSYM
 
 **/lib/python/*
 reference-pages/
