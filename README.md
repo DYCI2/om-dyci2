@@ -27,15 +27,15 @@ You can use the pre-packed version of the **om-dyci2** source folder distributed
 The **om-dyci2** source folder including the compiled wrapper (libdyci2/libdyci2.so) and the DYCI2 python modules (omdyci2/lib/python) must be installed in one of the OM library folders.
 Alternatively, you can just specify this repository as one of the "Libraries folder" in the OM Preferences.
 
-**Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 2.7 and the dependencies of DYCI2 library must also be installed on your computer** 
+**Note:** om-dyci2 will instanciate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 3 and the dependencies of DYCI2 library must also be installed on your computer** 
 :
 
-1. Download and install the **last** version of Python 2 (https://www.python.org/downloads)
+1. Download and install Python 3.9 (https://www.python.org/downloads)
 
 2. Use your terminal to install the dependencies:
 
 ```
-$ pip install -r python-requirements.txt
+$ pip3 install -r python-requirements.txt
 ```
 
 (If _pip_ is not installed: `sudo easy_install install pip`.)
@@ -56,11 +56,9 @@ make
 make install
 ```
 
-The Makefile will assume that Python 2.7 is installed in /System/Library/Frameworks/Python.framework/
+`make install` will copy the built dyci2lib.so and required Dyci2 python sources in *om-dyci2/lib/mac/*
 
-`make install` will copy the built dyci2lib.so to the adequate folder of the **om-dyci2** library (in *om-dyci2/lib/mac/*)
-
-
+Running these sources will be possible only if Python3.9 is installed
 
 
 
