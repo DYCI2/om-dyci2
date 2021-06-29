@@ -1,0 +1,37 @@
+
+========================================
+INSTALLER PYTHON (si besoin)
+========================================
+- Installer la dernière version de python 2.7 (https://www.python.org/downloads)
+
+- Installer les dépendances :
+	Ouvrir le terminal
+	$ cd [drag and drop l'icone du dossier __INSTALL__]
+	$ pip install -r python-requirements.txt
+(Si pip n'est pas installé: sudo easy-install pip. Ou essayer l'upgrade: curl https://bootstrap.pypa.io/get-pip.py | python)
+
+
+
+========================================
+SuperVP (installer audiosculpt si besoin)
+========================================
+- Installer Audiosculpt et le code d'activation associé (http://forumnet.ircam.fr/shop/en/forumnet/10-audiosculpt.html)
+
+
+========================================
+PARAMETRER OM7
+========================================
+
+- Ouvrir om7
+	- om7/preferences/files and folders "If output file exists" --> auto-rename
+
+	- om7/preferences/libraries "If output file exists" --> dans search folder mettre 
+		- le répertoire .../Patches/om-dyci2
+		- le répertoire .../Patches/
+		- cocher "Autoload"
+
+	- windows/session window/external libraries puis double clic sur om-dicy2 et om-supervp pour charger les librairies
+
+	- om7-beta/preferences/libraries, catégorie om-SuperVP
+		- Authorize --> path de la clé d'activation d'audiosculpt si besoin
+		- SuperVP exec --> vérifier que le path est bon (devrait être quelquechose comme /Applications/AudioSculpt 3.4.6/AudioSculpt 3.4.6.app/Contents/MacOS/supervp ou /Applications/AudioSculpt 3.4.5/AudioSculpt 3.4.5.app/Contents/MacOS/supervp)
