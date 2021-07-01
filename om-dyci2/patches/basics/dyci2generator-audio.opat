@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2021/01/19 13:41:10")
+  (:modified "2021/07/01 12:27:12")
   (:by "om-sharp")
-  (:version 1.02))
- (:window (:size (991 1021)) (:position (449 25)))
+  (:version 1.03))
+ (:window (:size (991 1005)) (:position (449 23)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -31,7 +31,7 @@
    (:align :center)
    (:display :text)
    (:showname nil)
-   (:lock :locked)
+   (:lock nil)
    (:lambda nil)
    (:inputs
     (:input
@@ -87,31 +87,31 @@
          "(4700 4900)"))
        (:labls
         (:list
-         "A"
          "D"
+         "C"
          "B"
+         "D"
          "C"
          "C"
          "C"
          "C"
-         "A"
-         "D"
-         "B"
-         "B"
-         "D"
-         "B"
-         "A"
-         "B"
-         "D"
-         "A"
-         "D"
          "D"
          "D"
          "C"
+         "B"
+         "B"
+         "C"
+         "D"
+         "D"
+         "D"
+         "B"
+         "C"
+         "C"
+         "B"
+         "C"
          "A"
-         "B"
-         "B"
-         "A"))))))
+         "D"
+         "B"))))))
    (:id 0))
   (:box
    (:library "om-dyci2")
@@ -122,7 +122,7 @@
    (:x 489)
    (:y 756)
    (:w 97)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -184,17 +184,58 @@
      (:class sound)
      (:slots
       ((:onset 0)
-       (:duration 0)
-       (:n-samples nil)
-       (:n-channels nil)
-       (:sample-rate nil)
+       (:duration 682666.7)
+       (:n-samples 32768000)
+       (:n-channels 2)
+       (:sample-rate 48000)
        (:smpl-type :float)
        (:sample-size 16)))
      (:add-slots
-      ((:markers nil)
+      ((:markers
+        (:list
+         (:list 100 "D")
+         (:list 300 "A")
+         (:list 500 "B")
+         (:list 700 "D")
+         (:list 900 "A")
+         (:list 1100 "B")
+         (:list 1300 "B")
+         (:list 1500 "A")
+         (:list 1700 "D")
+         (:list 1900 "C")
+         (:list 2100 "C")
+         (:list 2300 "B")
+         (:list 2500 "B")
+         (:list 2700 "A")
+         (:list 2900 "D")
+         (:list 3100 "B")
+         (:list 3300 "D")
+         (:list 3500 "D")
+         (:list 3700 "A")
+         (:list 3900 "C")
+         (:list 4100 "D")
+         (:list 4300 "B")
+         (:list 4500 "C")
+         (:list 4700 "B")
+         (:list 4900 "D")))
        (:gain 1.0)
        (:access-from-file nil)
-       (:file-pathname nil)))))
+       (:file-pathname
+        (:pathname
+         (:directory
+          (:relative
+           :up
+           :up
+           :up
+           :up
+           "Dyci2Lib"
+           "Max_library"
+           "_Tutorials_"
+           "_ExamplesCorpus_"))
+         (:device nil)
+         (:host nil)
+         (:name "ARKA_BABE_BASS")
+         (:type "wav")))))))
    (:id 2))
   (:box
    (:type :function)
@@ -204,7 +245,7 @@
    (:x 355)
    (:y 30)
    (:w 96)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -295,7 +336,7 @@
    (:x 100)
    (:y 177)
    (:w 103)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -309,7 +350,7 @@
    (:id 7))
   (:box
    (:type :value)
-   (:reference null)
+   (:reference pathname)
    (:group-id nil)
    (:name "value box")
    (:x 20)
@@ -330,7 +371,22 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value nil)
+   (:value
+    (:pathname
+     (:directory
+      (:absolute
+       "Users"
+       "nika"
+       "Documents"
+       "GitHub"
+       "Dyci2Lib"
+       "Max_library"
+       "_Tutorials_"
+       "_ExamplesCorpus_"))
+     (:device :unspecific)
+     (:host :unspecific)
+     (:name "ARKA_BABE_BASS")
+     (:type "wav")))
    (:id 8))
   (:box
    (:type :value)
@@ -360,7 +416,7 @@
    (:x 446)
    (:y 124)
    (:w 103)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -411,7 +467,7 @@
    (:x 452)
    (:y 73)
    (:w 90)
-   (:h 23)
+   (:h 22)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -428,7 +484,7 @@
    (:x 569)
    (:y 75)
    (:w 72)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -474,7 +530,7 @@
    (:x 335)
    (:y 66)
    (:w 55)
-   (:h 23)
+   (:h 22)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -490,8 +546,8 @@
    (:name "mapcar")
    (:x 165)
    (:y 625)
-   (:w 77)
-   (:h 29)
+   (:w 78)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -520,8 +576,8 @@
    (:name "mapcar")
    (:x 423)
    (:y 808)
-   (:w 77)
-   (:h 29)
+   (:w 78)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -551,7 +607,7 @@
    (:x 328)
    (:y 761)
    (:w 131)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -587,7 +643,7 @@
        (:name "SEGMENTS")
        (:x 154)
        (:y 59)
-       (:w 81)
+       (:w 89)
        (:h 42)
        (:color
         (:color-or-nil
@@ -636,7 +692,7 @@
        (:name "SOUND")
        (:x 91)
        (:y 206)
-       (:w 61)
+       (:w 65)
        (:h 42)
        (:color
         (:color-or-nil
@@ -658,7 +714,7 @@
        (:name "CROSSFADE")
        (:x 320)
        (:y 144)
-       (:w 85)
+       (:w 97)
        (:h 42)
        (:color
         (:color-or-nil
@@ -867,7 +923,7 @@
        (:name "reduce")
        (:x 257)
        (:y 474)
-       (:w 74)
+       (:w 75)
        (:h 30)
        (:color nil)
        (:border nil)
@@ -1052,7 +1108,7 @@
    (:display :mini-view)
    (:showname nil)
    (:show-markers t)
-   (:lock :locked)
+   (:lock nil)
    (:lambda nil)
    (:inputs
     (:input
@@ -1068,10 +1124,10 @@
      (:class sound)
      (:slots
       ((:onset 0)
-       (:duration 0)
-       (:n-samples nil)
-       (:n-channels nil)
-       (:sample-rate nil)
+       (:duration 1690.0)
+       (:n-samples 81120)
+       (:n-channels 2)
+       (:sample-rate 48000)
        (:smpl-type :float)
        (:sample-size 16)))
      (:add-slots
@@ -1133,8 +1189,8 @@
    (:name "mapcar")
    (:x 605)
    (:y 711)
-   (:w 77)
-   (:h 29)
+   (:w 78)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1184,7 +1240,7 @@
    (:x 514)
    (:y 658)
    (:w 113)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1209,7 +1265,7 @@
    (:x 449)
    (:y 195)
    (:w 54)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1235,7 +1291,7 @@
    (:x 425)
    (:y 228)
    (:w 93)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1260,7 +1316,7 @@
    (:x 225)
    (:y 470)
    (:w 55)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1285,7 +1341,7 @@
    (:x 145)
    (:y 471)
    (:w 75)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1310,7 +1366,7 @@
    (:x 168)
    (:y 548)
    (:w 92)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1335,7 +1391,7 @@
    (:x 175)
    (:y 511)
    (:w 83)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1361,7 +1417,7 @@
    (:x 272)
    (:y 376)
    (:w 92)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1386,7 +1442,7 @@
    (:x 255)
    (:y 412)
    (:w 126)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1441,7 +1497,7 @@
    (:x 263)
    (:y 807)
    (:w 134)
-   (:h 23)
+   (:h 22)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -1458,7 +1514,7 @@
    (:x 89)
    (:y 586)
    (:w 119)
-   (:h 29)
+   (:h 30)
    (:color nil)
    (:border nil)
    (:roundness nil)

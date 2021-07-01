@@ -1,0 +1,12 @@
+README
+
+0- Download the last version of OM7 here: https://github.com/openmusic-project/om7/releases
+
+1a- Download the release version of om-dyci2 here: https://github.com/DYCI2/om-dyci2/releases.
+OR
+1b- Download the last version of DYCI2lib here: https://github.com/DYCI2/Dyci2Lib,
+Move om-dyci2 and DYCI2lib in a same parent directory, and compile libdyci2 (open a terminal in [parent_directory]/om-dyci2/libdicy2/ then "make" "make install").
+
+2- Open OM7, and in OM7/Preferences/Libraries, give the path to the om-dyci2 directory in "Search folder" (and check Autoload).
+
+3- Open and use the tutorials !
