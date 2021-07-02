@@ -1,0 +1,13 @@
+README
+
+These tutorials require the OM-SuperVP library. Get them it from its repository (https://github.com/openmusic-project/OM-SuperVP/releases) and put it for instance in om-dyci2/dependencies/ and make sure that the path to this directory is in the search path.
+
+The OM-SUPERVP release does not include SuperVP binaries. Get them from IRCAM ForumNet (https://forum.ircam.fr/projects/detail/analysissynthesis-command-line-tools/) and either put them in OM-SuperVP/resources/bin/{mac,win,linux}/, OR set the path to SuperVP (for instance in .../AudioSculpt/Kernels/) in the OM Preferences/Externals path (visible when the library is loaded).
+
+Then in OM:
+
+- windows/session window/external libraries then double click on om-supervp to load it
+- preferences/libraries, in om-SuperVP :
+	- SuperVP exec --> path to supervp exec (for instance dependencies/om-supervp/resources/bin/mac/SuperVP/SuperVP.app/Contents/MacOS/supervp-2.103.2)
+	- Authorize --> path of the activation key if needed (for instance dependencies/om-supervp/resources/bin/mac/Ircam_Activation_key.txt)
+		
