@@ -1,13 +1,13 @@
 
 (:patch
- (:name "OMDYCI2-Tuto1-Manual_Scenario")
+ (:name "OMDYCI2-Tuto1-Manual_Scenario_inprogress")
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2021/07/02 19:37:01")
+  (:modified "2021/07/05 14:30:46")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1363 884)) (:position (327 48)))
+ (:window (:size (1996 891)) (:position (264 61)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -133,7 +133,7 @@
    (:name "RUN-GENERATION-LOOP-SUPERVP-NOSTRETCH")
    (:x 315)
    (:y 609)
-   (:w 325)
+   (:w 200)
    (:h 36)
    (:color
     (:color-or-nil

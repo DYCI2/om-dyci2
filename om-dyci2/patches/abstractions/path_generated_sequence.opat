@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2021/07/02 10:18:02")
-  (:modified "2021/07/02 10:18:20")
+  (:modified "2021/07/05 13:58:24")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (806 612)) (:position (-1279 101)))
+ (:window (:size (806 612)) (:position (0 101)))
  (:grid nil)
  (:lock nil)
  (:boxes

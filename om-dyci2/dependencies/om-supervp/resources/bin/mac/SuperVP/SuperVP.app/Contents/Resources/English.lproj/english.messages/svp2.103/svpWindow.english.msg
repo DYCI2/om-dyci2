@@ -1,9 +1,0 @@
-window:allocerror = can't allocate memory for a new window~
-window:badwindowtype = unknown window type, assuming a Hamming window~
-window:unknown = unknown window type <%s>\n~
-window:string_zero = SWindow:init:: window string is zero ! This is bug, please report with supervp parameters to roebel@ircam.fr ~
-window:cannotdraw = error opening file, can't draw window~
-window:windowtype = window type: %s~
-window:hamming = Hamming window~
-window:nuttall4_30 = Nuttall window (4 coef 30dB/oct)~
-window:rectangular = Rectangular window~
