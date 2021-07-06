@@ -1,13 +1,13 @@
 
 (:patch
- (:name "generate_and_write_variations")
+ (:name "generate_interpretations_of_scenario")
  (:doc "")
  (:info
   (:created "2021/07/02 10:06:10")
-  (:modified "2021/07/02 16:24:16")
+  (:modified "2021/07/06 18:36:05")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1146 916)) (:position (972 73)))
+ (:window (:size (1795 1048)) (:position (-146 301)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -36,8 +36,8 @@
    (:reference (:out (:type omout) (:name "out") (:index 1) (:doc "")))
    (:group-id nil)
    (:name "out")
-   (:x 267)
-   (:y 832)
+   (:x 43)
+   (:y 804)
    (:w 68)
    (:h 42)
    (:color
@@ -58,12 +58,16 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 2) (:name "cont_scen") (:doc "")))
+    (:in
+     (:type omin)
+     (:index 2)
+     (:name "scen_max_cont_list")
+     (:doc "")))
    (:group-id nil)
-   (:name "cont_scen")
+   (:name "scen_max_cont_list")
    (:x 741)
    (:y 210)
-   (:w 81)
+   (:w 127)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
@@ -78,12 +82,16 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 3) (:name "cont_gen") (:doc "")))
+    (:in
+     (:type omin)
+     (:index 3)
+     (:name "voice_max_cont_list")
+     (:doc "")))
    (:group-id nil)
-   (:name "cont_gen")
+   (:name "voice_max_cont_list")
    (:x 453)
    (:y 124)
-   (:w 81)
+   (:w 130)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
@@ -160,11 +168,11 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 7) (:name "GENERATOR") (:doc "")))
+    (:in (:type omin) (:index 7) (:name "generator") (:doc "")))
    (:group-id nil)
-   (:name "GENERATOR")
-   (:x 77)
-   (:y 112)
+   (:name "generator")
+   (:x 26)
+   (:y 79)
    (:w 98)
    (:h 42)
    (:color
@@ -203,8 +211,8 @@
     (:patch-from-file
      (:pathname
       (:directory (:relative))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "remix")
       (:type "opat"))))
    (:group-id nil)
@@ -219,7 +227,7 @@
    (:text-font nil)
    (:align :center)
    (:display :mini-view)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:pre-delay 0)
    (:inputs
@@ -245,9 +253,9 @@
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 156)
-   (:y 147)
-   (:w 107)
+   (:x 72)
+   (:y 145)
+   (:w 76)
    (:h 30)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
@@ -275,7 +283,7 @@
    (:text-font nil)
    (:align nil)
    (:icon :left)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:inputs
     (:input
@@ -295,8 +303,8 @@
    (:reference loop-for)
    (:group-id nil)
    (:name "for")
-   (:x 836)
-   (:y 458)
+   (:x 901)
+   (:y 461)
    (:w 50)
    (:h 42)
    (:color
@@ -345,9 +353,9 @@
    (:reference iterate)
    (:group-id nil)
    (:name "iterate")
-   (:x 156)
-   (:y 724)
-   (:w 100)
+   (:x 184)
+   (:y 766)
+   (:w 105)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 0.82 0.85 0.7 1.0)) (:t-or-nil t)))
@@ -404,7 +412,7 @@
    (:text-font nil)
    (:align nil)
    (:icon :left)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:inputs
     (:input
@@ -479,8 +487,8 @@
    (:reference loop-list)
    (:group-id nil)
    (:name "list-loop")
-   (:x 768)
-   (:y 458)
+   (:x 805)
+   (:y 457)
    (:w 65)
    (:h 42)
    (:color
@@ -821,8 +829,8 @@
        "  )"))))
    (:group-id nil)
    (:name "filter-output")
-   (:x 118)
-   (:y 320)
+   (:x 127)
+   (:y 318)
    (:w 98)
    (:h 28)
    (:color (:color-or-nil (:color nil) (:t-or-nil nil)))
@@ -831,7 +839,7 @@
    (:text-font nil)
    (:align :center)
    (:display :hidden)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:pre-delay 0)
    (:inputs
@@ -857,7 +865,7 @@
    (:text-font nil)
    (:align nil)
    (:icon :left)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:inputs
     (:input
@@ -994,7 +1002,7 @@
    (:reference (:symbol "DYCI2QUERY" "DYCI2"))
    (:group-id nil)
    (:name "dyci2query")
-   (:x 157)
+   (:x 84)
    (:y 276)
    (:w 96)
    (:h 30)
@@ -1105,16 +1113,16 @@
     (:patch-from-file
      (:pathname
       (:directory (:relative))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "path_generated_sequence")
       (:type "opat"))))
    (:group-id nil)
    (:name "path_generated_sequence")
    (:x 636)
    (:y 546)
-   (:w 181)
-   (:h 60)
+   (:w 182)
+   (:h 41)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1236,7 +1244,44 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 43)))
+   (:id 43))
+  (:box
+   (:type :special)
+   (:reference collect)
+   (:group-id nil)
+   (:name "collect")
+   (:x 49)
+   (:y 666)
+   (:w 56)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 0.82 0.7 0.7 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "data-in")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "push")
+     (:value t)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "init")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "collect") (:reactive nil))
+    (:output (:name "data-out") (:reactive nil))
+    (:output (:name "init") (:reactive nil)))
+   (:id 44)))
  (:connections
   (:connection
    (:from (:box 0 :out 0))
@@ -1270,8 +1315,8 @@
    (:attributes (:color nil :style nil :modif (0 1/230))))
   (:connection (:from (:box 9 :out 0)) (:to (:box 43 :in 0)))
   (:connection (:from (:box 10 :out 0)) (:to (:box 35 :in 1)))
-  (:connection (:from (:box 11 :out 0)) (:to (:box 14 :in 0)))
   (:connection (:from (:box 11 :out 0)) (:to (:box 39 :in 0)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 44 :in 0)))
   (:connection (:from (:box 12 :out 0)) (:to (:box 26 :in 0)))
   (:connection (:from (:box 12 :out 0)) (:to (:box 40 :in 3)))
   (:connection (:from (:box 13 :out 0)) (:to (:box 35 :in 2)))
@@ -1319,10 +1364,11 @@
   (:connection (:from (:box 35 :out 0)) (:to (:box 36 :in 0)))
   (:connection (:from (:box 36 :out 0)) (:to (:box 30 :in 0)))
   (:connection (:from (:box 37 :out 0)) (:to (:box 14 :in 4)))
-  (:connection (:from (:box 37 :out 0)) (:to (:box 1 :in 0)))
   (:connection (:from (:box 38 :out 0)) (:to (:box 37 :in 0)))
   (:connection (:from (:box 39 :out 0)) (:to (:box 37 :in 1)))
   (:connection (:from (:box 40 :out 0)) (:to (:box 11 :in 1)))
   (:connection (:from (:box 41 :out 0)) (:to (:box 14 :in 5)))
   (:connection (:from (:box 42 :out 0)) (:to (:box 41 :in 0)))
-  (:connection (:from (:box 43 :out 0)) (:to (:box 41 :in 1)))))
+  (:connection (:from (:box 43 :out 0)) (:to (:box 41 :in 1)))
+  (:connection (:from (:box 44 :out 0)) (:to (:box 14 :in 0)))
+  (:connection (:from (:box 44 :out 1)) (:to (:box 1 :in 0)))))

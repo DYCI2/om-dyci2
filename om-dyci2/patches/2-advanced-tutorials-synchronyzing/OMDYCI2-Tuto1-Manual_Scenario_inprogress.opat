@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2021/07/06 15:58:17")
+  (:modified "2021/07/06 16:46:36")
   (:by "om-sharp")
   (:version 1.03))
  (:window (:size (1746 926)) (:position (81 184)))
@@ -133,7 +133,7 @@
    (:name "RUN-GENERATION-LOOP-SUPERVP-NOSTRETCH")
    (:x 312)
    (:y 626)
-   (:w 200)
+   (:w 325)
    (:h 36)
    (:color
     (:color-or-nil

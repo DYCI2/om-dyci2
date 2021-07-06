@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2021/07/06 14:42:21")
+  (:modified "2021/07/06 18:36:01")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1681 1098)) (:position (289 39)))
+ (:window (:size (1880 1259)) (:position (324 79)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -39,8 +39,8 @@
    (:value 40)
    (:id 0))
   (:comment
-   (:x 396)
-   (:y 99)
+   (:x 394)
+   (:y 102)
    (:w 275)
    (:h 22)
    (:fgcolor nil)
@@ -95,7 +95,7 @@
    (:lock nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value (:list 1 5))
+   (:value (:list 1 2 5))
    (:id 3))
   (:box
    (:type :function)
@@ -1298,82 +1298,6 @@
    (:value "MyManualScenario")
    (:id 9))
   (:box
-   (:type :abstraction)
-   (:reference
-    (:patch-from-file
-     (:pathname
-      (:directory (:relative :up "abstractions"))
-      (:device nil)
-      (:host nil)
-      (:name "run-generation")
-      (:type "opat"))))
-   (:group-id nil)
-   (:name "run-generation")
-   (:x 372)
-   (:y 802)
-   (:w 200)
-   (:h 36)
-   (:color
-    (:color-or-nil
-     (:color
-      (:color
-       0.6266593337059021D0
-       0.011445105075836182D0
-       0.044897355139255524D0
-       0.43529412))
-     (:t-or-nil t)))
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align :center)
-   (:display :hidden)
-   (:lock nil)
-   (:lambda nil)
-   (:pre-delay 0)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "QUERY")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "LENGTH")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "SCEN-MAX-CONT-LIST")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "VOICE-MAX-CONT-LIST")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "VOICEGENERATOR")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "SOUND_DB")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "XFADE")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "RES_DIR")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 10))
-  (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
@@ -1387,7 +1311,7 @@
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:lock nil)
+   (:lock :eval-once)
    (:inputs
     (:input
      (:type :optional)
@@ -1415,7 +1339,7 @@
      "(-1 d -1 -1 -1)"
      "(-1 a -1 -1 -1)"
      "(-1 d -1 -1 -1)"))
-   (:id 11))
+   (:id 10))
   (:box
    (:type :function)
    (:reference length)
@@ -1431,7 +1355,7 @@
    (:text-font nil)
    (:align nil)
    (:icon :left)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:inputs
     (:input
@@ -1440,14 +1364,14 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 12))
+   (:id 11))
   (:box
    (:type :function)
    (:reference list)
    (:group-id nil)
    (:name "list")
-   (:x 684)
-   (:y 755)
+   (:x 724)
+   (:y 742)
    (:w 53)
    (:h 30)
    (:color nil)
@@ -1465,16 +1389,16 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 13))
+   (:id 12))
   (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 872)
-   (:y 403)
+   (:x 842)
+   (:y 420)
    (:w 208)
-   (:h 30)
+   (:h 33)
    (:color
     (:color-or-nil
      (:color
@@ -1492,23 +1416,7 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list a -1 a d a d a d a d a d a d a d a d))
-   (:id 14))
-  (:comment
-   (:x 795)
-   (:y 347)
-   (:w 190)
-   (:h 22)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font
-    (:font-or-nil
-     (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
-     (:t-or-nil t)))
-   (:align nil)
-   (:text "Label dim 1")
-   (:id 15))
+   (:id 13))
   (:comment
    (:x 12)
    (:y 103)
@@ -1526,10 +1434,10 @@
    (:text
     "1) SET THE ACTIVE DIMENSIONS OF THE LABELS
 (duration label_dim1 label_dim2...)")
-   (:id 16))
+   (:id 14))
   (:comment
-   (:x 788)
-   (:y 287)
+   (:x 844)
+   (:y 365)
    (:w 377)
    (:h 50)
    (:fgcolor nil)
@@ -1545,7 +1453,7 @@
     "3) SET THE DIFFERENT LABELS OF THE QUERY 
 () to let a dimension free [must be \"0\" in the list of dimensions]
 within a list: -1 to let one label free")
-   (:id 17))
+   (:id 15))
   (:box
    (:type :value)
    (:reference cons)
@@ -1572,7 +1480,7 @@ within a list: -1 to let one label free")
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list 0 1 0 0 0))
-   (:id 18))
+   (:id 16))
   (:box
    (:type :value)
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
@@ -1599,7 +1507,7 @@ within a list: -1 to let one label free")
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value "aif")
-   (:id 19))
+   (:id 17))
   (:box
    (:library "om-dyci2")
    (:type :object)
@@ -1860,7 +1768,7 @@ within a list: -1 to let one label free")
          "(-1 c -1 -1 -1)"
          "(-1 m -1 -1 -1)"
          "(-1 x -1 -1 -1)"))))))
-   (:id 20))
+   (:id 18))
   (:box
    (:type :abstraction)
    (:reference
@@ -1917,7 +1825,7 @@ within a list: -1 to let one label free")
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 21))
+   (:id 19))
   (:box
    (:type :function)
    (:reference list)
@@ -1958,7 +1866,7 @@ within a list: -1 to let one label free")
      (:value (:list nil))
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 22))
+   (:id 20))
   (:box
    (:type :abstraction)
    (:reference
@@ -2019,7 +1927,7 @@ within a list: -1 to let one label free")
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 23))
+   (:id 21))
   (:box
    (:type :function)
    (:reference mapcar)
@@ -2049,10 +1957,10 @@ within a list: -1 to let one label free")
      (:value name)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 24))
+   (:id 22))
   (:comment
-   (:x 370)
-   (:y 833)
+   (:x 90)
+   (:y 865)
    (:w 203)
    (:h 22)
    (:fgcolor nil)
@@ -2065,7 +1973,7 @@ within a list: -1 to let one label free")
      (:t-or-nil t)))
    (:align nil)
    (:text "5) EVALUATE")
-   (:id 25))
+   (:id 23))
   (:comment
    (:x 40)
    (:y 4)
@@ -2089,7 +1997,7 @@ within a list: -1 to let one label free")
      (:t-or-nil t)))
    (:align nil)
    (:text "OM-DYCI2 TUTORIAL 1: MANUAL SCENARIO")
-   (:id 26))
+   (:id 24))
   (:box
    (:type :abstraction)
    (:reference
@@ -2252,7 +2160,7 @@ within a list: -1 to let one label free")
    (:inputs)
    (:outputs
     (:output (:name "this_patch_parent_directory") (:reactive nil)))
-   (:id 27))
+   (:id 25))
   (:comment
    (:x 512)
    (:y 705)
@@ -2265,65 +2173,16 @@ within a list: -1 to let one label free")
    (:text-font nil)
    (:align nil)
    (:text "Crossfade (ms)")
-   (:id 28))
-  (:box
-   (:type :function)
-   (:reference flat)
-   (:group-id nil)
-   (:name "flat")
-   (:x 445)
-   (:y 853)
-   (:w 54)
-   (:h 30)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:icon :left)
-   (:lock nil)
-   (:lambda nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "LST")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 29))
-  (:box
-   (:type :interface)
-   (:reference list-selection)
-   (:group-id nil)
-   (:name "list-selection")
-   (:x 656)
-   (:y 823)
-   (:w 114)
-   (:h 60)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:multiple-selection nil)
-   (:cell-height 12)
-   (:cell-font
-    (:font (:face "Lucida Grande") (:size 11) (:style :plain)))
-   (:output-mode :value)
-   (:inputs
-    (:input (:type :key) (:name "items") (:value nil) (:reactive nil)))
-   (:outputs (:output (:name "value") (:reactive t)))
-   (:value nil)
-   (:items nil)
-   (:selection nil)
-   (:id 30))
+   (:id 26))
   (:box
    (:type :object)
    (:reference sound)
    (:group-id nil)
    (:name nil)
-   (:x 776)
-   (:y 823)
-   (:w 80)
-   (:h 50)
+   (:x 482)
+   (:y 965)
+   (:w 534)
+   (:h 151)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -2348,18 +2207,27 @@ within a list: -1 to let one label free")
      (:class sound)
      (:slots
       ((:onset 0)
-       (:duration 0)
-       (:n-samples nil)
-       (:n-channels nil)
-       (:sample-rate nil)
+       (:duration 17555.987)
+       (:n-samples 774219)
+       (:n-channels 1)
+       (:sample-rate 44100)
        (:smpl-type :float)
-       (:sample-size 16)))
+       (:sample-size 32)))
      (:add-slots
       ((:markers nil)
        (:gain 1.0)
        (:access-from-file nil)
-       (:file-pathname nil)))))
-   (:id 31))
+       (:file-pathname
+        (:pathname
+         (:directory
+          (:relative
+           "Results"
+           "ManualScenario_(dur=0)(dim1=1)(dim2=0)(dim3=0)(dim4=0)_[MyManualScenario][All_files]"))
+         (:device nil)
+         (:host nil)
+         (:name "Scen[L18C18]_L18_C18-Gen1_C1")
+         (:type "wav")))))))
+   (:id 27))
   (:box
    (:type :abstraction)
    (:reference
@@ -2838,197 +2706,252 @@ within a list: -1 to let one label free")
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "output 1") (:reactive nil)))
-   (:id 32))
+   (:id 28))
   (:box
    (:type :interface)
-   (:reference list-menu)
+   (:reference list-selection)
    (:group-id nil)
-   (:name "list-menu")
-   (:x 436)
-   (:y 954)
-   (:w 100)
-   (:h 30)
+   (:name "list-selection")
+   (:x 91)
+   (:y 885)
+   (:w 1316)
+   (:h 59)
    (:color nil)
    (:border nil)
    (:roundness nil)
-   (:font (:font (:face "Lucida Grande") (:size 11) (:style :bold)))
+   (:multiple-selection nil)
+   (:cell-height 12)
+   (:cell-font
+    (:font (:face "Lucida Grande") (:size 11) (:style :plain)))
    (:output-mode :value)
    (:inputs
     (:input (:type :key) (:name "items") (:value nil) (:reactive nil)))
    (:outputs (:output (:name "value") (:reactive t)))
-   (:value nil)
-   (:items nil)
-   (:selection 0)
-   (:id 33))
+   (:value
+    (:pathname
+     (:directory
+      (:absolute
+       "Users"
+       "jnika"
+       "Documents"
+       "GitHub"
+       "om-dyci2"
+       "om-dyci2"
+       "patches"
+       "1-advanced-tutorials-chaining"
+       "Results"
+       "ManualScenario_(dur=0)(dim1=1)(dim2=0)(dim3=0)(dim4=0)_[MyManualScenario][All_files]"))
+     (:device :unspecific)
+     (:host :unspecific)
+     (:name "Scen[L18C18]_L18_C18-Gen1_C1")
+     (:type "wav")))
+   (:items
+    (:list
+     (:pathname
+      (:directory
+       (:absolute
+        "Users"
+        "jnika"
+        "Documents"
+        "GitHub"
+        "om-dyci2"
+        "om-dyci2"
+        "patches"
+        "1-advanced-tutorials-chaining"
+        "Results"
+        "ManualScenario_(dur=0)(dim1=1)(dim2=0)(dim3=0)(dim4=0)_[MyManualScenario][All_files]"))
+      (:device :unspecific)
+      (:host :unspecific)
+      (:name "Scen[L18C18]_L18_C18-Gen1_C1")
+      (:type "wav"))
+     (:pathname
+      (:directory
+       (:absolute
+        "Users"
+        "jnika"
+        "Documents"
+        "GitHub"
+        "om-dyci2"
+        "om-dyci2"
+        "patches"
+        "1-advanced-tutorials-chaining"
+        "Results"
+        "ManualScenario_(dur=0)(dim1=1)(dim2=0)(dim3=0)(dim4=0)_[MyManualScenario][All_files]"))
+      (:device :unspecific)
+      (:host :unspecific)
+      (:name "Scen[L18C18]_L18_C18-Gen2_C2")
+      (:type "wav"))
+     (:pathname
+      (:directory
+       (:absolute
+        "Users"
+        "jnika"
+        "Documents"
+        "GitHub"
+        "om-dyci2"
+        "om-dyci2"
+        "patches"
+        "1-advanced-tutorials-chaining"
+        "Results"
+        "ManualScenario_(dur=0)(dim1=1)(dim2=0)(dim3=0)(dim4=0)_[MyManualScenario][All_files]"))
+      (:device :unspecific)
+      (:host :unspecific)
+      (:name "Scen[L18C18]_L18_C18-Gen3_C5")
+      (:type "wav"))))
+   (:selection (:list 0))
+   (:id 29))
+  (:comment
+   (:x 92)
+   (:y 942)
+   (:w 203)
+   (:h 22)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font
+    (:font-or-nil
+     (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
+     (:t-or-nil t)))
+   (:align nil)
+   (:text "6) CMD + CLICK ON THE PATHS")
+   (:id 30))
   (:box
-   (:type :object)
-   (:reference collection)
+   (:type :abstraction)
+   (:reference
+    (:patch-from-file
+     (:pathname
+      (:directory (:relative :up "abstractions"))
+      (:device nil)
+      (:host nil)
+      (:name "loop_interpretations_variants_scenario")
+      (:type "opat"))))
    (:group-id nil)
-   (:name "...")
-   (:x 700)
-   (:y 954)
-   (:w 80)
-   (:h 50)
+   (:name "loop_interpretations_variants_scenario")
+   (:x 336)
+   (:y 794)
+   (:w 244)
+   (:h 60)
    (:color nil)
    (:border nil)
    (:roundness nil)
    (:text-font nil)
    (:align :center)
-   (:display :mini-view)
-   (:showname nil)
+   (:display :hidden)
    (:lock nil)
    (:lambda nil)
+   (:pre-delay 0)
    (:inputs
     (:input
      (:type :standard)
-     (:name "SELF")
+     (:name "QUERY")
      (:value nil)
      (:reactive nil))
     (:input
      (:type :standard)
-     (:name "OBJ-LIST")
+     (:name "LENGTH")
      (:value nil)
-     (:reactive nil)))
-   (:outputs
-    (:output (:name "SELF") (:reactive nil))
-    (:output (:name "OBJ-LIST") (:reactive nil)))
-   (:window (:size nil) (:position nil))
-   (:edition-params)
-   (:value (:object (:class collection) (:slots ((:obj-list nil)))))
-   (:id 34))
-  (:box
-   (:type :object)
-   (:reference sound)
-   (:group-id nil)
-   (:name nil)
-   (:x 527)
-   (:y 995)
-   (:w 80)
-   (:h 50)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align :center)
-   (:display :mini-view)
-   (:showname nil)
-   (:show-markers t)
-   (:lock nil)
-   (:lambda nil)
-   (:inputs
+     (:reactive nil))
     (:input
      (:type :standard)
-     (:name "SELF")
-     (:value :choose-file)
-     (:reactive t)))
-   (:outputs (:output (:name "SELF") (:reactive nil)))
-   (:window (:size nil) (:position nil))
-   (:edition-params)
-   (:value
-    (:object
-     (:class sound)
-     (:slots
-      ((:onset 0)
-       (:duration 0)
-       (:n-samples nil)
-       (:n-channels nil)
-       (:sample-rate nil)
-       (:smpl-type :float)
-       (:sample-size 16)))
-     (:add-slots
-      ((:markers nil)
-       (:gain 1.0)
-       (:access-from-file nil)
-       (:file-pathname nil)))))
-   (:id 35)))
+     (:name "SCEN-MAX-CONT-LIST")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "VOICE-MAX-CONT-LIST")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "VOICEGENERATOR")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "SOUND_DB")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "XFADE")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "OUTPUT_DIR")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 31)))
  (:connections
-  (:connection (:from (:box 0 :out 0)) (:to (:box 10 :in 6)))
-  (:connection
-   (:from (:box 3 :out 0))
-   (:to (:box 10 :in 3))
-   (:attributes (:color nil :style nil :modif (0 -991/8910))))
+  (:connection (:from (:box 0 :out 0)) (:to (:box 31 :in 6)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 31 :in 3)))
   (:connection (:from (:box 4 :out 0)) (:to (:box 7 :in 0)))
   (:connection (:from (:box 5 :out 0)) (:to (:box 4 :in 1)))
   (:connection (:from (:box 6 :out 0)) (:to (:box 4 :in 0)))
-  (:connection (:from (:box 7 :out 0)) (:to (:box 10 :in 5)))
-  (:connection (:from (:box 7 :out 1)) (:to (:box 20 :in 1)))
-  (:connection (:from (:box 7 :out 2)) (:to (:box 20 :in 2)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 31 :in 5)))
+  (:connection (:from (:box 7 :out 1)) (:to (:box 18 :in 1)))
+  (:connection (:from (:box 7 :out 2)) (:to (:box 18 :in 2)))
   (:connection (:from (:box 8 :out 0)) (:to (:box 6 :in 1)))
   (:connection
    (:from (:box 8 :out 0))
-   (:to (:box 32 :in 3))
+   (:to (:box 28 :in 3))
    (:attributes
     (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif (0 -104/489))))
   (:connection
    (:from (:box 9 :out 0))
-   (:to (:box 32 :in 2))
+   (:to (:box 28 :in 2))
    (:attributes
     (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-  (:connection (:from (:box 10 :out 0)) (:to (:box 29 :in 0)))
   (:connection
-   (:from (:box 11 :out 0))
-   (:to (:box 12 :in 0))
+   (:from (:box 10 :out 0))
+   (:to (:box 11 :in 0))
    (:attributes (:color nil :style nil :modif (0 0.334058))))
+  (:connection (:from (:box 10 :out 0)) (:to (:box 31 :in 0)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 12 :in 0)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 31 :in 1)))
+  (:connection (:from (:box 12 :out 0)) (:to (:box 31 :in 2)))
+  (:connection (:from (:box 13 :out 0)) (:to (:box 20 :in 1)))
   (:connection
-   (:from (:box 11 :out 0))
-   (:to (:box 10 :in 0))
-   (:attributes (:color nil :style nil :modif (0 1673/4485))))
-  (:connection (:from (:box 12 :out 0)) (:to (:box 13 :in 0)))
-  (:connection
-   (:from (:box 12 :out 0))
-   (:to (:box 10 :in 1))
-   (:attributes (:color nil :style nil :modif (0 5/66))))
-  (:connection
-   (:from (:box 13 :out 0))
-   (:to (:box 10 :in 2))
-   (:attributes (:color nil :style nil :modif (0 1/29))))
-  (:connection (:from (:box 14 :out 0)) (:to (:box 22 :in 1)))
-  (:connection
-   (:from (:box 18 :out 0))
+   (:from (:box 16 :out 0))
    (:to (:box 7 :in 1))
    (:attributes (:color nil :style nil :modif (0 0.43076918))))
-  (:connection (:from (:box 18 :out 0)) (:to (:box 21 :in 1)))
+  (:connection (:from (:box 16 :out 0)) (:to (:box 19 :in 1)))
   (:connection
-   (:from (:box 18 :out 0))
-   (:to (:box 23 :in 0))
-   (:attributes (:color nil :style nil :modif (0 0.21854605))))
+   (:from (:box 16 :out 0))
+   (:to (:box 21 :in 0))
+   (:attributes (:color nil :style nil :modif (0 0.3075668))))
   (:connection
-   (:from (:box 18 :out 0))
-   (:to (:box 32 :in 0))
+   (:from (:box 16 :out 0))
+   (:to (:box 28 :in 0))
    (:attributes
     (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
   (:connection
-   (:from (:box 19 :out 0))
+   (:from (:box 17 :out 0))
    (:to (:box 7 :in 2))
    (:attributes (:color nil :style nil :modif (0 5/19))))
-  (:connection (:from (:box 20 :out 0)) (:to (:box 10 :in 4)))
+  (:connection (:from (:box 18 :out 0)) (:to (:box 31 :in 4)))
   (:connection
-   (:from (:box 21 :out 0))
+   (:from (:box 19 :out 0))
    (:to (:box 7 :in 3))
    (:attributes (:color nil :style nil :modif (0 7/300))))
   (:connection
-   (:from (:box 21 :out 0))
-   (:to (:box 24 :in 0))
+   (:from (:box 19 :out 0))
+   (:to (:box 22 :in 0))
    (:attributes (:color nil :style nil :modif (0 0.33757558))))
-  (:connection (:from (:box 22 :out 0)) (:to (:box 23 :in 1)))
-  (:connection (:from (:box 23 :out 0)) (:to (:box 24 :in 1)))
-  (:connection (:from (:box 24 :out 0)) (:to (:box 11 :in 0)))
+  (:connection (:from (:box 20 :out 0)) (:to (:box 21 :in 1)))
+  (:connection (:from (:box 21 :out 0)) (:to (:box 22 :in 1)))
+  (:connection (:from (:box 22 :out 0)) (:to (:box 10 :in 0)))
   (:connection
-   (:from (:box 27 :out 0))
+   (:from (:box 25 :out 0))
    (:to (:box 6 :in 0))
    (:attributes (:color nil :style nil :modif (0 14/39))))
   (:connection
-   (:from (:box 27 :out 0))
-   (:to (:box 32 :in 1))
+   (:from (:box 25 :out 0))
+   (:to (:box 28 :in 1))
    (:attributes
     (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-  (:connection (:from (:box 29 :out 0)) (:to (:box 30 :in 0)))
-  (:connection (:from (:box 29 :out 0)) (:to (:box 33 :in 0)))
-  (:connection (:from (:box 29 :out 0)) (:to (:box 34 :in 1)))
-  (:connection (:from (:box 30 :out 0)) (:to (:box 31 :in 0)))
-  (:connection
-   (:from (:box 32 :out 0))
-   (:to (:box 10 :in 7))
-   (:attributes
-    (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-  (:connection (:from (:box 33 :out 0)) (:to (:box 35 :in 0)))))
+  (:connection (:from (:box 28 :out 0)) (:to (:box 31 :in 7)))
+  (:connection (:from (:box 29 :out 0)) (:to (:box 27 :in 0)))
+  (:connection (:from (:box 31 :out 0)) (:to (:box 29 :in 0)))))

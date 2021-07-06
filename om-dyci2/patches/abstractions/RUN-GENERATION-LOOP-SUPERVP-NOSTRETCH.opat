@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2021/07/02 19:05:14")
-  (:modified "2021/07/06 15:57:00")
+  (:modified "2021/07/06 16:48:56")
   (:by "om-sharp")
   (:version 1.03))
  (:window (:size (1866 1017)) (:position (223 180)))
@@ -32,30 +32,6 @@
    (:id 0))
   (:box
    (:type :io)
-   (:reference (:out (:type omout) (:name "out") (:index 1) (:doc "")))
-   (:group-id nil)
-   (:name "out")
-   (:x 836)
-   (:y 697)
-   (:w 40)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
-   (:border 0)
-   (:roundness 0)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "out-value")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs)
-   (:id 1))
-  (:box
-   (:type :io)
    (:reference
     (:in (:type omin) (:index 1) (:name "LENGTH") (:doc "")))
    (:group-id nil)
@@ -73,7 +49,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 2))
+   (:id 1))
   (:box
    (:type :io)
    (:reference
@@ -93,7 +69,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 3))
+   (:id 2))
   (:box
    (:type :io)
    (:reference
@@ -117,7 +93,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 4))
+   (:id 3))
   (:box
    (:type :io)
    (:reference
@@ -137,7 +113,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 5))
+   (:id 4))
   (:box
    (:type :io)
    (:reference
@@ -157,7 +133,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 6))
+   (:id 5))
   (:box
    (:type :io)
    (:reference (:in (:type omin) (:index 1) (:name "XFADE") (:doc "")))
@@ -176,7 +152,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 7))
+   (:id 6))
   (:box
    (:type :io)
    (:reference
@@ -196,7 +172,7 @@
    (:icon :top)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 8))
+   (:id 7))
   (:box
    (:type :function)
    (:reference write-to-string)
@@ -221,7 +197,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 9))
+   (:id 8))
   (:box
    (:type :function)
    (:reference list)
@@ -246,7 +222,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 10))
+   (:id 9))
   (:box
    (:type :function)
    (:reference (:symbol "OM-PRINT-FORMAT" "OM-LISP"))
@@ -281,7 +257,7 @@
      (:value "DYCI2")
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 11))
+   (:id 10))
   (:box
    (:type :value)
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
@@ -301,7 +277,7 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value "NEW SCENARIO: ~A")
-   (:id 12))
+   (:id 11))
   (:box
    (:type :function)
    (:reference list)
@@ -326,7 +302,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 13))
+   (:id 12))
   (:box
    (:type :function)
    (:reference remove)
@@ -356,7 +332,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 14))
+   (:id 13))
   (:box
    (:type :abstraction)
    (:reference
@@ -369,7 +345,7 @@
       (:type "opat"))))
    (:group-id nil)
    (:name "loop_generate_and_write_variations_supervp")
-   (:x 783)
+   (:x 784)
    (:y 477)
    (:w 281)
    (:h 104)
@@ -379,7 +355,7 @@
    (:text-font nil)
    (:align :center)
    (:display :mini-view)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:pre-delay 0)
    (:inputs
@@ -431,7 +407,7 @@
    (:outputs
     (:output (:name "out") (:reactive nil))
     (:output (:name "master_list_dur_sync") (:reactive nil)))
-   (:id 15))
+   (:id 14))
   (:box
    (:type :function)
    (:reference car)
@@ -456,7 +432,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 16))
+   (:id 15))
   (:box
    (:type :function)
    (:reference cdr)
@@ -481,7 +457,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 17))
+   (:id 16))
   (:box
    (:type :abstraction)
    (:reference
@@ -504,7 +480,7 @@
    (:text-font nil)
    (:align :center)
    (:display :mini-view)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:pre-delay 0)
    (:inputs
@@ -556,7 +532,7 @@
    (:outputs
     (:output (:name "out") (:reactive nil))
     (:output (:name "master_list_dur_sync") (:reactive nil)))
-   (:id 18))
+   (:id 17))
   (:box
    (:type :function)
    (:reference list)
@@ -581,39 +557,95 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 19)))
+   (:id 18))
+  (:box
+   (:type :function)
+   (:reference cons)
+   (:group-id nil)
+   (:name "cons")
+   (:x 489)
+   (:y 662)
+   (:w 63)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "CAR")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "CDR")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 19))
+  (:box
+   (:type :io)
+   (:reference (:out (:type omout) (:name "out") (:index 1) (:doc "")))
+   (:group-id nil)
+   (:name "out")
+   (:x 473)
+   (:y 732)
+   (:w 40)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 20)))
  (:connections
-  (:connection (:from (:box 0 :out 0)) (:to (:box 14 :in 1)))
-  (:connection (:from (:box 2 :out 0)) (:to (:box 9 :in 0)))
-  (:connection (:from (:box 3 :out 0)) (:to (:box 15 :in 1)))
-  (:connection (:from (:box 3 :out 0)) (:to (:box 18 :in 1)))
-  (:connection (:from (:box 4 :out 0)) (:to (:box 16 :in 0)))
-  (:connection (:from (:box 4 :out 0)) (:to (:box 17 :in 0)))
-  (:connection (:from (:box 5 :out 0)) (:to (:box 15 :in 6)))
-  (:connection (:from (:box 5 :out 0)) (:to (:box 18 :in 6)))
-  (:connection (:from (:box 6 :out 0)) (:to (:box 15 :in 7)))
-  (:connection (:from (:box 6 :out 0)) (:to (:box 18 :in 7)))
-  (:connection (:from (:box 7 :out 0)) (:to (:box 15 :in 4)))
-  (:connection (:from (:box 7 :out 0)) (:to (:box 18 :in 4)))
-  (:connection (:from (:box 8 :out 0)) (:to (:box 15 :in 3)))
-  (:connection (:from (:box 8 :out 0)) (:to (:box 18 :in 3)))
-  (:connection (:from (:box 9 :out 0)) (:to (:box 10 :in 0)))
-  (:connection (:from (:box 10 :out 0)) (:to (:box 15 :in 0)))
-  (:connection (:from (:box 10 :out 0)) (:to (:box 18 :in 0)))
-  (:connection (:from (:box 12 :out 0)) (:to (:box 11 :in 0)))
-  (:connection (:from (:box 13 :out 0)) (:to (:box 11 :in 1)))
-  (:connection (:from (:box 14 :out 0)) (:to (:box 13 :in 0)))
+  (:connection (:from (:box 0 :out 0)) (:to (:box 13 :in 1)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 8 :in 0)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 14 :in 1)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 17 :in 1)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 15 :in 0)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 16 :in 0)))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 14 :in 6)))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 17 :in 6)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 14 :in 7)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 17 :in 7)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 14 :in 4)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 17 :in 4)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 14 :in 3)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 17 :in 3)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 9 :in 0)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 14 :in 0)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 17 :in 0)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 10 :in 0)))
+  (:connection (:from (:box 12 :out 0)) (:to (:box 10 :in 1)))
+  (:connection (:from (:box 13 :out 0)) (:to (:box 12 :in 0)))
   (:connection
-   (:from (:box 14 :out 0))
-   (:to (:box 15 :in 5))
+   (:from (:box 13 :out 0))
+   (:to (:box 14 :in 5))
    (:attributes
     (:color nil :style nil :modif (-619163/1538238 -0.4396907))))
-  (:connection (:from (:box 14 :out 0)) (:to (:box 18 :in 5)))
-  (:connection (:from (:box 16 :out 0)) (:to (:box 19 :in 0)))
-  (:connection (:from (:box 17 :out 0)) (:to (:box 15 :in 2)))
-  (:connection (:from (:box 18 :out 0)) (:to (:box 1 :in 0)))
+  (:connection (:from (:box 13 :out 0)) (:to (:box 17 :in 5)))
+  (:connection (:from (:box 14 :out 0)) (:to (:box 19 :in 0)))
+  (:connection (:from (:box 15 :out 0)) (:to (:box 18 :in 0)))
+  (:connection (:from (:box 16 :out 0)) (:to (:box 14 :in 2)))
+  (:connection (:from (:box 17 :out 0)) (:to (:box 19 :in 1)))
   (:connection
-   (:from (:box 18 :out 1))
-   (:to (:box 15 :in 8))
+   (:from (:box 17 :out 1))
+   (:to (:box 14 :in 8))
    (:attributes (:color nil :style nil :modif (-95/369 0))))
-  (:connection (:from (:box 19 :out 0)) (:to (:box 18 :in 2)))))
+  (:connection (:from (:box 18 :out 0)) (:to (:box 17 :in 2)))
+  (:connection (:from (:box 19 :out 0)) (:to (:box 20 :in 0)))))
