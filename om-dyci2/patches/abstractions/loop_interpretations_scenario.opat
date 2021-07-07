@@ -1,13 +1,13 @@
 
 (:patch
- (:name "run-generation")
+ (:name "loop_interpretations_scenario")
  (:doc "")
  (:info
   (:created "2021/07/02 10:05:39")
-  (:modified "2021/07/06 18:24:14")
+  (:modified "2021/07/07 16:05:29")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1329 640)) (:position (0 85)))
+ (:window (:size (1329 640)) (:position (1224 173)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -36,7 +36,7 @@
    (:group-id nil)
    (:name "out")
    (:x 364)
-   (:y 458)
+   (:y 501)
    (:w 40)
    (:h 42)
    (:color
@@ -125,12 +125,12 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 5) (:name "VOICEGENERATOR") (:doc "")))
+    (:in (:type omin) (:index 5) (:name "VOICE_GENERATOR") (:doc "")))
    (:group-id nil)
-   (:name "VOICEGENERATOR")
+   (:name "VOICE_GENERATOR")
    (:x 555)
    (:y 215)
-   (:w 135)
+   (:w 142)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
@@ -437,8 +437,8 @@
     (:patch-from-file
      (:pathname
       (:directory (:relative))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "generate_interpretations_of_scenario")
       (:type "opat"))))
    (:group-id nil)
@@ -464,7 +464,7 @@
      (:reactive nil))
     (:input
      (:type :standard)
-     (:name "scen_max_cont_list")
+     (:name "scen_max_cont")
      (:value nil)
      (:reactive nil))
     (:input
@@ -484,12 +484,12 @@
      (:reactive nil))
     (:input
      (:type :standard)
-     (:name "query")
+     (:name "scenario")
      (:value nil)
      (:reactive nil))
     (:input
      (:type :standard)
-     (:name "generator")
+     (:name "voice_generator")
      (:value nil)
      (:reactive nil))
     (:input
