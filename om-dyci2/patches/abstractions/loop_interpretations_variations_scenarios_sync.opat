@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2021/07/02 19:05:14")
-  (:modified "2021/07/09 11:48:35")
+  (:modified "2021/07/09 17:41:15")
   (:by "om-sharp")
   (:version 1.03))
  (:window (:size (1680 1005)) (:position (0 23)))
@@ -509,7 +509,7 @@
      (:reactive nil)))
    (:outputs
     (:output (:name "out") (:reactive nil))
-    (:output (:name "list_dur_sync") (:reactive nil)))
+    (:output (:name "list_dur") (:reactive nil)))
    (:id 18))
   (:box
    (:type :abstraction)
@@ -589,7 +589,7 @@
      (:reactive nil)))
    (:outputs
     (:output (:name "out") (:reactive nil))
-    (:output (:name "list_dur_sync") (:reactive nil)))
+    (:output (:name "list_dur") (:reactive nil)))
    (:id 19))
   (:box
    (:type :special)

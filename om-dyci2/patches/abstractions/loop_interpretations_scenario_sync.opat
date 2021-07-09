@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2021/07/02 19:05:14")
-  (:modified "2021/07/09 15:07:04")
+  (:modified "2021/07/09 17:40:54")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1680 1005)) (:position (199 183)))
+ (:window (:size (1680 1005)) (:position (0 23)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -529,7 +529,7 @@
    (:text-font nil)
    (:align :center)
    (:display :hidden)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:pre-delay 0)
    (:inputs
@@ -583,7 +583,9 @@
      (:name "stretch_mode")
      (:value nil)
      (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
+   (:outputs
+    (:output (:name "out") (:reactive nil))
+    (:output (:name "list_dur") (:reactive nil)))
    (:id 21))
   (:box
    (:type :abstraction)
@@ -607,7 +609,7 @@
    (:text-font nil)
    (:align :center)
    (:display :hidden)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:pre-delay 0)
    (:inputs
@@ -661,7 +663,9 @@
      (:name "stretch_mode")
      (:value nil)
      (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
+   (:outputs
+    (:output (:name "out") (:reactive nil))
+    (:output (:name "list_dur") (:reactive nil)))
    (:id 22)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 16 :in 1)))
@@ -679,6 +683,8 @@
   (:connection (:from (:box 7 :out 0)) (:to (:box 21 :in 3)))
   (:connection (:from (:box 7 :out 0)) (:to (:box 22 :in 3)))
   (:connection (:from (:box 9 :out 0)) (:to (:box 22 :in 9)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 21 :in 9)))
+  (:connection (:from (:box 10 :out 0)) (:to (:box 21 :in 8)))
   (:connection (:from (:box 11 :out 0)) (:to (:box 12 :in 0)))
   (:connection (:from (:box 12 :out 0)) (:to (:box 21 :in 0)))
   (:connection (:from (:box 12 :out 0)) (:to (:box 22 :in 0)))
@@ -691,4 +697,6 @@
   (:connection (:from (:box 18 :out 0)) (:to (:box 22 :in 2)))
   (:connection (:from (:box 19 :out 0)) (:to (:box 21 :in 2)))
   (:connection (:from (:box 20 :out 0)) (:to (:box 8 :in 0)))
+  (:connection (:from (:box 21 :out 0)) (:to (:box 20 :in 0)))
+  (:connection (:from (:box 21 :out 1)) (:to (:box 22 :in 8)))
   (:connection (:from (:box 22 :out 0)) (:to (:box 20 :in 1)))))
