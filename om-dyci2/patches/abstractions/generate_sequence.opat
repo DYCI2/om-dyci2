@@ -1,0 +1,270 @@
+
+(:patch
+ (:name "generate_sequence")
+ (:doc "")
+ (:info
+  (:created "2021/07/07 15:48:36")
+  (:modified "2021/07/14 18:01:15")
+  (:by "om-sharp")
+  (:version 1.03))
+ (:window (:size (646 473)) (:position (536 104)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 1) (:name "generator") (:doc "")))
+   (:group-id nil)
+   (:name "generator")
+   (:x 46)
+   (:y 78)
+   (:w 73)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 2) (:name "max_continuity") (:doc "")))
+   (:group-id nil)
+   (:name "max_continuity")
+   (:x 123)
+   (:y 78)
+   (:w 102)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 1))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 3) (:name "scenario") (:doc "")))
+   (:group-id nil)
+   (:name "scenario")
+   (:x 262)
+   (:y 72)
+   (:w 67)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 2))
+  (:box
+   (:type :io)
+   (:reference
+    (:out
+     (:type omout)
+     (:name "filtered_generated_sequence")
+     (:index 1)
+     (:doc "")))
+   (:group-id nil)
+   (:name "filtered_generated_sequence")
+   (:x 58)
+   (:y 278)
+   (:w 177)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 3))
+  (:box
+   (:type :io)
+   (:reference
+    (:out
+     (:type omout)
+     (:name "generated_sequence")
+     (:index 2)
+     (:doc "")))
+   (:group-id nil)
+   (:name "generated_sequence")
+   (:x 230)
+   (:y 277)
+   (:w 135)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 4))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "filter-output")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size (500 500)) (:position (917 441)))
+     (:text
+      (:list
+       ";;; Edit a valid LAMBDA EXPRESSION"
+       ";;; e.g. (lambda (arg1 arg2 ...) ( ... ))"
+       "(lambda (output) "
+       "  (if "
+       "      (and (> (length output) 0) (nth 0 output)) "
+       "      output "
+       "    ;(if "
+       "     ;   (and (> (length output) 0) (nth 1 output))"
+       "        ;(list \"(1 0 200)\" \"(1 301 600)\")"
+       "    (loop for i from 0 to 5 collect \"(1 0 100)\")"
+       "      ;)"
+       "    )"
+       "  )"))))
+   (:group-id nil)
+   (:name "filter-output")
+   (:x 125)
+   (:y 200)
+   (:w 98)
+   (:h 28)
+   (:color (:color-or-nil (:color nil) (:t-or-nil nil)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:lock :eval-once)
+   (:lambda nil)
+   (:pre-delay 0)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "OUTPUT")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 5))
+  (:box
+   (:type :function)
+   (:reference remove)
+   (:group-id nil)
+   (:name "remove")
+   (:x 117)
+   (:y 233)
+   (:w 78)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock :eval-once)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "ITEM")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "SEQUENCE")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 6))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:patch-from-file
+     (:pathname
+      (:directory (:relative))
+      (:device :unspecific)
+      (:host :unspecific)
+      (:name "generate_from_query")
+      (:type "opat"))))
+   (:group-id nil)
+   (:name "generate_from_query")
+   (:x 98)
+   (:y 134)
+   (:w 153)
+   (:h 60)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:lock nil)
+   (:lambda nil)
+   (:pre-delay 0)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "generator")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "max_continuity")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "query")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "generated_output") (:reactive nil)))
+   (:id 7)))
+ (:connections
+  (:connection (:from (:box 0 :out 0)) (:to (:box 7 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 7 :in 1)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 7 :in 2)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 6 :in 1)))
+  (:connection
+   (:from (:box 5 :out 0))
+   (:to (:box 4 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection
+   (:from (:box 6 :out 0))
+   (:to (:box 3 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 5 :in 0)))))
