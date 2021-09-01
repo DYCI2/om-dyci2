@@ -8,7 +8,7 @@ Get them it from https://forum.ircam.fr/projects/detail/om-supervp/.
 Move the superVP lib for instance in om-dyci2/dependencies/ and make sure that the path to this directory is in the search path.
 
 This release includes SuperVP executables for macOS, Windows, Linux. These programs are protected and require an authorization through Ircam forum subscription. 
-See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (*** see note below)
+See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (see *** note below)
 
 Then in OM:
 - windows/session window/external libraries then double click on om-supervp to load it
