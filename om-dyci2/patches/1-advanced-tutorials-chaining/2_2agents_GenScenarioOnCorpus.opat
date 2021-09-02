@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2021/07/07 17:33:42")
+  (:modified "2021/09/01 16:35:53")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1966 1100)) (:position (813 81)))
+ (:window (:size (1282 1099)) (:position (251 114)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -16,8 +16,8 @@
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 11)
-   (:y 542)
+   (:x 6)
+   (:y 507)
    (:w 53)
    (:h 30)
    (:color
@@ -39,8 +39,8 @@
    (:value 50)
    (:id 0))
   (:comment
-   (:x 11)
-   (:y 527)
+   (:x 6)
+   (:y 492)
    (:w 177)
    (:h 22)
    (:fgcolor nil)
@@ -55,8 +55,8 @@
    (:text "4) SET LENGTH SCENARIOS")
    (:id 1))
   (:comment
-   (:x 44)
-   (:y 570)
+   (:x 39)
+   (:y 535)
    (:w 209)
    (:h 36)
    (:fgcolor nil)
@@ -71,8 +71,8 @@
    (:text "5) SET MAX CONTINUITIES FOR THE SCENARIOS")
    (:id 2))
   (:comment
-   (:x 887)
-   (:y 87)
+   (:x 805)
+   (:y 54)
    (:w 288)
    (:h 22)
    (:fgcolor nil)
@@ -91,8 +91,8 @@
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 541)
-   (:y 676)
+   (:x 536)
+   (:y 641)
    (:w 38)
    (:h 30)
    (:color
@@ -118,8 +118,8 @@
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 43)
-   (:y 601)
+   (:x 38)
+   (:y 566)
    (:w 201)
    (:h 30)
    (:color
@@ -141,8 +141,8 @@
    (:value (:list 10 20 30))
    (:id 5))
   (:comment
-   (:x 145)
-   (:y 631)
+   (:x 140)
+   (:y 596)
    (:w 275)
    (:h 36)
    (:fgcolor nil)
@@ -162,8 +162,8 @@
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 147)
-   (:y 664)
+   (:x 142)
+   (:y 629)
    (:w 173)
    (:h 30)
    (:color
@@ -562,8 +562,8 @@
       (:connection (:from (:box 10 :out 0)) (:to (:box 9 :in 1))))))
    (:group-id nil)
    (:name "loop-process-dataset")
-   (:x 894)
-   (:y 274)
+   (:x 889)
+   (:y 239)
    (:w 150)
    (:h 36)
    (:color nil)
@@ -599,8 +599,8 @@
    (:reference (:symbol "DYCI2GENERATOR" "DYCI2"))
    (:group-id nil)
    (:name nil)
-   (:x 818)
-   (:y 313)
+   (:x 813)
+   (:y 278)
    (:w 226)
    (:h 113)
    (:color
@@ -648,52 +648,6 @@
      (:slots
       ((:memory
         (:list
-         "(-1 a l -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 m s -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m s -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 a m -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 m l -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 b m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 a m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 b m -1 -1)"
@@ -747,55 +701,55 @@
          "(-1 a l -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 m s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 m s -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m s -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 a m -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 m l -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 b m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 a m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
          "(-1 x x -1 -1)"))
        (:labls
         (:list
-         "(-1 a l -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 m s -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m s -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 a m -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 m l -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 b m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 a m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 b m -1 -1)"
@@ -849,6 +803,52 @@
          "(-1 a l -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 m s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 m s -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m s -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 a m -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 m l -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 b m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 a m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
          "(-1 x x -1 -1)"))))))
    (:id 9))
   (:box
@@ -856,8 +856,8 @@
    (:reference format)
    (:group-id nil)
    (:name "format")
-   (:x 92)
-   (:y 473)
+   (:x 87)
+   (:y 438)
    (:w 80)
    (:h 30)
    (:color nil)
@@ -911,8 +911,8 @@
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 99)
-   (:y 190)
+   (:x 94)
+   (:y 155)
    (:w 77)
    (:h 30)
    (:color
@@ -938,8 +938,8 @@
    (:reference split)
    (:group-id nil)
    (:name "split")
-   (:x 87)
-   (:y 410)
+   (:x 82)
+   (:y 375)
    (:w 100)
    (:h 30)
    (:color nil)
@@ -1015,8 +1015,8 @@
        ""))))
    (:group-id nil)
    (:name "function_process_label")
-   (:x 162)
-   (:y 225)
+   (:x 157)
+   (:y 190)
    (:w 161)
    (:h 28)
    (:color
@@ -1046,8 +1046,8 @@
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 14))
   (:comment
-   (:x 444)
-   (:y 88)
+   (:x 389)
+   (:y 52)
    (:w 275)
    (:h 22)
    (:fgcolor nil)
@@ -1066,8 +1066,8 @@
    (:reference (:symbol "OM-DIRECTORY" "OM-API"))
    (:group-id nil)
    (:name "om-directory")
-   (:x 500)
-   (:y 182)
+   (:x 495)
+   (:y 147)
    (:w 105)
    (:h 30)
    (:color nil)
@@ -1092,8 +1092,8 @@
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 621)
-   (:y 137)
+   (:x 616)
+   (:y 102)
    (:w 52)
    (:h 30)
    (:color
@@ -1135,8 +1135,8 @@
        "  "))))
    (:group-id nil)
    (:name "make-local-dyci2-path")
-   (:x 448)
-   (:y 144)
+   (:x 443)
+   (:y 109)
    (:w 155)
    (:h 29)
    (:color (:color-or-nil (:color nil) (:t-or-nil nil)))
@@ -2167,8 +2167,8 @@
       (:connection (:from (:box 27 :out 0)) (:to (:box 16 :in 2))))))
    (:group-id nil)
    (:name "loop-process-dataset")
-   (:x 526)
-   (:y 270)
+   (:x 521)
+   (:y 235)
    (:w 150)
    (:h 39)
    (:color nil)
@@ -2211,8 +2211,8 @@
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 443)
-   (:y 108)
+   (:x 438)
+   (:y 73)
    (:w 140)
    (:h 31)
    (:color
@@ -2231,15 +2231,15 @@
    (:lock nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value "All_files")
+   (:value "Soprano")
    (:id 20))
   (:box
    (:type :value)
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 623)
-   (:y 174)
+   (:x 618)
+   (:y 139)
    (:w 48)
    (:h 30)
    (:color
@@ -2258,7 +2258,7 @@
    (:lock nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value "aif")
+   (:value "aiff")
    (:id 21))
   (:box
    (:library "om-dyci2")
@@ -2266,8 +2266,8 @@
    (:reference (:symbol "DYCI2GENERATOR" "DYCI2"))
    (:group-id nil)
    (:name nil)
-   (:x 471)
-   (:y 311)
+   (:x 466)
+   (:y 275)
    (:w 231)
    (:h 102)
    (:color
@@ -2315,52 +2315,6 @@
      (:slots
       ((:memory
         (:list
-         "(1 0 1876)"
-         "(1 1876 2398)"
-         "(1 2398 2907)"
-         "(1 2907 5108)"
-         "(1 5108 6217)"
-         "(1 6217 6991)"
-         "(1 6991 7525)"
-         "(1 7525 8164)"
-         "(1 8164 9684)"
-         "(1 9684 12561)"
-         "(1 12561 15552)"
-         "(1 15552 15791)"
-         "(1 15791 15821)"
-         "(1 15821 16699)"
-         "(1 16699 17257)"
-         "(1 17257 17894)"
-         "(1 17894 18507)"
-         "(1 18507 19081)"
-         "(1 19081 19272)"
-         "(1 19272 19330)"
-         "(1 19330 19538)"
-         "(1 19538 19638)"
-         "(1 19638 19869)"
-         "(1 19869 20169)"
-         "(1 20169 20488)"
-         "(1 20488 21170)"
-         "(1 21170 22862)"
-         "(1 22862 23504)"
-         "(1 23504 25037)"
-         "(1 25037 25037)"
-         "(1 25037 25413)"
-         "(1 25413 26853)"
-         "(1 26853 28961)"
-         "(1 28961 29150)"
-         "(1 29150 29150)"
-         "(1 29150 29150)"
-         "(1 29150 29384)"
-         "(1 29384 31478)"
-         "(1 31478 32011)"
-         "(1 32011 32650)"
-         "(1 32650 34170)"
-         "(1 34170 37048)"
-         "(1 37048 40039)"
-         "(1 40039 40308)"
-         "(1 40308 41274)"
-         "(1 41274 42226)"
          "(1 42226 43201)"
          "(1 43201 44155)"
          "(1 44155 45691)"
@@ -2414,55 +2368,55 @@
          "(1 104452 107411)"
          "(1 107411 108060)"
          "(1 108060 108695)"
-         "(1 108695 110007)"))
+         "(1 108695 110007)"
+         "(2 0 1876)"
+         "(2 1876 2398)"
+         "(2 2398 2907)"
+         "(2 2907 5108)"
+         "(2 5108 6217)"
+         "(2 6217 6991)"
+         "(2 6991 7525)"
+         "(2 7525 8164)"
+         "(2 8164 9684)"
+         "(2 9684 12561)"
+         "(2 12561 15552)"
+         "(2 15552 15791)"
+         "(2 15791 15821)"
+         "(2 15821 16699)"
+         "(2 16699 17257)"
+         "(2 17257 17894)"
+         "(2 17894 18507)"
+         "(2 18507 19081)"
+         "(2 19081 19272)"
+         "(2 19272 19330)"
+         "(2 19330 19538)"
+         "(2 19538 19638)"
+         "(2 19638 19869)"
+         "(2 19869 20169)"
+         "(2 20169 20488)"
+         "(2 20488 21170)"
+         "(2 21170 22862)"
+         "(2 22862 23504)"
+         "(2 23504 25037)"
+         "(2 25037 25037)"
+         "(2 25037 25413)"
+         "(2 25413 26853)"
+         "(2 26853 28961)"
+         "(2 28961 29150)"
+         "(2 29150 29150)"
+         "(2 29150 29150)"
+         "(2 29150 29384)"
+         "(2 29384 31478)"
+         "(2 31478 32011)"
+         "(2 32011 32650)"
+         "(2 32650 34170)"
+         "(2 34170 37048)"
+         "(2 37048 40039)"
+         "(2 40039 40308)"
+         "(2 40308 41274)"
+         "(2 41274 42226)"))
        (:labls
         (:list
-         "(-1 a l -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 m s -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m s -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 a m -1 -1)"
-         "(-1 c s -1 -1)"
-         "(-1 m l -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 b m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 x x -1 -1)"
-         "(-1 a m -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 c m -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 a l -1 -1)"
-         "(-1 d s -1 -1)"
-         "(-1 m m -1 -1)"
-         "(-1 c m -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 b m -1 -1)"
@@ -2516,6 +2470,52 @@
          "(-1 a l -1 -1)"
          "(-1 c m -1 -1)"
          "(-1 m s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 m s -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m s -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 a m -1 -1)"
+         "(-1 c s -1 -1)"
+         "(-1 m l -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 b m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 x x -1 -1)"
+         "(-1 a m -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 c m -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 a l -1 -1)"
+         "(-1 d s -1 -1)"
+         "(-1 m m -1 -1)"
          "(-1 x x -1 -1)"))))))
    (:id 22))
   (:box
@@ -2523,8 +2523,8 @@
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 150)
-   (:y 379)
+   (:x 145)
+   (:y 344)
    (:w 291)
    (:h 32)
    (:color
@@ -2539,10 +2539,10 @@
    (:value "(dur=~a)(dim1=~a)(dim2=~a)(dim3=~a)(dim4=~a)")
    (:id 23))
   (:comment
-   (:x 99)
-   (:y 149)
-   (:w 305)
-   (:h 36)
+   (:x 29)
+   (:y 108)
+   (:w 249)
+   (:h 50)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -2561,8 +2561,8 @@
    (:reference (:symbol "OM-DIRECTORY" "OM-API"))
    (:group-id nil)
    (:name "om-directory")
-   (:x 943)
-   (:y 178)
+   (:x 938)
+   (:y 143)
    (:w 105)
    (:h 30)
    (:color nil)
@@ -2587,8 +2587,8 @@
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 1056)
-   (:y 147)
+   (:x 1051)
+   (:y 112)
    (:w 52)
    (:h 30)
    (:color
@@ -2630,8 +2630,8 @@
        "  "))))
    (:group-id nil)
    (:name "make-local-dyci2-path")
-   (:x 891)
-   (:y 146)
+   (:x 886)
+   (:y 111)
    (:w 155)
    (:h 29)
    (:color (:color-or-nil (:color nil) (:t-or-nil nil)))
@@ -2661,8 +2661,8 @@
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 888)
-   (:y 110)
+   (:x 883)
+   (:y 75)
    (:w 140)
    (:h 31)
    (:color
@@ -2681,7 +2681,7 @@
    (:lock nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value "All_files")
+   (:value "Soprano")
    (:id 28))
   (:box
    (:type :abstraction)
@@ -2829,8 +2829,8 @@
       (:connection (:from (:box 4 :out 0)) (:to (:box 1 :in 0))))))
    (:group-id nil)
    (:name "this_patch_parent_directory")
-   (:x 101)
-   (:y 95)
+   (:x 96)
+   (:y 60)
    (:w 186)
    (:h 28)
    (:color nil)
@@ -2847,8 +2847,8 @@
     (:output (:name "this_patch_parent_directory") (:reactive nil)))
    (:id 29))
   (:comment
-   (:x 541)
-   (:y 651)
+   (:x 536)
+   (:y 616)
    (:w 112)
    (:h 22)
    (:fgcolor nil)
@@ -2871,8 +2871,8 @@
       (:type "opat"))))
    (:group-id nil)
    (:name "loop_interpretations_variations_scenarios")
-   (:x 461)
-   (:y 751)
+   (:x 456)
+   (:y 716)
    (:w 259)
    (:h 60)
    (:color nil)
@@ -2928,9 +2928,9 @@
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 31))
   (:comment
-   (:x 82)
-   (:y 853)
-   (:w 203)
+   (:x 11)
+   (:y 787)
+   (:w 277)
    (:h 22)
    (:fgcolor nil)
    (:bgcolor nil)
@@ -2941,15 +2941,15 @@
      (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
      (:t-or-nil t)))
    (:align nil)
-   (:text "6) EVALUATE")
+   (:text "6) EVALUATE  (select box then press \"v\")")
    (:id 32))
   (:box
    (:type :object)
    (:reference sound)
    (:group-id nil)
    (:name nil)
-   (:x 474)
-   (:y 998)
+   (:x 359)
+   (:y 923)
    (:w 534)
    (:h 151)
    (:color nil)
@@ -2976,35 +2976,26 @@
      (:class sound)
      (:slots
       ((:onset 0)
-       (:duration 61454.92)
-       (:n-samples 2710162)
-       (:n-channels 1)
-       (:sample-rate 44100)
+       (:duration 0)
+       (:n-samples nil)
+       (:n-channels nil)
+       (:sample-rate nil)
        (:smpl-type :float)
-       (:sample-size 32)))
+       (:sample-size 16)))
      (:add-slots
       ((:markers nil)
        (:gain 1.0)
        (:access-from-file nil)
-       (:file-pathname
-        (:pathname
-         (:directory
-          (:relative
-           "Results"
-           "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
-         (:device nil)
-         (:host nil)
-         (:name "Scen[L50C20]_L50_C20-Gen2_C1")
-         (:type "wav")))))))
+       (:file-pathname nil)))))
    (:id 33))
   (:box
    (:type :interface)
    (:reference list-selection)
    (:group-id nil)
    (:name "list-selection")
-   (:x 83)
-   (:y 873)
-   (:w 1316)
+   (:x 10)
+   (:y 805)
+   (:w 1232)
    (:h 92)
    (:color nil)
    (:border nil)
@@ -3030,10 +3021,10 @@
        "patches"
        "1-advanced-tutorials-chaining"
        "Results"
-       "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+       "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
      (:device :unspecific)
      (:host nil)
-     (:name "Scen[L50C20]_L50_C20-Gen2_C1")
+     (:name "Scen[L50C30]_L50_C30-Gen2_C1")
      (:type "wav")))
    (:items
     (:list
@@ -3049,7 +3040,7 @@
         "patches"
         "1-advanced-tutorials-chaining"
         "Results"
-        "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+        "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
       (:device :unspecific)
       (:host nil)
       (:name "Scen[L50C10]_L50_C10-Gen1_C5")
@@ -3066,7 +3057,7 @@
         "patches"
         "1-advanced-tutorials-chaining"
         "Results"
-        "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+        "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
       (:device :unspecific)
       (:host nil)
       (:name "Scen[L50C10]_L50_C10-Gen2_C1")
@@ -3083,7 +3074,7 @@
         "patches"
         "1-advanced-tutorials-chaining"
         "Results"
-        "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+        "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
       (:device :unspecific)
       (:host nil)
       (:name "Scen[L50C20]_L50_C20-Gen1_C5")
@@ -3100,7 +3091,7 @@
         "patches"
         "1-advanced-tutorials-chaining"
         "Results"
-        "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+        "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
       (:device :unspecific)
       (:host nil)
       (:name "Scen[L50C20]_L50_C20-Gen2_C1")
@@ -3117,7 +3108,7 @@
         "patches"
         "1-advanced-tutorials-chaining"
         "Results"
-        "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+        "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
       (:device :unspecific)
       (:host nil)
       (:name "Scen[L50C30]_L50_C30-Gen1_C5")
@@ -3134,29 +3125,13 @@
         "patches"
         "1-advanced-tutorials-chaining"
         "Results"
-        "GenScenOnACorpus_(dur=0)(dim1=1)(dim2=1)(dim3=0)(dim4=0)_[All_files][All_files]"))
+        "GenScenOnACorpus_(dur=0)(vocal_playing_mode=1)(size=1)_[All_files][All_files]"))
       (:device :unspecific)
       (:host nil)
       (:name "Scen[L50C30]_L50_C30-Gen2_C1")
       (:type "wav"))))
-   (:selection (:list 3))
+   (:selection (:list 5))
    (:id 34))
-  (:comment
-   (:x 84)
-   (:y 963)
-   (:w 203)
-   (:h 22)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font
-    (:font-or-nil
-     (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
-     (:t-or-nil t)))
-   (:align nil)
-   (:text "7) CMD + CLICK ON THE PATHS")
-   (:id 35))
   (:box
    (:type :abstraction)
    (:reference
@@ -3169,8 +3144,8 @@
       (:type "opat"))))
    (:group-id nil)
    (:name "output_folder")
-   (:x 791)
-   (:y 682)
+   (:x 786)
+   (:y 647)
    (:w 108)
    (:h 60)
    (:color nil)
@@ -3214,14 +3189,14 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "output 1") (:reactive nil)))
-   (:id 36))
+   (:id 35))
   (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 207)
-   (:y 290)
+   (:x 202)
+   (:y 255)
    (:w 206)
    (:h 30)
    (:color
@@ -3241,14 +3216,14 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "dur" "vocal_playing_mode" "size"))
-   (:id 37))
+   (:id 36))
   (:box
    (:type :value)
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 893)
-   (:y 640)
+   (:x 888)
+   (:y 605)
    (:w 139)
    (:h 30)
    (:color
@@ -3268,6 +3243,24 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value "GenScenOnACorpus")
+   (:id 37))
+  (:comment
+   (:x 11)
+   (:y 894)
+   (:w 418)
+   (:h 36)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font
+    (:font-or-nil
+     (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
+     (:t-or-nil t)))
+   (:align nil)
+   (:text
+    "7) WAIT FOR THE 3*2 = 6 GENERATION RUNS TO BE FINISHED, THEN
+CMD + CLICK ON THE PATHS")
    (:id 38)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 31 :in 1)))
@@ -3287,7 +3280,7 @@
    (:from (:box 11 :out 0))
    (:to (:box 19 :in 1))
    (:attributes (:color nil :style nil :modif (0 1/5))))
-  (:connection (:from (:box 11 :out 0)) (:to (:box 36 :in 5)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 35 :in 5)))
   (:connection (:from (:box 12 :out 0)) (:to (:box 10 :in 2)))
   (:connection (:from (:box 12 :out 1)) (:to (:box 10 :in 3)))
   (:connection (:from (:box 12 :out 2)) (:to (:box 10 :in 4)))
@@ -3308,7 +3301,7 @@
   (:connection (:from (:box 19 :out 1)) (:to (:box 22 :in 1)))
   (:connection (:from (:box 19 :out 2)) (:to (:box 22 :in 2)))
   (:connection (:from (:box 20 :out 0)) (:to (:box 18 :in 1)))
-  (:connection (:from (:box 20 :out 0)) (:to (:box 36 :in 0)))
+  (:connection (:from (:box 20 :out 0)) (:to (:box 35 :in 0)))
   (:connection
    (:from (:box 21 :out 0))
    (:to (:box 19 :in 2))
@@ -3322,7 +3315,7 @@
    (:attributes (:color nil :style nil :modif (0 6/25))))
   (:connection (:from (:box 27 :out 0)) (:to (:box 25 :in 0)))
   (:connection (:from (:box 28 :out 0)) (:to (:box 27 :in 1)))
-  (:connection (:from (:box 28 :out 0)) (:to (:box 36 :in 1)))
+  (:connection (:from (:box 28 :out 0)) (:to (:box 35 :in 1)))
   (:connection
    (:from (:box 29 :out 0))
    (:to (:box 18 :in 0))
@@ -3331,9 +3324,9 @@
    (:from (:box 29 :out 0))
    (:to (:box 27 :in 0))
    (:attributes (:color nil :style nil :modif (0 2/11))))
-  (:connection (:from (:box 29 :out 0)) (:to (:box 36 :in 3)))
+  (:connection (:from (:box 29 :out 0)) (:to (:box 35 :in 3)))
   (:connection (:from (:box 31 :out 0)) (:to (:box 34 :in 0)))
   (:connection (:from (:box 34 :out 0)) (:to (:box 33 :in 0)))
-  (:connection (:from (:box 36 :out 0)) (:to (:box 31 :in 7)))
-  (:connection (:from (:box 37 :out 0)) (:to (:box 36 :in 4)))
-  (:connection (:from (:box 38 :out 0)) (:to (:box 36 :in 2)))))
+  (:connection (:from (:box 35 :out 0)) (:to (:box 31 :in 7)))
+  (:connection (:from (:box 36 :out 0)) (:to (:box 35 :in 4)))
+  (:connection (:from (:box 37 :out 0)) (:to (:box 35 :in 2)))))
