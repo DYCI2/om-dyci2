@@ -1,0 +1,15 @@
+lib-sf:getsfnamealloc 		= allocation error in getsfname~
+lib-sf:FORMreaderror 		= error reading field FORM from AIFF sound file header~
+lib-sf:FORMnotstart 		= AIFF sound file doesn't start with field FORM~
+lib-sf:carlopenerror 		= error opening CARL sound file `%s'\n ~
+lib-sf:openerror 			= error opening sound file `%s'\n ~
+lif-sf:AIFFheader 			= error reading AIFF header from `%s'\n ~
+lib-sf:NeXTHeader 			= error reading NeXT header from '%s'\n ~
+lib-sf:badNeXTformat 		= NeXT sound file '%s' must be in 16-bit linear format\n ~
+lib-sf:headererror 			= error in reading sound file header~
+lib-sf:badpack 				= SVP does not handle 8bit sound files~
+lib-sf:fileformatseekerror = error seeking in GetFileFormat \n~
+lib-sf:unsupportedsoundformat = Unsupported sample encoding in %s converting into short!\n~
+lib-sf:unsupportedpacking = Unsupported sample size of %d bytes in %s!\n~
+lib-sf:inplacenonseek = Cannot work inplace on pipe %s !!\n~
+lib-sf:fakenumframes  = number of frames in sound file %s exceeds supported limit %lld, proceed at your own risk !\n~

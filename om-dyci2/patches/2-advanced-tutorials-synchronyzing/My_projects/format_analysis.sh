@@ -1,0 +1,1 @@
+for f in */*.seg_desc; do sed 1d "$f" > tmpfile; mv tmpfile "$f" ; done

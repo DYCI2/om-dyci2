@@ -1,0 +1,844 @@
+
+(:patch
+ (:om-version 0.05)
+ (:name "02-connection-pm2")
+ (:doc "")
+ (:info
+  (:created "2019/10/29 22:06:27")
+  (:modified "2019/10/29 22:16:46"))
+ (:window (:size (840 841)) (:position (600 129)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:library "OM-SuperVP")
+   (:type :function)
+   (:reference transient-detection)
+   (:group-id nil)
+   (:name "transient-detection")
+   (:x 573)
+   (:y 212)
+   (:w 132)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "IN")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:type :value)
+   (:reference simple-base-string)
+   (:group-id nil)
+   (:name "list")
+   (:x 615)
+   (:y 449)
+   (:w 93)
+   (:h 30)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value "chordseq.sdif")
+   (:id 1))
+  (:box
+   (:library "OM-pm2")
+   (:type :function)
+   (:reference chord-seq-analysis)
+   (:group-id nil)
+   (:name "chord-seq-analysis")
+   (:x 502)
+   (:y 488)
+   (:w 130)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SOUND")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :key)
+     (:name "out")
+     (:value "chordseqs.sdif")
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 2))
+  (:comment
+   (:x 52)
+   (:y 111)
+   (:w 237)
+   (:h 86)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :bold)))
+   (:align nil)
+   (:text
+    "The PM2-ADDITIVE TOOLS perform partial tracking or chord-seq analysis or sound files and can be used complementarily with the om-supervp library")
+   (:id 3))
+  (:comment
+   (:x 52)
+   (:y 18)
+   (:w 496)
+   (:h 74)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 18) (:style :bold)))
+   (:align nil)
+   (:text
+    "OM-SuperVP - advanced examples
+
+connection with om-pm2 additive analysis tools")
+   (:id 4))
+  (:comment
+   (:x 52)
+   (:y 224)
+   (:w 350)
+   (:h 53)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :plain)))
+   (:align nil)
+   (:text
+    "1) Marker Generation by Transient Detection
+2) chord-sequence analysis of the segmented sound file
+3) Conversion to symbolic pitches ")
+   (:id 5))
+  (:comment
+   (:x 467)
+   (:y 670)
+   (:w 25)
+   (:h 28)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Arial") (:size 12) (:style :bold)))
+   (:align nil)
+   (:text "(3)")
+   (:id 6))
+  (:comment
+   (:x 671)
+   (:y 492)
+   (:w 25)
+   (:h 28)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Arial") (:size 12) (:style :bold)))
+   (:align nil)
+   (:text "(2)")
+   (:id 7))
+  (:comment
+   (:x 568)
+   (:y 283)
+   (:w 25)
+   (:h 28)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Arial") (:size 12) (:style :bold)))
+   (:align nil)
+   (:text "(1)")
+   (:id 8))
+  (:box
+   (:type :function)
+   (:reference sdif->markers)
+   (:group-id nil)
+   (:name "sdif->markers")
+   (:x 623)
+   (:y 337)
+   (:w 105)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 9))
+  (:box
+   (:type :object)
+   (:reference sdiffile)
+   (:group-id nil)
+   (:name "markers.sdif")
+   (:x 616)
+   (:y 269)
+   (:w 118)
+   (:h 50)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:showname nil)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value :choose-file)
+     (:reactive nil)))
+   (:outputs (:output (:name "SELF") (:reactive nil)))
+   (:window (:size (nil nil)) (:position (nil nil)))
+   (:edition-params)
+   (:value
+    (:object
+     (:class sdiffile)
+     (:add-slots
+      ((:file-map
+        (:list
+         (:fstream-desc
+          (:id 0)
+          (:fsig "1MRK")
+          (:tmin 2.1304267898425433D-10)
+          (:tmax 2.026700680173697D0)
+          (:nf 24)
+          (:matrices
+           (:list
+            (:mstream-desc
+             (:msig "1BEG")
+             (:fields ("??????x1"))
+             (:rmax 1)
+             (:tmin 2.1304267898425433D-10)
+             (:tmax 2.008526077523591D0)
+             (:nf 12))
+            (:mstream-desc
+             (:msig "1END")
+             (:fields ("??????x1"))
+             (:rmax 1)
+             (:tmin 0.01268707481562424D0)
+             (:tmax 2.026700680173697D0)
+             (:nf 12))
+            (:mstream-desc
+             (:msig "XTRD")
+             (:fields ("rel_energy_diff" "rel_maxamp"))
+             (:rmax 1)
+             (:tmin 0.01268707481562424D0)
+             (:tmax 2.026700680173697D0)
+             (:nf 12)))))))
+       (:file-pathname
+        (:pathname
+         (:directory (:relative :up :up :up :up :up "OM" "out-files"))
+         (:device :unspecific)
+         (:host :unspecific)
+         (:name "markers")
+         (:type "sdif")))))))
+   (:id 10))
+  (:box
+   (:type :object)
+   (:reference sdiffile)
+   (:group-id nil)
+   (:name "chordseq.sdif")
+   (:x 504)
+   (:y 534)
+   (:w 115)
+   (:h 40)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:showname nil)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value :choose-file)
+     (:reactive nil)))
+   (:outputs (:output (:name "SELF") (:reactive nil)))
+   (:window (:size (nil nil)) (:position (nil nil)))
+   (:edition-params)
+   (:value
+    (:object
+     (:class sdiffile)
+     (:add-slots
+      ((:file-map
+        (:list
+         (:fstream-desc
+          (:id 0)
+          (:fsig "1MRK")
+          (:tmin 0.072D0)
+          (:tmax 1.846D0)
+          (:nf 19)
+          (:matrices
+           (:list
+            (:mstream-desc
+             (:msig "1BEG")
+             (:fields ("??????x1"))
+             (:rmax 12)
+             (:tmin 0.072D0)
+             (:tmax 1.356D0)
+             (:nf 18))
+            (:mstream-desc
+             (:msig "1TRC")
+             (:fields ("??????x1" "??????x2" "??????x3" "??????x4"))
+             (:rmax 12)
+             (:tmin 0.072D0)
+             (:tmax 1.356D0)
+             (:nf 18))
+            (:mstream-desc
+             (:msig "1END")
+             (:fields ("??????x1"))
+             (:rmax 12)
+             (:tmin 0.092D0)
+             (:tmax 1.846D0)
+             (:nf 18)))))))
+       (:file-pathname
+        (:pathname
+         (:directory (:relative :up :up :up :up :up "OM" "out-files"))
+         (:device :unspecific)
+         (:host :unspecific)
+         (:name "chordseq")
+         (:type "sdif")))))))
+   (:id 11))
+  (:box
+   (:type :object)
+   (:reference chord-seq)
+   (:group-id nil)
+   (:name "CHORD-SEQ")
+   (:x 508)
+   (:y 657)
+   (:w 152)
+   (:h 109)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :mini-view)
+   (:showname nil)
+   (:show-markers t)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LMIDIC")
+     (:value (:list 6000))
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LONSET")
+     (:value (:list 0 1000))
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LDUR")
+     (:value (:list 1000))
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LVEL")
+     (:value (:list 100))
+     (:reactive nil))
+    (:input
+     (:type :key)
+     (:name "loffset")
+     (:value (:list 0))
+     (:reactive nil))
+    (:input
+     (:type :key)
+     (:name "lchan")
+     (:value (:list 1))
+     (:reactive nil))
+    (:input (:type :key) (:name "llegato") (:value 0) (:reactive nil)))
+   (:outputs
+    (:output (:name "SELF") (:reactive nil))
+    (:output (:name "LMIDIC") (:reactive nil))
+    (:output (:name "LONSET") (:reactive nil))
+    (:output (:name "LDUR") (:reactive nil))
+    (:output (:name "LVEL") (:reactive nil))
+    (:output (:name "loffset") (:reactive nil))
+    (:output (:name "lchan") (:reactive nil))
+    (:output (:name "llegato") (:reactive nil)))
+   (:window (:size (nil nil)) (:position (nil nil)))
+   (:edition-params (:staff :g))
+   (:value
+    (:object
+     (:class chord-seq)
+     (:slots
+      ((:onset 0)
+       (:duration 1846)
+       (:interpol (:number-or-nil (:number 50) (:t-or-nil nil)))
+       (:name "CHORD-SEQ")
+       (:symbolic-date nil)
+       (:symbolic-dur nil)
+       (:symbolic-dur-extent 0)
+       (:lmidic
+        (:list
+         (:list 6720 4948 4536 6054)
+         (:list 7198 4820 5998 6704)
+         (:list 4808 5988 6206 6678)
+         (:list 7424 8990 4806 6008 6206)
+         (:list 4260 4814 6208 6712 7422 8992 9584)
+         (:list 7400 8994 9582 4244 4808 6006 6204 6702 7196)
+         (:list
+          4812
+          6002
+          6186
+          6370
+          6702
+          7196
+          7402
+          7586
+          8606
+          8994
+          9312
+          9582)
+         (:list 4806 6004 6196 6394 6698 7400 7602 8102 8604)
+         (:list
+          7198
+          7398
+          8108
+          9698
+          8812
+          4808
+          5472
+          5994
+          6196
+          6404
+          6904
+          7086)
+         (:list
+          4822
+          6208
+          6902
+          7596
+          8810
+          10020
+          4352
+          6000
+          6398
+          7394
+          8104
+          9700)
+         (:list
+          4810
+          6208
+          6898
+          8100
+          8808
+          9698
+          4242
+          5990
+          6398
+          7392
+          8608
+          9318)
+         (:list
+          6012
+          6396
+          7404
+          8608
+          9314
+          4826
+          6210
+          6896
+          8104
+          8806
+          9816
+          4024)
+         (:list
+          4782
+          6398
+          7406
+          8158
+          8364
+          8810
+          6194
+          6900
+          8104
+          8278
+          8606
+          9312)
+         (:list
+          9510
+          4812
+          6210
+          6896
+          7602
+          8302
+          8808
+          6004
+          6398
+          7404
+          8100
+          8606)
+         (:list 6200 8302 6398 4814 6896 7404)
+         (:list 6896 4816 7404 6200 6400)
+         (:list 6400 6896 4814 6200)
+         (:list 6896 4816 6210)))
+       (:lonset
+        (:list
+         72
+         92
+         212
+         237
+         244
+         265
+         328
+         354
+         466
+         481
+         570
+         588
+         696
+         703
+         1045
+         1065
+         1335
+         1356
+         1846))
+       (:ldur
+        (:list
+         (:list 20 20 20 20)
+         (:list 120 120 120 120)
+         (:list 25 25 25 25)
+         (:list 7 7 7 7 7)
+         (:list 21 21 21 21 21 21 21)
+         (:list 63 63 63 63 63 63 63 63 63)
+         (:list 26 26 26 26 26 26 26 26 26 26 26 26)
+         (:list 112 112 112 112 112 112 112 112 112)
+         (:list 15 15 15 15 15 15 15 15 15 15 15 15)
+         (:list 89 89 89 89 89 89 89 89 89 89 89 89)
+         (:list 18 18 18 18 18 18 18 18 18 18 18 18)
+         (:list 108 108 108 108 108 108 108 108 108 108 108 108)
+         (:list 7 7 7 7 7 7 7 7 7 7 7 7)
+         (:list 342 342 342 342 342 342 342 342 342 342 342 342)
+         (:list 20 20 20 20 20 20)
+         (:list 270 270 270 270 270)
+         (:list 21 21 21 21)
+         (:list 490 490 490)))
+       (:lvel
+        (:list
+         (:list 52 57 55 51)
+         (:list 51 81 59 57)
+         (:list 97 63 76 51)
+         (:list 51 51 98 63 97)
+         (:list 51 100 112 51 52 51 51)
+         (:list 54 51 51 51 103 60 109 53 50)
+         (:list 103 60 89 63 53 50 54 50 53 50 50 51)
+         (:list 95 58 84 84 51 54 51 50 51)
+         (:list 51 54 61 51 54 94 51 56 74 72 92 52)
+         (:list 87 76 127 52 59 53 58 54 75 52 68 54)
+         (:list 81 73 124 65 58 52 55 53 73 65 64 55)
+         (:list 53 71 78 76 55 82 69 112 61 57 52 54)
+         (:list 73 68 79 52 52 54 66 103 61 58 68 54)
+         (:list 50 67 60 82 50 70 51 51 62 64 53 56)
+         (:list 54 52 56 61 66 51)
+         (:list 62 58 50 52 53)
+         (:list 50 57 55 51)
+         (:list 53 52 50)))
+       (:loffset
+        (:list
+         (:list 0 0 0 0)
+         (:list 0 0 0 0)
+         (:list 0 0 0 0)
+         (:list 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0 0 0 0 0 0 0)
+         (:list 0 0 0 0 0 0)
+         (:list 0 0 0 0 0)
+         (:list 0 0 0 0)
+         (:list 0 0 0)))
+       (:lchan
+        (:list
+         (:list 1 1 1 1)
+         (:list 1 1 1 1)
+         (:list 1 1 1 1)
+         (:list 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1 1 1 1 1 1 1)
+         (:list 1 1 1 1 1 1)
+         (:list 1 1 1 1 1)
+         (:list 1 1 1 1)
+         (:list 1 1 1)))
+       (:lport
+        (:list
+         (:list nil nil nil nil)
+         (:list nil nil nil nil)
+         (:list nil nil nil nil)
+         (:list nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil nil nil nil nil nil nil)
+         (:list nil nil nil nil nil nil)
+         (:list nil nil nil nil nil)
+         (:list nil nil nil nil)
+         (:list nil nil nil)))
+       (:llegato nil)))))
+   (:id 12))
+  (:box
+   (:type :object)
+   (:reference sound)
+   (:group-id nil)
+   (:name "")
+   (:x 446)
+   (:y 384)
+   (:w 160)
+   (:h 78)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :mini-view)
+   (:showname nil)
+   (:show-markers t)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value :choose-file)
+     (:reactive nil))
+    (:input
+     (:type :key)
+     (:name "markers")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "SELF") (:reactive nil))
+    (:output (:name "markers") (:reactive nil)))
+   (:window (:size (nil nil)) (:position (nil nil)))
+   (:edition-params)
+   (:value
+    (:object
+     (:class sound)
+     (:slots
+      ((:onset 0)
+       (:duration 2491.9048)
+       (:n-samples 109893)
+       (:n-channels 1)
+       (:sample-rate 44100)
+       (:smpl-type :float)
+       (:sample-size 16)))
+     (:add-slots
+      ((:markers
+        (:list
+         0
+         13
+         72
+         92
+         212
+         237
+         244
+         265
+         328
+         354
+         466
+         481
+         570
+         588
+         696
+         703
+         1045
+         1065
+         1335
+         1356
+         1846
+         1859
+         2009
+         2027))
+       (:gain 1.0)
+       (:access-from-file nil)
+       (:file-pathname
+        (:pathname
+         (:directory (:relative :up :up "resources" "sound"))
+         (:device :unspecific)
+         (:host :unspecific)
+         (:name "PianoOriginal")
+         (:type "aiff")))))))
+   (:id 13))
+  (:box
+   (:type :object)
+   (:reference sound)
+   (:group-id nil)
+   (:name "SOUND4")
+   (:x 422)
+   (:y 123)
+   (:w 127)
+   (:h 68)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :mini-view)
+   (:showname nil)
+   (:show-markers t)
+   (:lock :locked)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value :choose-file)
+     (:reactive nil)))
+   (:outputs (:output (:name "SELF") (:reactive nil)))
+   (:window (:size (nil nil)) (:position (nil nil)))
+   (:edition-params)
+   (:value
+    (:object
+     (:class sound)
+     (:slots
+      ((:onset 0)
+       (:duration 2491.9048)
+       (:n-samples 109893)
+       (:n-channels 1)
+       (:sample-rate 44100)
+       (:smpl-type :float)
+       (:sample-size 16)))
+     (:add-slots
+      ((:markers nil)
+       (:gain 1.0)
+       (:access-from-file nil)
+       (:file-pathname
+        (:pathname
+         (:directory (:relative :up :up "resources" "sound"))
+         (:device :unspecific)
+         (:host :unspecific)
+         (:name "PianoOriginal")
+         (:type "aiff")))))))
+   (:id 14))
+  (:box
+   (:type :function)
+   (:reference sdif->chord-seq)
+   (:group-id nil)
+   (:name "sdif->chord-seq")
+   (:x 505)
+   (:y 606)
+   (:w 114)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 15)))
+ (:connections
+  (:connection
+   (:from (:box 0 :out 0))
+   (:to (:box 10 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 1 :out 0))
+   (:to (:box 2 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 2 :out 0))
+   (:to (:box 11 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 9 :out 0))
+   (:to (:box 13 :in 1))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 10 :out 0))
+   (:to (:box 9 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 11 :out 0))
+   (:to (:box 15 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 13 :out 0))
+   (:to (:box 2 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 14 :out 0))
+   (:to (:box 0 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 14 :out 0))
+   (:to (:box 13 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))
+  (:connection
+   (:from (:box 15 :out 0))
+   (:to (:box 12 :in 0))
+   (:attributes (:color nil :style nil :modif nil)))))
