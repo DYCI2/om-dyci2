@@ -3,24 +3,20 @@ README
 
 These tutorials require the OM-SuperVP library. 
 
-Get them it from https://forum.ircam.fr/projects/detail/om-supervp/. 
+1) Get them it from https://forum.ircam.fr/projects/detail/om-supervp/. 
 
-Move the superVP lib for instance in om-dyci2/dependencies/ and make sure that the path to this directory is in the search path.
+2) Move the superVP lib for instance in om-dyci2/dependencies/ and make sure that the path to this directory is in the search path.
 
-This release includes SuperVP executables for macOS, Windows, Linux. These programs are protected and require an authorization through Ircam forum subscription. 
+3) This release includes SuperVP executables for macOS, Windows, Linux. These programs are protected and require an authorization through Ircam forum subscription. 
 See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (see *** note below)
 
-Then in OM:
+4) Then in OM:
 - windows/session window/external libraries then double click on om-supervp to load it
 - preferences/libraries, in om-SuperVP :
 	- SuperVP exec --> path to supervp exec (for instance dependencies/om-supervp/resources/bin/mac/SuperVP/SuperVP.app/Contents/MacOS/supervp-2.103.2)
 	- Authorize --> path of the activation key if needed (for instance dependencies/om-supervp/resources/bin/mac/Ircam_Activation_key.txt)
 
 
-(***) Free-releases of the library (not including the binaries) are available at: https://github.com/openmusic-project/OM-SuperVP/releases.
+(***) 
+Free-releases of the library (not including the binaries) are available at: https://github.com/openmusic-project/OM-SuperVP/releases.
 You will still need the binaries (and then an Ircam forum subscription): geyt et them from IRCAM ForumNet (https://forum.ircam.fr/projects/detail/analysissynthesis-command-line-tools/) and either put them in OM-SuperVP/resources/bin/{mac,win,linux}/, OR set the path to SuperVP (for instance in .../AudioSculpt/Kernels/) in the OM Preferences/Externals path (visible when the library is loaded).
-		
-
-
-
-<gaetanrobillard.studio@gmail.com>, <louise.enjalbert@ircam.fr>jerome.nika@protonmail.com>, <Cyril.Beros@ircam.fr>, <aline.morel@ircam.fr>
