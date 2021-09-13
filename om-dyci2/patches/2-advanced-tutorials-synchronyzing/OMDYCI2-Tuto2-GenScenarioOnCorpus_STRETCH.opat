@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2021/09/08 14:08:44")
+  (:modified "2021/09/13 21:02:18")
   (:by "om-sharp")
   (:version 1.03))
- (:window (:size (1360 723)) (:position (-856 23)))
+ (:window (:size (1221 1005)) (:position (0 23)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -286,8 +286,8 @@ and set parameters to process the labels")
     "/!\\ preferences/files and folders/ if output file exists --> auto-rename")
    (:id 9))
   (:comment
-   (:x 916)
-   (:y 496)
+   (:x 731)
+   (:y 95)
    (:w 320)
    (:h 64)
    (:fgcolor nil)
@@ -7334,7 +7334,7 @@ Red boxes: run (selection then « v »)")
    (:x 660)
    (:y 629)
    (:w 279)
-   (:h 106)
+   (:h 134)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -7345,43 +7345,17 @@ Red boxes: run (selection then « v »)")
      (:t-or-nil t)))
    (:align nil)
    (:text
-    "6) Sync mode
+    "WORK IN PROGRESS --> 2 DIFFERENT PATCHES (TEMPORARY)
+6) Sync mode
 nil: no synchronization
 t: the events of all the tracks are stretched to match the durations of the events in track 1
 (if using this mode, introducing duration classes in step 1, for instance 50ms or 100ms may be preferible)")
    (:id 31))
-  (:box
-   (:type :value)
-   (:reference null)
-   (:group-id nil)
-   (:name "value box")
-   (:x 512)
-   (:y 700)
-   (:w 53)
-   (:h 30)
-   (:color
-    (:color-or-nil
-     (:color
-      (:color
-       0.8902462720870972D0
-       0.6694902181625366D0
-       0.2833995819091797D0
-       0.53333337))
-     (:t-or-nil t)))
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:lock nil)
-   (:inputs)
-   (:outputs (:output (:name "value") (:reactive nil)))
-   (:value nil)
-   (:id 32))
   (:comment
-   (:x 75)
-   (:y 799)
-   (:w 203)
-   (:h 22)
+   (:x 72)
+   (:y 772)
+   (:w 110)
+   (:h 50)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -7391,8 +7365,8 @@ t: the events of all the tracks are stretched to match the durations of the even
      (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
      (:t-or-nil t)))
    (:align nil)
-   (:text "7) EVALUATE")
-   (:id 33))
+   (:text "7) EVALUATE (select box then press 'v')")
+   (:id 32))
   (:box
    (:type :object)
    (:reference sound)
@@ -7437,7 +7411,7 @@ t: the events of all the tracks are stretched to match the durations of the even
        (:gain 1.0)
        (:access-from-file nil)
        (:file-pathname nil)))))
-   (:id 34))
+   (:id 33))
   (:box
    (:type :interface)
    (:reference list-selection)
@@ -7446,7 +7420,7 @@ t: the events of all the tracks are stretched to match the durations of the even
    (:x 74)
    (:y 818)
    (:w 369)
-   (:h 176)
+   (:h 90)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -7564,7 +7538,7 @@ t: the events of all the tracks are stretched to match the durations of the even
       (:name "Scen[L(20)C5]_L(\"20\")_C5-Gen2_C5")
       (:type "wav"))))
    (:selection nil)
-   (:id 35))
+   (:id 34))
   (:comment
    (:x 260)
    (:y 801)
@@ -7580,7 +7554,7 @@ t: the events of all the tracks are stretched to match the durations of the even
      (:t-or-nil t)))
    (:align nil)
    (:text "8) CMD + CLICK ON THE PATHS")
-   (:id 36))
+   (:id 35))
   (:box
    (:type :function)
    (:reference flat)
@@ -7605,7 +7579,7 @@ t: the events of all the tracks are stretched to match the durations of the even
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 37)))
+   (:id 36)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 30 :in 6)))
   (:connection (:from (:box 3 :out 0)) (:to (:box 30 :in 3)))
@@ -7695,6 +7669,6 @@ t: the events of all the tracks are stretched to match the durations of the even
    (:from (:box 29 :out 0))
    (:to (:box 19 :in 4))
    (:attributes (:color nil :style nil :modif (0 -67/420))))
-  (:connection (:from (:box 30 :out 0)) (:to (:box 37 :in 0)))
-  (:connection (:from (:box 35 :out 0)) (:to (:box 34 :in 0)))
-  (:connection (:from (:box 37 :out 0)) (:to (:box 35 :in 0)))))
+  (:connection (:from (:box 30 :out 0)) (:to (:box 36 :in 0)))
+  (:connection (:from (:box 34 :out 0)) (:to (:box 33 :in 0)))
+  (:connection (:from (:box 36 :out 0)) (:to (:box 34 :in 0)))))
