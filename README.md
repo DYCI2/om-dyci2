@@ -1,6 +1,9 @@
 [DYCI2](https://github.com/DYCI2/Dyci2Lib) for the OpenMusic ([OM6](http://repmus.ircam.fr/openmusic/)/[OM#](https://github.com/cac-t-u-s/om-sharp)) visual programming and computer-aided composition environments.
 
-© Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
+© Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018 - ... .
+
+__A conference paper about the OM(#)-DYCI2 library can be downloaded [here](https://aimc2021.iem.at/wp-content/uploads/2021/06/AIMC_2021_Nika_Bresson.pdf).__
+
 
 This repository contains:
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library.
