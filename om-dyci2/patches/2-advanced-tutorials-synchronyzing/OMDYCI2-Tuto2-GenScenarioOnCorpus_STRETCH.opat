@@ -1,10 +1,10 @@
 
 (:patch
- (:name "OMDYCI2-Tuto2-GenScenarioOnCorpus_STRETCH_OK")
+ (:name "OMDYCI2-Tuto2-GenScenarioOnCorpus_STRETCH")
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2021/09/13 21:02:18")
+  (:modified "2021/12/01 15:37:20")
   (:by "om-sharp")
   (:version 1.03))
  (:window (:size (1221 1005)) (:position (0 23)))
@@ -3920,7 +3920,7 @@ Red boxes: run (selection then « v »)")
    (:text
     "OM-DYCI2 - Advanced tutorial 2: AUTOMATIC GENERATION OF EVOLUTIVE SCENARIOS ON THE WHOLE SCENARIO DIRECTORY
 - an evolutive scenario [length determined at step 4) max continuity defined at step 5)] generated on the whole directory
-- the events in the resulting voices are stretched so that all the tracks are syncronized on track 1 (see patch Cb)")
+- the events in the resulting voices are stretched so that all the tracks are syncronized on track 1")
    (:id 26))
   (:box
    (:type :abstraction)
