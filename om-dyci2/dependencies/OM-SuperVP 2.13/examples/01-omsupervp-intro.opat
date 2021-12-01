@@ -1,0 +1,90 @@
+
+(:patch
+ (:om-version 0.05)
+ (:name "01-omsupervp-intro")
+ (:doc "")
+ (:info
+  (:created "2019/10/29 17:36:43")
+  (:modified "2019/10/29 17:47:25"))
+ (:window (:size (924 329)) (:position (520 251)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:comment
+   (:x 59)
+   (:y 62)
+   (:w 398)
+   (:h 23)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :plain)))
+   (:align nil)
+   (:text "Programming and examples by Jean Bresson and Jean Lochard.")
+   (:id 0))
+  (:comment
+   (:x 61)
+   (:y 27)
+   (:w 256)
+   (:h 36)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font
+    (:font-or-nil
+     (:font (:font (:face "Verdana") (:size 18.0D0) (:style :bold)))
+     (:t-or-nil t)))
+   (:align nil)
+   (:text "OM-SuperVP")
+   (:id 1))
+  (:comment
+   (:x 13)
+   (:y 126)
+   (:w 580)
+   (:h 23)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :plain)))
+   (:align nil)
+   (:text
+    "This library allows you to control SuperVP (the audio engine of Audiosculpt) from OpenMusic. ")
+   (:id 2))
+  (:comment
+   (:x 13)
+   (:y 197)
+   (:w 540)
+   (:h 113)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :plain)))
+   (:align nil)
+   (:text
+    "- SuperVP location
+
+- Default Input, Output and Temp folders for sound and parameters files.
+
+- Sound processing parameters (display system output, delete intermediate files, etc.) 
+
+")
+   (:id 3))
+  (:comment
+   (:x 13)
+   (:y 161)
+   (:w 657)
+   (:h 23)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :plain)))
+   (:align nil)
+   (:text
+    "Before using SuperVP objects in OpenMusic, you can redefine your supervp or general sound  preferences.")
+   (:id 4)))
+ (:connections))
