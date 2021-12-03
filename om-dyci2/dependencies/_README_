@@ -3,7 +3,7 @@ README
 
 Tutorials can be found in om-dyci2/om-dyci2/patches. The tutorials in the directories "2-advanced-tutorials-synchronyzing" and "3-tutorials-audio-analysis" require the OM-SuperVP library. 
 
-1) Get them it from https://forum.ircam.fr/projects/detail/om-supervp/. 
+1) Get it from https://forum.ircam.fr/projects/detail/om-supervp/. 
 
 2) Move the superVP lib for instance in om-dyci2/dependencies/ and make sure that the path to this directory is in the search path.
 
