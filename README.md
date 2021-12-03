@@ -17,7 +17,7 @@ This repository contains:
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library.
 * __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment.
 
-__Users are invited to use the pre-packed version of the **om-dyci2** source folder distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)__, and developpers or expert users may compile the source code available on this github repository (see below).
+__Users are invited to use the pre-packed version of the **om-dyci2** source folder distributed in this project's [release pages](https://github.com/DYCI2/om-dyci2/releases)__, and developpers or expert users are invited to use and compile the source code available on this github repository (see below).
 
 ------
 ### Installing and using om-dyci2:
