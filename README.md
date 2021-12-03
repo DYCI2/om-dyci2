@@ -2,7 +2,7 @@
 
 OM-DYCI2 is a framework for interactive generation of musical sequences combining generative agents and computer-assisted composition tools. It enables guiding corpus-based generative processes through explicit specifications of temporal structures, or using another layer of generative models trained on a corpus of structures. 
 
-OM-DYCI2 is the compositional declination of the Max [DYCI2 library dedicated to interaction](https://github.com/DYCI2/Dyci2Lib) developped in the [OM#](https://github.com/cac-t-u-s/om-sharp)/[OM6](http://repmus.ircam.fr/openmusic/) visual programming and computer-aided composition environments. ([Doc Python Library](http://repmus.ircam.fr/downloads/docs/DYCI2_library/).
+OM-DYCI2 is the compositional declination of the Max [DYCI2 library dedicated to interaction](https://github.com/DYCI2/Dyci2Lib) developped in the [OM#](https://github.com/cac-t-u-s/om-sharp)/[OM6](http://repmus.ircam.fr/openmusic/) visual programming and computer-aided composition environments ([Doc Python Library](http://repmus.ircam.fr/downloads/docs/DYCI2_library/)).
 
 © Victoire Siguret, Jean Bresson, Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
 Contributions by Dionysios Papanikolaou and Mikhail Malt (2021).
