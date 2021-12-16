@@ -1,3 +1,4 @@
+# OM-DYCI2
 
 OM-DYCI2 is a framework for interactive generation of musical sequences combining generative agents and computer-assisted composition tools. It enables guiding corpus-based generative processes through explicit specifications of temporal structures, or using another layer of generative models trained on a corpus of structures. 
 
@@ -11,7 +12,7 @@ This folder contains a release version of om-dyci2 ready to be included in your 
 
 ### Release
 
-__To be able to use all the features, we recommend for the moment to use OM# (other features will be ported to OM in a future release).__
+__To be able to use all the features, we recommend for the moment to use OM# (the functionalities associated to Tutorials 1 to 3 will be ported to OM in a future release).__
 
 The release version of om-dyci2 provides all the required binaries, so there is no need to compile anything but the dependencies of the [Python DYCI2 Library](https://forge.ircam.fr/p/DYCI2_library/downloads/) must be installed. om-dyci2 will instantiate a virtual Python interpreter and run DYCI2 in it, so **the last version of Python 3 and the dependencies of DYCI2 library must also be installed on your computer** :
 
@@ -46,7 +47,7 @@ The tutorials in the directories "2-advanced-tutorials-synchronyzing" and "3-tut
 2) Move the superVP lib for instance in om-dyci2/dependencies/ and make sure that the path to this directory is in the search path.
 
 3) This release includes SuperVP executables for macOS, Windows, Linux. These programs are protected and require an authorization through Ircam forum subscription. 
-See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (see *** note below)
+See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (see note below)
 
 4) Then in OM#:
 - windows/session window/external libraries then double click on om-supervp to load it
@@ -55,7 +56,7 @@ See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (see ***
 	- Authorize --> path of the activation key if needed (for instance dependencies/om-supervp/resources/bin/mac/Ircam_Activation_key.txt)
  
 Free-releases of the library (not including the binaries) are available at: https://github.com/openmusic-project/OM-SuperVP/releases.
-You will still need the binaries (and then an Ircam forum subscription): geyt et them from IRCAM ForumNet (https://forum.ircam.fr/projects/detail/analysissynthesis-command-line-tools/) and either put them in OM-SuperVP/resources/bin/{mac,win,linux}/, OR set the path to SuperVP (for instance in .../AudioSculpt/Kernels/) in the OM Preferences/Externals path (visible when the library is loaded).
+You will still need the binaries (and then an Ircam forum subscription): get them from IRCAM ForumNet (https://forum.ircam.fr/projects/detail/analysissynthesis-command-line-tools/) and either put them in OM-SuperVP/resources/bin/{mac,win,linux}/, OR set the path to SuperVP (for instance in .../AudioSculpt/Kernels/) in the OM Preferences/Externals path (visible when the library is loaded).
 
 ------
 

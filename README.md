@@ -94,7 +94,7 @@ See: https://www.ircam.fr/product/abonnement-premium-individuel-annuel/ (see ***
 	- Authorize --> path of the activation key if needed (for instance dependencies/om-supervp/resources/bin/mac/Ircam_Activation_key.txt)
  
 Free-releases of the library (not including the binaries) are available at: https://github.com/openmusic-project/OM-SuperVP/releases.
-You will still need the binaries (and then an Ircam forum subscription): geyt et them from IRCAM ForumNet (https://forum.ircam.fr/projects/detail/analysissynthesis-command-line-tools/) and either put them in OM-SuperVP/resources/bin/{mac,win,linux}/, OR set the path to SuperVP (for instance in .../AudioSculpt/Kernels/) in the OM Preferences/Externals path (visible when the library is loaded).
+You will still need the binaries (and then an Ircam forum subscription): get them from IRCAM ForumNet (https://forum.ircam.fr/projects/detail/analysissynthesis-command-line-tools/) and either put them in OM-SuperVP/resources/bin/{mac,win,linux}/, OR set the path to SuperVP (for instance in .../AudioSculpt/Kernels/) in the OM Preferences/Externals path (visible when the library is loaded).
 
 ------
 ### Troubleshooting
