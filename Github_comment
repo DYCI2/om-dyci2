@@ -1,0 +1,5 @@
+
+0. Faire attention à la branche sur laquelle on travaille; il faut que ça soit dev2
+1. Fetch (dans le cas qu'ily a des changements par un autre collaborateur)
+2. Commit (rajouter commentaire)
+3. Pull 
