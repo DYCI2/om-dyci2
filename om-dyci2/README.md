@@ -7,7 +7,7 @@ OM-DYCI2 is the compositional declination of the Max [DYCI2 library dedicated to
 © Victoire Siguret, Jean Bresson & Jérôme Nika — STMS lab IRCAM / CNRS / Sorbonne Université, 2018.
 Contributions by Dionysios Papanikolaou and Mikhail Malt (2021).
 
-If using the library, please quote: __Nika, Jérôme, and Jean Bresson. "Composing Structured Music Generation Processes with Creative Agents." 2nd Joint Conference on AI Music Creativity (AIMC 2021). 2021 [(Article)](https://aimc2021.iem.at/wp-content/uploads/2021/06/AIMC_2021_Nika_Bresson.pdf)__ . The appendix of this article refers to multimedia resources extracted from recent creations using OM-DYCI2 (Pascal Dusapin, Steve Lehman, Rémi Fox, Le Fresnoy - Studio National des Arts Contemporains, etc.). Moreover, it is a good introduction to the use of the library since it details all the playing modes implemented in the tutorials.
+If using the library please quote: __Nika, Jérôme, and Jean Bresson. "Composing Structured Music Generation Processes with Creative Agents." 2nd Joint Conference on AI Music Creativity (AIMC 2021). 2021 [(Article)](https://aimc2021.iem.at/wp-content/uploads/2021/06/AIMC_2021_Nika_Bresson.pdf)__ . The appendix of this article refers to multimedia resources extracted from recent creations using OM-DYCI2 (Pascal Dusapin, Steve Lehman, Rémi Fox, Le Fresnoy - Studio National des Arts Contemporains, etc.). Moreover, it is a good introduction to the use of the library since it details all the playing modes implemented in the tutorials.
 
 ------
 
