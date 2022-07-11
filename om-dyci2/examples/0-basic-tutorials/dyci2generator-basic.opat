@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2022/07/11 17:30:30")
+  (:modified "2022/07/11 18:01:29")
   (:by "om-sharp")
   (:version 1.05))
- (:window (:size (1253 701)) (:position (91 23)))
+ (:window (:size (1039 708)) (:position (91 23)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -119,7 +119,7 @@
    (:x 37)
    (:y 202)
    (:w 355)
-   (:h 56)
+   (:h 52)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -290,7 +290,7 @@
    (:group-id nil)
    (:name "value box")
    (:x 63)
-   (:y 369)
+   (:y 416)
    (:w 255)
    (:h 29)
    (:color
@@ -720,7 +720,35 @@ list of lables
 no gen-memory
 
 ")
-   (:id 17)))
+   (:id 17))
+  (:comment
+   (:x 359)
+   (:y 275)
+   (:w 46)
+   (:h 23)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "query")
+   (:id 18))
+  (:comment
+   (:x 627)
+   (:y 362)
+   (:w 323)
+   (:h 85)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "create colour palette for all internal library devices
+colour for variables and control for user to change")
+   (:id 19)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 1 :in 0)))
   (:connection (:from (:box 1 :out 0)) (:to (:box 2 :in 0)))
