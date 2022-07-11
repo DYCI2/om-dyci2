@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2021/01/19 11:59:45")
+  (:modified "2022/07/11 17:30:30")
   (:by "om-sharp")
-  (:version 1.02))
- (:window (:size (677 448)) (:position (460 141)))
+  (:version 1.05))
+ (:window (:size (1253 701)) (:position (91 23)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -27,6 +27,7 @@
    (:text-font nil)
    (:align nil)
    (:lock nil)
+   (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "A" "B" "C" "D"))
@@ -48,6 +49,7 @@
    (:icon :left)
    (:lock nil)
    (:lambda nil)
+   (:reactive nil)
    (:inputs
     (:input
      (:type :standard)
@@ -72,6 +74,7 @@
    (:text-font nil)
    (:align :center)
    (:icon :left)
+   (:reactive nil)
    (:lock nil)
    (:inputs
     (:input
@@ -102,6 +105,7 @@
    (:text-font nil)
    (:align nil)
    (:lock nil)
+   (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value 15)
@@ -125,6 +129,7 @@
    (:showname nil)
    (:lock nil)
    (:lambda nil)
+   (:reactive nil)
    (:inputs
     (:input
      (:type :standard)
@@ -170,21 +175,21 @@
          "M15"))
        (:labls
         (:list
-         "A"
-         "D"
          "C"
-         "D"
-         "D"
-         "A"
          "C"
          "A"
-         "C"
+         "A"
          "A"
          "C"
          "B"
          "D"
+         "D"
          "C"
-         "A"))))))
+         "D"
+         "D"
+         "B"
+         "D"
+         "C"))))))
    (:id 4))
   (:box
    (:library "om-dyci2")
@@ -204,6 +209,7 @@
    (:icon :left)
    (:lock nil)
    (:lambda nil)
+   (:reactive nil)
    (:inputs
     (:input
      (:type :standard)
@@ -233,6 +239,7 @@
    (:text-font nil)
    (:align nil)
    (:lock nil)
+   (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "A" "B" "C" "D" "C" "B" "A"))
@@ -265,9 +272,9 @@
     "initalize a DYCI2 Generator: lock after eval to make queries on the same generator.")
    (:id 8))
   (:comment
-   (:x 251)
-   (:y 309)
-   (:w 166)
+   (:x 246)
+   (:y 320)
+   (:w 163)
    (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
@@ -293,6 +300,7 @@
    (:text-font nil)
    (:align nil)
    (:lock nil)
+   (:reactive nil)
    (:inputs
     (:input
      (:type :optional)
@@ -303,13 +311,12 @@
    (:value (:list "M6" "M12" "M3" "M4" "M14" "M12" "M10"))
    (:id 10))
   (:box
-   (:library "om-dyci2")
    (:type :function)
    (:reference debug-dyci2)
    (:group-id nil)
    (:name "debug-dyci2")
-   (:x 459)
-   (:y 14)
+   (:x 455)
+   (:y 18)
    (:w 106)
    (:h 29)
    (:color nil)
@@ -320,6 +327,7 @@
    (:icon :left)
    (:lock nil)
    (:lambda nil)
+   (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 11))
@@ -340,6 +348,7 @@
    (:icon :left)
    (:lock nil)
    (:lambda nil)
+   (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 12))
@@ -376,6 +385,7 @@
        (:text-font nil)
        (:align :center)
        (:icon :top)
+       (:reactive nil)
        (:inputs)
        (:outputs (:output (:name "out") (:reactive nil)))
        (:id 0))
@@ -398,6 +408,7 @@
        (:text-font nil)
        (:align :center)
        (:icon :top)
+       (:reactive nil)
        (:inputs
         (:input
          (:type :standard)
@@ -424,6 +435,7 @@
        (:text-font nil)
        (:align :center)
        (:icon :top)
+       (:reactive nil)
        (:inputs
         (:input
          (:type :standard)
@@ -454,6 +466,7 @@
        (:icon :left)
        (:lock nil)
        (:lambda nil)
+       (:reactive nil)
        (:inputs
         (:input
          (:type :optional)
@@ -485,6 +498,7 @@
        (:text-font nil)
        (:align :center)
        (:icon :top)
+       (:reactive nil)
        (:inputs
         (:input
          (:type :standard)
@@ -524,6 +538,7 @@
        (:text-font nil)
        (:align :center)
        (:icon :top)
+       (:reactive nil)
        (:inputs
         (:input
          (:type :standard)
@@ -549,6 +564,7 @@
        (:icon :left)
        (:lock nil)
        (:lambda nil)
+       (:reactive nil)
        (:inputs
         (:input
          (:type :standard)
@@ -575,6 +591,7 @@
        (:text-font nil)
        (:align nil)
        (:lock nil)
+       (:reactive nil)
        (:inputs)
        (:outputs (:output (:name "value") (:reactive nil)))
        (:value 1)
@@ -597,6 +614,7 @@
        (:text-font nil)
        (:align nil)
        (:lock nil)
+       (:reactive nil)
        (:inputs)
        (:outputs (:output (:name "value") (:reactive nil)))
        (:value "M")
@@ -622,9 +640,10 @@
    (:text-font nil)
    (:align :center)
    (:display :mini-view)
+   (:pre-delay 0)
    (:lock nil)
    (:lambda nil)
-   (:pre-delay 0)
+   (:reactive nil)
    (:inputs
     (:input
      (:type :standard)
@@ -632,7 +651,76 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 13)))
+   (:id 13))
+  (:comment
+   (:x 632)
+   (:y 91)
+   (:w 251)
+   (:h 53)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "aleatoire pour creer une suite d'etiquette 
+
+une cotee etiquette une ")
+   (:id 14))
+  (:comment
+   (:x 630)
+   (:y 170)
+   (:w 250)
+   (:h 98)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "list of content
+list of lables 
+
+no gen-memory
+
+")
+   (:id 15))
+  (:comment
+   (:x 633)
+   (:y 43)
+   (:w 311)
+   (:h 38)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "create a simpler patch to explain lables and content
+query with scenario")
+   (:id 16))
+  (:comment
+   (:x 630)
+   (:y 283)
+   (:w 250)
+   (:h 98)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "list of content
+list of lables 
+
+no gen-memory
+
+")
+   (:id 17)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 1 :in 0)))
   (:connection (:from (:box 1 :out 0)) (:to (:box 2 :in 0)))
