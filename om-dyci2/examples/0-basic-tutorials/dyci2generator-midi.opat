@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/06/28 14:20:21")
-  (:modified "2022/07/12 16:10:47")
+  (:modified "2022/07/12 16:25:39")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1336 923)) (:position (481 -1055)))
@@ -60,7 +60,7 @@
    (:id 1))
   (:box
    (:type :value)
-   (:reference null)
+   (:reference pathname)
    (:group-id nil)
    (:name "value box")
    (:x 180)
@@ -82,7 +82,22 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value nil)
+   (:value
+    (:pathname
+     (:directory
+      (:absolute
+       "Users"
+       "dpapanikolaou"
+       "Documents"
+       "GitHub"
+       "om-dyci2"
+       "om-dyci2"
+       "examples"
+       "0-basic-tutorials"))
+     (:device :unspecific)
+     (:host :unspecific)
+     (:name "test_banchieri_textlabels-4")
+     (:type "midi")))
    (:id 2))
   (:box
    (:type :abstraction)
@@ -623,7 +638,7 @@
    (:type :abstraction)
    (:reference
     (:patch
-     (:name "v")
+     (:name "Remix")
      (:doc "")
      (:info (:created nil) (:modified nil) (:by nil) (:version nil))
      (:window (:size (502 412)) (:position (63 91)))
@@ -952,7 +967,7 @@
       (:connection (:from (:box 7 :out 0)) (:to (:box 6 :in 1)))
       (:connection (:from (:box 8 :out 0)) (:to (:box 6 :in 0))))))
    (:group-id nil)
-   (:name "Remix")
+   (:name "v")
    (:x 128)
    (:y 598)
    (:w 84)
