@@ -4,10 +4,14 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
+<<<<<<< Updated upstream
   (:modified "2022/07/12 14:46:21")
+=======
+  (:modified "2022/07/12 14:46:34")
+>>>>>>> Stashed changes
   (:by "om-sharp")
-  (:version 1.05))
- (:window (:size (1039 708)) (:position (91 23)))
+  (:version 1.06))
+ (:window (:size (1039 708)) (:position (580 -899)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -750,20 +754,31 @@ no gen-memory
 colour for variables and control for user to change")
    (:id 19))
   (:comment
+<<<<<<< Updated upstream
    (:x 453)
    (:y 540)
    (:w 182)
    (:h 53)
+=======
+   (:x 581)
+   (:y 480)
+   (:w 168)
+   (:h 23)
+>>>>>>> Stashed changes
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
    (:roundness nil)
    (:text-font nil)
    (:align nil)
+<<<<<<< Updated upstream
    (:text
     "1) title
 2) define what the patch does
 3) comment everything")
+=======
+   (:text "enter your comment here...")
+>>>>>>> Stashed changes
    (:id 20)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 1 :in 0)))
