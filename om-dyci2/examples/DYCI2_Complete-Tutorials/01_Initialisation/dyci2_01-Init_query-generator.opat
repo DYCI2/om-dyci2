@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2022/08/19 16:50:26")
+  (:modified "2022/08/19 18:13:13")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1455 855)) (:position (227 74)))
@@ -325,8 +325,8 @@ ATTENTION
    (:text "Validate")
    (:id 14))
   (:comment
-   (:x 49)
-   (:y 16)
+   (:x 296)
+   (:y 27)
    (:w 313)
    (:h 29)
    (:fgcolor
@@ -346,8 +346,8 @@ ATTENTION
    (:text "DYCI2 Tutorial patches")
    (:id 15))
   (:comment
-   (:x 50)
-   (:y 46)
+   (:x 297)
+   (:y 57)
    (:w 247)
    (:h 25)
    (:fgcolor
@@ -361,11 +361,11 @@ ATTENTION
      (:font (:font (:face "Lucida Grande") (:size 14) (:style :bold)))
      (:t-or-nil t)))
    (:align :left)
-   (:text "01 : introduction ")
+   (:text "A. introduction ")
    (:id 16))
   (:comment
-   (:x 49)
-   (:y 70)
+   (:x 296)
+   (:y 81)
    (:w 357)
    (:h 25)
    (:fgcolor
@@ -379,7 +379,7 @@ ATTENTION
      (:font (:font (:face "Lucida Grande") (:size 14) (:style :bold)))
      (:t-or-nil t)))
    (:align :left)
-   (:text "Main principles of a query for a scenario")
+   (:text "1. Main principles of a query for a scenario")
    (:id 17))
   (:box
    (:type :value)
@@ -446,7 +446,7 @@ ATTENTION
    (:x 599)
    (:y 218)
    (:w 191)
-   (:h 29)
+   (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -553,7 +553,7 @@ ATTENTION
    (:text "1.")
    (:id 28))
   (:comment
-   (:x 31)
+   (:x 34)
    (:y 246)
    (:w 38)
    (:h 27)
@@ -569,8 +569,8 @@ ATTENTION
    (:text "2.")
    (:id 29))
   (:comment
-   (:x 79)
-   (:y 380)
+   (:x 87)
+   (:y 381)
    (:w 38)
    (:h 27)
    (:fgcolor nil)
