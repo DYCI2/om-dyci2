@@ -1,0 +1,155 @@
+
+(:patch
+ (:name "dyci2_01-Init_query-generator_notes")
+ (:doc "")
+ (:info
+  (:created "2022/08/19 15:39:03")
+  (:modified "2022/08/19 15:39:58")
+  (:by "om-sharp")
+  (:version 1.06))
+ (:window (:size (1233 1029)) (:position (29 54)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:comment
+   (:x 258)
+   (:y 431)
+   (:w 215)
+   (:h 53)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "initalize a DYCI2 Generator: lock after eval to make queries on the same generator.")
+   (:id 0))
+  (:comment
+   (:x 222)
+   (:y 278)
+   (:w 251)
+   (:h 53)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "aleatoire pour creer une suite d'etiquette 
+
+une cotee etiquette une ")
+   (:id 1))
+  (:comment
+   (:x 223)
+   (:y 357)
+   (:w 250)
+   (:h 98)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "list of content
+list of lables 
+
+no gen-memory
+
+")
+   (:id 2))
+  (:comment
+   (:x 162)
+   (:y 230)
+   (:w 311)
+   (:h 38)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "create a simpler patch to explain lables and content
+query with scenario")
+   (:id 3))
+  (:comment
+   (:x 203)
+   (:y 668)
+   (:w 250)
+   (:h 98)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "list of content
+list of lables 
+
+no gen-memory
+
+")
+   (:id 4))
+  (:comment
+   (:x 149)
+   (:y 520)
+   (:w 323)
+   (:h 38)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "create colour palette for all internal library devices
+colour for variables and control for user to change")
+   (:id 5))
+  (:comment
+   (:x 278)
+   (:y 597)
+   (:w 182)
+   (:h 53)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "1) title
+2) define what the patch does
+3) comment everything")
+   (:id 6))
+  (:comment
+   (:x 164)
+   (:y 203)
+   (:w 309)
+   (:h 23)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "Fill out the list with the same number of elements ")
+   (:id 7))
+  (:comment
+   (:x 164)
+   (:y 780)
+   (:w 370)
+   (:h 23)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "*3 A FAIRE!!! Patch qui explique qu'est que c'est un scenario")
+   (:id 8)))
+ (:connections))

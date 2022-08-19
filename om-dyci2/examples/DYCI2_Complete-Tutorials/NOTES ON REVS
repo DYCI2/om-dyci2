@@ -1,0 +1,9 @@
+1) Faire un patch avec une liste des markers 
+2) Separer automatique et manuel
+3) 
+
+Refomuler la suite des patches dans l'ordre :
+0.labels segmentation
+1.load annotations
+2.preprocessing labels
+3.chaining (sync / pas sync / silence / stretch) {svp ?}

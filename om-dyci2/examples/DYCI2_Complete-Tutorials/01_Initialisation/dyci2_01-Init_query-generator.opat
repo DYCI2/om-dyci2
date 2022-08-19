@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/06/17 2:59:29")
-  (:modified "2022/07/13 15:44:32")
+  (:modified "2022/08/19 15:48:05")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1440 855)) (:position (402 -1055)))
+ (:window (:size (1096 855)) (:position (254 56)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -127,20 +127,6 @@
    (:text "Labels *2 :")
    (:id 3))
   (:comment
-   (:x 950)
-   (:y 654)
-   (:w 215)
-   (:h 53)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "initalize a DYCI2 Generator: lock after eval to make queries on the same generator.")
-   (:id 4))
-  (:comment
    (:x 368)
    (:y 387)
    (:w 163)
@@ -152,7 +138,7 @@
    (:text-font nil)
    (:align nil)
    (:text "Query for new scenario *3")
-   (:id 5))
+   (:id 4))
   (:box
    (:type :value)
    (:reference cons)
@@ -178,107 +164,7 @@
      (:reactive nil)))
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "M6" "M2" "M4"))
-   (:id 6))
-  (:comment
-   (:x 975)
-   (:y 268)
-   (:w 251)
-   (:h 53)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "aleatoire pour creer une suite d'etiquette 
-
-une cotee etiquette une ")
-   (:id 7))
-  (:comment
-   (:x 973)
-   (:y 347)
-   (:w 250)
-   (:h 98)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "list of content
-list of lables 
-
-no gen-memory
-
-")
-   (:id 8))
-  (:comment
-   (:x 976)
-   (:y 220)
-   (:w 311)
-   (:h 38)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "create a simpler patch to explain lables and content
-query with scenario")
-   (:id 9))
-  (:comment
-   (:x 973)
-   (:y 460)
-   (:w 250)
-   (:h 98)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "list of content
-list of lables 
-
-no gen-memory
-
-")
-   (:id 10))
-  (:comment
-   (:x 970)
-   (:y 539)
-   (:w 323)
-   (:h 38)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "create colour palette for all internal library devices
-colour for variables and control for user to change")
-   (:id 11))
-  (:comment
-   (:x 971)
-   (:y 730)
-   (:w 182)
-   (:h 53)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "1) title
-2) define what the patch does
-3) comment everything")
-   (:id 12))
+   (:id 5))
   (:comment
    (:x 52)
    (:y 162)
@@ -291,7 +177,7 @@ colour for variables and control for user to change")
    (:text-font nil)
    (:align nil)
    (:text "List of Markers *1 :")
-   (:id 13))
+   (:id 6))
   (:box
    (:type :value)
    (:reference cons)
@@ -312,7 +198,7 @@ colour for variables and control for user to change")
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "pizz" "ord" "st" "sp" "mst" "msp"))
-   (:id 14))
+   (:id 7))
   (:box
    (:type :value)
    (:reference cons)
@@ -333,20 +219,7 @@ colour for variables and control for user to change")
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "M1" "M2" "M3" "M4" "M5" "M6"))
-   (:id 15))
-  (:comment
-   (:x 980)
-   (:y 193)
-   (:w 309)
-   (:h 23)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text "Fill out the list with the same number of elements ")
-   (:id 16))
+   (:id 8))
   (:comment
    (:x 94)
    (:y 587)
@@ -360,12 +233,12 @@ colour for variables and control for user to change")
    (:align nil)
    (:text
     "*1 Markers can either be generated automatically or added manually")
-   (:id 17))
+   (:id 9))
   (:comment
    (:x 94)
    (:y 623)
    (:w 778)
-   (:h 68)
+   (:h 128)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -376,8 +249,11 @@ colour for variables and control for user to change")
     "*2  Assign a category to each marker 
 - i.e. You might desire to classify the insrumental playing technics by assigning labels such as : (\"pizz\" \"ord\" \"st\" \"sp\" \"mst\" \"msp\").
 Or you might want to assign a generative classification (\"A\" \"B\" \"C\" \"D\" ...)
-ATTENTION : each marker must correspond to a given label (list of markers and list of labels must have the same length)")
-   (:id 18))
+
+ATTENTION 
+1. each marker must correspond to a given label (list of markers and list of labels must have the same length)
+2. the choice of assigning labels to instrumental playing technics is arbitrary. As noted before you can always assign a generative classification  (\"A\" \"B\" \"C\" \"D\" ...).")
+   (:id 10))
   (:comment
    (:x 488)
    (:y 205)
@@ -391,7 +267,7 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
    (:align nil)
    (:text
     "connect me to the right most inlet of DYCI2GENERATOR in order to assign a new classification to your markers")
-   (:id 19))
+   (:id 11))
   (:box
    (:type :value)
    (:reference cons)
@@ -412,7 +288,7 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list "msp" "ord" "sp"))
-   (:id 20))
+   (:id 12))
   (:comment
    (:x 446)
    (:y 324)
@@ -425,21 +301,7 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
    (:text-font nil)
    (:align nil)
    (:text "each marker is associated to a label")
-   (:id 21))
-  (:comment
-   (:x 97)
-   (:y 723)
-   (:w 370)
-   (:h 23)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "*3 A FAIRE!!! Patch qui explique qu'est que c'est un scenario")
-   (:id 22))
+   (:id 13))
   (:comment
    (:x 390)
    (:y 471)
@@ -452,7 +314,7 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
    (:text-font nil)
    (:align nil)
    (:text "Validate")
-   (:id 23))
+   (:id 14))
   (:comment
    (:x 49)
    (:y 16)
@@ -473,7 +335,7 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
      (:t-or-nil t)))
    (:align :left)
    (:text "DYCI2 Tutorial patches")
-   (:id 24))
+   (:id 15))
   (:comment
    (:x 50)
    (:y 46)
@@ -491,7 +353,7 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
      (:t-or-nil t)))
    (:align :left)
    (:text "01 : introduction ")
-   (:id 25))
+   (:id 16))
   (:comment
    (:x 49)
    (:y 70)
@@ -509,10 +371,23 @@ ATTENTION : each marker must correspond to a given label (list of markers and li
      (:t-or-nil t)))
    (:align :left)
    (:text "Main principles of a query for a scenario")
-   (:id 26)))
+   (:id 17))
+  (:comment
+   (:x 488)
+   (:y 79)
+   (:w 241)
+   (:h 23)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "Note that the choice of using ")
+   (:id 18)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 1 :in 0)))
-  (:connection (:from (:box 1 :out 0)) (:to (:box 6 :in 0)))
-  (:connection (:from (:box 14 :out 0)) (:to (:box 0 :in 2)))
-  (:connection (:from (:box 15 :out 0)) (:to (:box 0 :in 1)))
-  (:connection (:from (:box 20 :out 0)) (:to (:box 1 :in 1)))))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 5 :in 0)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 0 :in 2)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 0 :in 1)))
+  (:connection (:from (:box 12 :out 0)) (:to (:box 1 :in 1)))))
