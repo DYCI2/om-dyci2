@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/08/21 20:28:25")
+  (:modified "2022/08/22 0:57:48")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1303 998)) (:position (131 25)))
+ (:window (:size (1303 998)) (:position (233 61)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -16,7 +16,7 @@
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 514)
+   (:x 520)
    (:y 612)
    (:w 38)
    (:h 30)
@@ -40,8 +40,8 @@
    (:value 40)
    (:id 0))
   (:comment
-   (:x 629)
-   (:y 77)
+   (:x 630)
+   (:y 81)
    (:w 119)
    (:h 22)
    (:fgcolor
@@ -64,7 +64,7 @@
    (:text "1) Choose dataset")
    (:id 1))
   (:comment
-   (:x 377)
+   (:x 383)
    (:y 492)
    (:w 228)
    (:h 36)
@@ -86,14 +86,14 @@
      (:t-or-nil t)))
    (:align nil)
    (:text
-    "6) Set max successive label continuity on the scenario provided in 3.**")
+    "6) Set max successive label continuity on the scenario provided in 3.***")
    (:id 2))
   (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 376)
+   (:x 382)
    (:y 524)
    (:w 173)
    (:h 31)
@@ -149,7 +149,7 @@
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 148)
+   (:x 165)
    (:y 413)
    (:w 322)
    (:h 48)
@@ -246,8 +246,8 @@
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 213)
-   (:y 258)
+   (:x 242)
+   (:y 277)
    (:w 242)
    (:h 29)
    (:color
@@ -270,9 +270,9 @@
    (:value (:list m m b b d a d a d a d a d a d a d a d))
    (:id 8))
   (:comment
-   (:x 374)
-   (:y 138)
-   (:w 261)
+   (:x 272)
+   (:y 131)
+   (:w 324)
    (:h 22)
    (:fgcolor
     (:color-or-nil
@@ -291,11 +291,11 @@
      (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
      (:t-or-nil t)))
    (:align nil)
-   (:text "4) Configure the active dimensions (cf 2).")
+   (:text "4) Configure the state of the active dimensions (cf 3). **")
    (:id 9))
   (:comment
-   (:x 20)
-   (:y 258)
+   (:x 49)
+   (:y 277)
    (:w 194)
    (:h 106)
    (:fgcolor
@@ -326,9 +326,9 @@ within a list: -1 to let one label free")
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 372)
-   (:y 157)
-   (:w 77)
+   (:x 273)
+   (:y 150)
+   (:w 128)
    (:h 30)
    (:color
     (:color-or-nil
@@ -347,7 +347,7 @@ within a list: -1 to let one label free")
    (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value (:list 0 1 0 0 0))
+   (:value (:list 0 1 0 0 0 0))
    (:id 11))
   (:box
    (:type :value)
@@ -383,7 +383,7 @@ within a list: -1 to let one label free")
    (:reference (:symbol "DYCI2GENERATOR" "DYCI2"))
    (:group-id nil)
    (:name nil)
-   (:x 615)
+   (:x 609)
    (:y 371)
    (:w 335)
    (:h 54)
@@ -646,7 +646,7 @@ within a list: -1 to let one label free")
      (:name "function_process_label")
      (:doc "")
      (:info (:created nil) (:modified nil) (:by nil) (:version nil))
-     (:window (:size (1645 653)) (:position (35 23)))
+     (:window (:size (1645 653)) (:position (87 233)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -666,8 +666,8 @@ within a list: -1 to let one label free")
        ""))))
    (:group-id nil)
    (:name "function_process_label")
-   (:x 436)
-   (:y 220)
+   (:x 292)
+   (:y 209)
    (:w 188)
    (:h 28)
    (:color
@@ -702,9 +702,9 @@ within a list: -1 to let one label free")
    (:reference list)
    (:group-id nil)
    (:name "list")
-   (:x 300)
-   (:y 304)
-   (:w 115)
+   (:x 339)
+   (:y 312)
+   (:w 96)
    (:h 29)
    (:color nil)
    (:border nil)
@@ -736,6 +736,11 @@ within a list: -1 to let one label free")
      (:type :optional)
      (:name "x")
      (:value (:list nil))
+     (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "x")
+     (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 15))
@@ -806,9 +811,9 @@ within a list: -1 to let one label free")
    (:reference mapcar)
    (:group-id nil)
    (:name "mapcar")
-   (:x 275)
+   (:x 262)
    (:y 382)
-   (:w 78)
+   (:w 139)
    (:h 29)
    (:color nil)
    (:border nil)
@@ -881,7 +886,7 @@ within a list: -1 to let one label free")
    (:text "OM-DYCI2 TUTORIAL 1: Generate a manual scenario")
    (:id 19))
   (:comment
-   (:x 548)
+   (:x 554)
    (:y 616)
    (:w 112)
    (:h 23)
@@ -1061,9 +1066,9 @@ within a list: -1 to let one label free")
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 373)
-   (:y 100)
-   (:w 206)
+   (:x 271)
+   (:y 73)
+   (:w 333)
    (:h 30)
    (:color
     (:color-or-nil
@@ -1082,7 +1087,14 @@ within a list: -1 to let one label free")
    (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value (:list "dur" "playing_mode" "size"))
+   (:value
+    (:list
+     "dur"
+     "playing_mode"
+     "size"
+     "register"
+     "vibrato"
+     "intensity"))
    (:id 23))
   (:comment
    (:x 109)
@@ -1111,8 +1123,8 @@ within a list: -1 to let one label free")
 CMD + CLICK ON THE PATHS")
    (:id 24))
   (:comment
-   (:x 148)
-   (:y 125)
+   (:x 42)
+   (:y 127)
    (:w 207)
    (:h 134)
    (:fgcolor nil)
@@ -1167,7 +1179,7 @@ m: Breathy sound")
    (:reference (:symbol "OM-CHOOSE-DIRECTORY-DIALOG" "OM-API"))
    (:group-id nil)
    (:name "om-choose-directory-dialog")
-   (:x 627)
+   (:x 632)
    (:y 99)
    (:w 192)
    (:h 29)
@@ -1188,7 +1200,7 @@ m: Breathy sound")
    (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
    (:group-id nil)
    (:name "value box")
-   (:x 737)
+   (:x 731)
    (:y 197)
    (:w 75)
    (:h 29)
@@ -1216,7 +1228,7 @@ m: Breathy sound")
    (:reference directory-namestring)
    (:group-id nil)
    (:name "directory-namestring")
-   (:x 654)
+   (:x 651)
    (:y 140)
    (:w 152)
    (:h 29)
@@ -1238,7 +1250,7 @@ m: Breathy sound")
    (:outputs (:output (:name "out") (:reactive nil)))
    (:id 29))
   (:comment
-   (:x 821)
+   (:x 826)
    (:y 72)
    (:w 204)
    (:h 83)
@@ -1255,8 +1267,8 @@ m: Breathy sound")
 4. Lock")
    (:id 30))
   (:comment
-   (:x 806)
-   (:y 233)
+   (:x 805)
+   (:y 201)
    (:w 133)
    (:h 23)
    (:fgcolor nil)
@@ -1356,10 +1368,10 @@ m: Breathy sound")
     (:color-or-nil
      (:color
       (:color
-       0.13134481012821198D0
-       0.9996772408485413D0
-       0.023624084889888764D0
-       0.3529412))
+       0.5019567608833313D0
+       0.9999629259109497D0
+       0.031039152294397354D0
+       0.5764706))
      (:t-or-nil t)))
    (:border nil)
    (:roundness nil)
@@ -1421,9 +1433,9 @@ m: Breathy sound")
    (:text "7) Set name for new results")
    (:id 37))
   (:comment
-   (:x 186)
-   (:y 927)
-   (:w 327)
+   (:x 159)
+   (:y 943)
+   (:w 337)
    (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
@@ -1431,13 +1443,13 @@ m: Breathy sound")
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:text "** Each continuity will generate a new resulting sound")
+   (:text "*** Each continuity will generate a new resulting sound")
    (:id 38))
   (:comment
-   (:x 188)
-   (:y 857)
-   (:w 340)
-   (:h 68)
+   (:x 159)
+   (:y 899)
+   (:w 699)
+   (:h 38)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -1445,13 +1457,12 @@ m: Breathy sound")
    (:text-font nil)
    (:align nil)
    (:text
-    "0=ignore dimension
-1=set dimension 
-Here : ((ignore \"dur\") (set \"playing_mode\") (ignore \"size\") (ignore \"label_dim3\") (ignore \"label_dim4\"))")
+    "** 0=ignore dimension, 1=include dimension 
+Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"register\") (ignore \"vibrato\") (ignore \"intensity\"))")
    (:id 39))
   (:comment
-   (:x 376)
-   (:y 79)
+   (:x 272)
+   (:y 54)
    (:w 160)
    (:h 22)
    (:fgcolor
@@ -1471,11 +1482,11 @@ Here : ((ignore \"dur\") (set \"playing_mode\") (ignore \"size\") (ignore \"labe
      (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
      (:t-or-nil t)))
    (:align nil)
-   (:text "3) Set active dimensions")
+   (:text "3) Set active dimensions *")
    (:id 40))
   (:comment
-   (:x 693)
-   (:y 175)
+   (:x 729)
+   (:y 179)
    (:w 239)
    (:h 22)
    (:fgcolor
@@ -1517,10 +1528,10 @@ Here : ((ignore \"dur\") (set \"playing_mode\") (ignore \"size\") (ignore \"labe
     (:color-or-nil
      (:color
       (:color
-       0.13134481012821198D0
-       0.9996772408485413D0
-       0.023624084889888764D0
-       0.6))
+       0.5019567608833313D0
+       0.9999629259109497D0
+       0.031039152294397354D0
+       0.5764706))
      (:t-or-nil t)))
    (:border nil)
    (:roundness nil)
@@ -1590,7 +1601,15 @@ Here : ((ignore \"dur\") (set \"playing_mode\") (ignore \"size\") (ignore \"labe
    (:y 562)
    (:w 200)
    (:h 56)
-   (:color nil)
+   (:color
+    (:color-or-nil
+     (:color
+      (:color
+       0.5019567608833313D0
+       0.9999629259109497D0
+       0.031039152294397354D0
+       0.5764706))
+     (:t-or-nil t)))
    (:border nil)
    (:roundness nil)
    (:text-font nil)
@@ -1627,7 +1646,34 @@ Here : ((ignore \"dur\") (set \"playing_mode\") (ignore \"size\") (ignore \"labe
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "output 1") (:reactive nil)))
-   (:id 43)))
+   (:id 43))
+  (:comment
+   (:x 160)
+   (:y 874)
+   (:w 663)
+   (:h 23)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "* ATTENTION to adjust the length of the active dimensions set in 3 with the dimension's state list (in 4 and 5)  ")
+   (:id 44))
+  (:comment
+   (:x 478)
+   (:y 204)
+   (:w 179)
+   (:h 38)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "lambda function processing dimension's state")
+   (:id 45)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 42 :in 6)))
   (:connection (:from (:box 3 :out 0)) (:to (:box 42 :in 3)))
