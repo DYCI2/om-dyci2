@@ -1,0 +1,218 @@
+
+(:patch
+ (:name "generate_from_query")
+ (:doc "")
+ (:info
+  (:created "2021/07/07 15:41:58")
+  (:modified "2021/07/07 15:42:10")
+  (:by "om-sharp")
+  (:version 1.03))
+ (:window (:size (456 431)) (:position (1092 384)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :value)
+   (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
+   (:group-id nil)
+   (:name "value box")
+   (:x 54)
+   (:y 53)
+   (:w 107)
+   (:h 30)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value "max_continuity")
+   (:id 0))
+  (:box
+   (:library "om-dyci2")
+   (:type :function)
+   (:reference (:symbol "DYCI2QUERY" "DYCI2"))
+   (:group-id nil)
+   (:name "dyci2query")
+   (:x 140)
+   (:y 144)
+   (:w 96)
+   (:h 30)
+   (:color
+    (:color-or-nil
+     (:color
+      (:color 0.928181231D0 0.9095486403D0 0.7207480669D0 1.0D0))
+     (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "QUERY")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 1))
+  (:box
+   (:library "om-dyci2")
+   (:type :function)
+   (:reference (:symbol "DYCI2SETPARAM" "DYCI2"))
+   (:group-id nil)
+   (:name "dyci2setparam")
+   (:x 50)
+   (:y 100)
+   (:w 116)
+   (:h 30)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "PARAMETER")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "VALUE")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 2))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 1) (:name "generator") (:doc "")))
+   (:group-id nil)
+   (:name "generator")
+   (:x 1)
+   (:y 17)
+   (:w 73)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 3))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 2) (:name "max_continuity") (:doc "")))
+   (:group-id nil)
+   (:name "max_continuity")
+   (:x 165)
+   (:y 16)
+   (:w 102)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 4))
+  (:box
+   (:type :io)
+   (:reference (:in (:type omin) (:index 3) (:name "query") (:doc "")))
+   (:group-id nil)
+   (:name "query")
+   (:x 188)
+   (:y 94)
+   (:w 58)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 5))
+  (:box
+   (:type :io)
+   (:reference
+    (:out
+     (:type omout)
+     (:name "generated_output")
+     (:index 1)
+     (:doc "")))
+   (:group-id nil)
+   (:name "generated_output")
+   (:x 130)
+   (:y 192)
+   (:w 116)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 6)))
+ (:connections
+  (:connection (:from (:box 0 :out 0)) (:to (:box 2 :in 1)))
+  (:connection
+   (:from (:box 1 :out 0))
+   (:to (:box 6 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection
+   (:from (:box 2 :out 0))
+   (:to (:box 1 :in 0))
+   (:attributes (:color nil :style nil :modif (0 29/105))))
+  (:connection
+   (:from (:box 3 :out 0))
+   (:to (:box 2 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection
+   (:from (:box 4 :out 0))
+   (:to (:box 2 :in 2))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection
+   (:from (:box 5 :out 0))
+   (:to (:box 1 :in 1))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))))
