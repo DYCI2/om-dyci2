@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2022/08/21 12:33:12")
-  (:modified "2022/08/21 19:17:46")
+  (:modified "2022/08/22 1:01:49")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1437 848)) (:position (181 131)))
+ (:window (:size (1437 848)) (:position (124 202)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -920,17 +920,15 @@
   (:comment
    (:x 882)
    (:y 204)
-   (:w 357)
-   (:h 53)
+   (:w 235)
+   (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:text
-    "List of values of the active dimensions 
-(by default Duration (ms) Pitch (0=ignore, 1=exact pitch, 2=octaviate pitch) Energy (0-100) Voice-Casting Nmf)")
+   (:text "List of values of the active dimensions")
    (:id 28))
   (:comment
    (:x 316)
@@ -950,15 +948,15 @@
   (:comment
    (:x 791)
    (:y 149)
-   (:w 155)
-   (:h 38)
+   (:w 359)
+   (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:text "Lambda function of Label's Parameter Values")
+   (:text "From function_process_label. Label's Parameter States")
    (:id 30))
   (:comment
    (:x 745)

@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/08/22 0:59:08")
+  (:modified "2022/08/22 1:02:20")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1303 998)) (:position (233 61)))
@@ -1346,7 +1346,7 @@ m: Breathy sound")
    (:text-font nil)
    (:align nil)
    (:text
-    "Gather and output from the leftmost outlet : [audio file], from the middle outlet : [file-index onset offset] and from the rightmost outlet [active dimensions data] of all analysis files (txt) inside your directory.  ")
+    "Gather and output from the leftmost outlet : [dataset audio files], from the middle outlet : [file-index onset offset] and from the rightmost outlet [active dimensions data] of all analysis files (txt) inside your directory.  ")
    (:id 35))
   (:box
    (:type :abstraction)
