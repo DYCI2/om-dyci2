@@ -1,0 +1,495 @@
+
+(:patch
+ (:name "dyci2_active-dimensions")
+ (:doc "")
+ (:info
+  (:created "2022/08/23 0:31:46")
+  (:modified "2022/08/23 0:42:35")
+  (:by "om-sharp")
+  (:version 1.06))
+ (:window (:size (768 630)) (:position (991 143)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 1) (:name "dimension_state") (:doc "")))
+   (:group-id nil)
+   (:name "dimension_state")
+   (:x 240)
+   (:y 86)
+   (:w 109)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 2) (:name "scenario") (:doc "")))
+   (:group-id nil)
+   (:name "scenario")
+   (:x 373)
+   (:y 126)
+   (:w 67)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 1))
+  (:box
+   (:type :io)
+   (:reference
+    (:out (:type omout) (:name "cons") (:index 1) (:doc "")))
+   (:group-id nil)
+   (:name "cons")
+   (:x 211)
+   (:y 492)
+   (:w 47)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 2))
+  (:box
+   (:type :io)
+   (:reference
+    (:out (:type omout) (:name "length") (:index 2) (:doc "")))
+   (:group-id nil)
+   (:name "length")
+   (:x 283)
+   (:y 527)
+   (:w 144)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 3))
+  (:box
+   (:type :value)
+   (:reference cons)
+   (:group-id nil)
+   (:name "value box")
+   (:x 168)
+   (:y 311)
+   (:w 322)
+   (:h 67)
+   (:color (:color-or-nil (:color nil) (:t-or-nil nil)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock :eval-once)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :optional)
+     (:name "in")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value
+    (:list
+     "(-1 m -1 -1 -1 -1)"
+     "(-1 m -1 -1 -1 -1)"
+     "(-1 b -1 -1 -1 -1)"
+     "(-1 b -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"
+     "(-1 a -1 -1 -1 -1)"
+     "(-1 d -1 -1 -1 -1)"))
+   (:id 4))
+  (:box
+   (:type :function)
+   (:reference length)
+   (:group-id nil)
+   (:name "length")
+   (:x 313)
+   (:y 421)
+   (:w 72)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock :eval-once)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SEQUENCE")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 5))
+  (:box
+   (:type :function)
+   (:reference list)
+   (:group-id nil)
+   (:name "list")
+   (:x 390)
+   (:y 468)
+   (:w 54)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :optional)
+     (:name "x")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 6))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "function_process_label")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size nil) (:position nil))
+     (:text
+      (:list
+       ";;; Edit a valid LAMBDA EXPRESSION"
+       ";;; e.g. (lambda (arg1 arg2 ...) ( ... ))"
+       "(lambda (e list_activation_labels) "
+       "  (write-to-string"
+       "   (append "
+       "    (list (if (> (nth 0 list_activation_labels) 0) (round (/ (nth 0 e) (nth 0 list_activation_labels)))  -1))"
+       "    (loop for i from 1 to (- (length e) 1)"
+       "          collect (if (and (nth i list_activation_labels) (> (nth i list_activation_labels) 0)) (nth i e)  -1)"
+       "          ;collect (if (and (nth i list_activation_labels) (> (nth i list_activation_labels) 0)) (round (/ (nth i e) (nth i list_activation_labels)))  -1)"
+       "          )"
+       "    )"
+       "   )"
+       ")"
+       "  "
+       ""))))
+   (:group-id nil)
+   (:name "function_process_label")
+   (:x 104)
+   (:y 185)
+   (:w 188)
+   (:h 28)
+   (:color
+    (:color-or-nil
+     (:color
+      (:color
+       0.030046656727790833D0
+       0.24989540874958038D0
+       0.4119427800178528D0
+       0.5019608))
+     (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda :lambda)
+   (:reactive nil)
+   (:inputs
+    (:input (:type :standard) (:name "E") (:value nil) (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LIST_ACTIVATION_LABELS")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 7))
+  (:box
+   (:type :function)
+   (:reference list)
+   (:group-id nil)
+   (:name "list")
+   (:x 388)
+   (:y 185)
+   (:w 96)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :optional)
+     (:name "x")
+     (:value (:list nil))
+     (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "x")
+     (:value (:list nil))
+     (:reactive nil))
+    (:input (:type :optional) (:name "x") (:value nil) (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "x")
+     (:value (:list nil))
+     (:reactive nil))
+    (:input (:type :optional) (:name "x") (:value nil) (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "x")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 8))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "gather-dimensions-query")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size nil) (:position nil))
+     (:text
+      (:list
+       ";;; Edit a valid LAMBDA EXPRESSION"
+       ";;; e.g. (lambda (arg1 arg2 ...) ( ... ))"
+       "(lambda (list_activation_labels list_dimensions) "
+       "  (let* ("
+       "         (l_dimensions (loop for l in list_dimensions collect (length l)))"
+       "         (l_max (list-max l_dimensions))"
+       "         )"
+       "    (loop for i from 0 to (- l_max 1)"
+       "          collect (loop for j from 0 to (- (length list_activation_labels) 1)"
+       "                        collect (if "
+       "                                    (and "
+       "                                     (> (nth j list_activation_labels) 0)"
+       "                                     (> (nth j l_dimensions) 0)"
+       "                                     (<= i (- (nth j l_dimensions) 1))"
+       "                                     )"
+       "                                    (nth i (nth j list_dimensions))"
+       "                                  -1)"
+       "                        )"
+       "          into labels"
+       "          finally return labels"
+       "          )"
+       "    )"
+       ")"))))
+   (:group-id nil)
+   (:name "gather-dimensions-query")
+   (:x 307)
+   (:y 217)
+   (:w 177)
+   (:h 28)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "LIST_ACTIVATION_LABELS")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LIST_DIMENSIONS")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 9))
+  (:box
+   (:type :function)
+   (:reference mapcar)
+   (:group-id nil)
+   (:name "mapcar")
+   (:x 265)
+   (:y 280)
+   (:w 139)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "FUNCTION")
+     (:value box)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LIST")
+     (:value name)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 10))
+  (:comment
+   (:x 41)
+   (:y 149)
+   (:w 179)
+   (:h 38)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "lambda function processing dimension's state")
+   (:id 11))
+  (:box
+   (:type :io)
+   (:reference
+    (:out (:type omout) (:name "list") (:index 3) (:doc "")))
+   (:group-id nil)
+   (:name "list")
+   (:x 432)
+   (:y 528)
+   (:w 56)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 12))
+  (:box
+   (:type :io)
+   (:reference
+    (:out
+     (:type omout)
+     (:name "function_process_label")
+     (:index 4)
+     (:doc "")))
+   (:group-id nil)
+   (:name "function_process_label")
+   (:x 63)
+   (:y 249)
+   (:w 144)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 13)))
+ (:connections
+  (:connection (:from (:box 0 :out 0)) (:to (:box 7 :in 1)))
+  (:connection (:from (:box 0 :out 0)) (:to (:box 9 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 8 :in 1)))
+  (:connection
+   (:from (:box 4 :out 0))
+   (:to (:box 5 :in 0))
+   (:attributes (:color nil :style nil :modif (0 0.334058))))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 2 :in 0)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 6 :in 0)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 3 :in 0)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 12 :in 0)))
+  (:connection
+   (:from (:box 7 :out 0))
+   (:to (:box 10 :in 0))
+   (:attributes (:color nil :style nil :modif (0 0.33757558))))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 13 :in 0)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 9 :in 1)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 10 :in 1)))
+  (:connection (:from (:box 10 :out 0)) (:to (:box 4 :in 0)))))
