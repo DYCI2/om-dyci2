@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/08/22 1:03:42")
+  (:modified "2022/08/22 18:01:05")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1303 998)) (:position (233 61)))
+ (:window (:size (1303 998)) (:position (266 25)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -16,9 +16,9 @@
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 520)
+   (:x 516)
    (:y 612)
-   (:w 38)
+   (:w 44)
    (:h 30)
    (:color
     (:color-or-nil
@@ -114,7 +114,7 @@
    (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value (:list 1 2 5))
+   (:value (:list 2 5 7))
    (:id 3))
   (:box
    (:type :value)
@@ -347,7 +347,7 @@ within a list: -1 to let one label free")
    (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value (:list 0 1 0 0 0 0))
+   (:value (:list 0 1 0 0 0))
    (:id 11))
   (:box
    (:type :value)
@@ -735,11 +735,6 @@ within a list: -1 to let one label free")
     (:input
      (:type :optional)
      (:name "x")
-     (:value (:list nil))
-     (:reactive nil))
-    (:input
-     (:type :optional)
-     (:name "x")
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
@@ -751,7 +746,7 @@ within a list: -1 to let one label free")
      (:name "gather-dimensions-query")
      (:doc "")
      (:info (:created nil) (:modified nil) (:by nil) (:version nil))
-     (:window (:size (1024 671)) (:position (262 939)))
+     (:window (:size (1024 671)) (:position (678 421)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
@@ -779,7 +774,7 @@ within a list: -1 to let one label free")
        ")"))))
    (:group-id nil)
    (:name "gather-dimensions-query")
-   (:x 252)
+   (:x 238)
    (:y 342)
    (:w 177)
    (:h 28)
@@ -1069,7 +1064,7 @@ within a list: -1 to let one label free")
    (:x 271)
    (:y 73)
    (:w 333)
-   (:h 30)
+   (:h 29)
    (:color
     (:color-or-nil
      (:color
@@ -1088,13 +1083,7 @@ within a list: -1 to let one label free")
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value
-    (:list
-     "dur"
-     "playing_mode"
-     "size"
-     "register"
-     "vibrato"
-     "intensity"))
+    (:list "dur" "vocal_playing_mode" "size" "register" "vibrato"))
    (:id 23))
   (:comment
    (:x 109)
@@ -1457,7 +1446,7 @@ m: Breathy sound")
    (:text-font nil)
    (:align nil)
    (:text
-    "** 0=ignore dimension, 1=include dimension 
+    "** 0=ignore dimension, 1=include dimension on label processing 
 Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"register\") (ignore \"vibrato\") (ignore \"intensity\"))")
    (:id 39))
   (:comment
@@ -1649,9 +1638,9 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
    (:id 43))
   (:comment
    (:x 160)
-   (:y 874)
+   (:y 864)
    (:w 663)
-   (:h 23)
+   (:h 38)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -1659,7 +1648,7 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
    (:text-font nil)
    (:align nil)
    (:text
-    "* ATTENTION to adjust the length of the active dimensions set in 3 with the dimension's state list (in 4 and 5)  ")
+    "* Here you can set any dimension you desire and fits your analysis file. ATTENTION to adjust the length of the active dimensions set in 3 with the dimension's state list (in 4 and 5)  ")
    (:id 44))
   (:comment
    (:x 478)
