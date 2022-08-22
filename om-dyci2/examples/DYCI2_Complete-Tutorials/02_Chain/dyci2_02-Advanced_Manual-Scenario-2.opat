@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/08/23 1:10:39")
+  (:modified "2022/08/23 1:12:27")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1113 1036)) (:position (311 25)))
@@ -200,7 +200,7 @@
    (:x 216)
    (:y 314)
    (:w 328)
-   (:h 80)
+   (:h 78)
    (:fgcolor
     (:color-or-nil
      (:color
@@ -406,8 +406,8 @@ within a list: -1 to let one label free")
            "1-advanced-tutorials-chaining"
            "Results"
            "MyManualScenario_(dur=0)(vocal_playing_mode=1)(size=0)_[Manual_Scen][Soprano]"))
-         (:device :unspecific)
-         (:host :unspecific)
+         (:device nil)
+         (:host nil)
          (:name "Scen[L19C19]_L19_C19-Gen3_C5")
          (:type "wav")))))))
    (:id 13))
@@ -566,8 +566,8 @@ within a list: -1 to let one label free")
 CMD + CLICK ON THE PATHS")
    (:id 16))
   (:comment
-   (:x 10)
-   (:y 370)
+   (:x 758)
+   (:y 331)
    (:w 207)
    (:h 134)
    (:fgcolor nil)
@@ -788,8 +788,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "Loop_Interpretations_Scenario")
       (:type "opat"))))
    (:group-id nil)
@@ -865,8 +865,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "Output_Folder")
       (:type "opat"))))
    (:group-id nil)
@@ -941,8 +941,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "dyci2_active-dimensions")
       (:type "opat"))))
    (:group-id nil)
@@ -984,8 +984,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device :unspecific)
-      (:host :unspecific)
+      (:device nil)
+      (:host nil)
       (:name "dyci2_dataset-processing")
       (:type "opat"))))
    (:group-id nil)
