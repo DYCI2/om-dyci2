@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2022/08/21 19:56:13")
-  (:modified "2022/08/22 17:54:32")
+  (:modified "2022/08/22 18:07:55")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1139 929)) (:position (576 63)))
@@ -1114,7 +1114,7 @@
    (:x 63)
    (:y 363)
    (:w 141)
-   (:h 60)
+   (:h 79)
    (:color nil)
    (:border nil)
    (:roundness nil)
@@ -1204,7 +1204,7 @@
    (:id 40))
   (:comment
    (:x 202)
-   (:y 351)
+   (:y 360)
    (:w 199)
    (:h 83)
    (:fgcolor nil)
