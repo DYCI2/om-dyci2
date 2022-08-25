@@ -1,10 +1,10 @@
 
 (:patch
- (:name "output_folder")
+ (:name "dyci2_output_folder")
  (:doc "")
  (:info
   (:created "2021/07/06 13:35:28")
-  (:modified "2022/07/13 18:21:37")
+  (:modified "2022/08/25 21:28:24")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (602 533)) (:position (519 473)))
@@ -173,6 +173,11 @@
     (:input
      (:type :standard)
      (:name "CONTROL-STRING")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "format-arguments")
      (:value nil)
      (:reactive nil))
     (:input
@@ -359,6 +364,7 @@
    (:value "~a_~a_[~A][~a]")
    (:id 11)))
  (:connections
+  (:connection (:from (:box 0 :out 0)) (:to (:box 6 :in 4)))
   (:connection
    (:from (:box 1 :out 0))
    (:to (:box 6 :in 2))
