@@ -1,0 +1,373 @@
+
+(:patch
+ (:name "Loop_Process_Labels")
+ (:doc "")
+ (:info
+  (:created "2022/08/25 19:43:15")
+  (:modified "2022/08/25 19:45:19")
+  (:by "om-sharp")
+  (:version 1.06))
+ (:window (:size (613 715)) (:position (29 54)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 1) (:name "lab_files") (:doc "")))
+   (:group-id nil)
+   (:name "lab_files")
+   (:x 151)
+   (:y 57)
+   (:w 66)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :optional)
+     (:name "internal input value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:type :io)
+   (:reference (:out (:type omout) (:name "mem") (:index 1) (:doc "")))
+   (:group-id nil)
+   (:name "mem")
+   (:x 279)
+   (:y 552)
+   (:w 49)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 1))
+  (:box
+   (:type :io)
+   (:reference
+    (:in
+     (:type omin)
+     (:index 2)
+     (:name "list_activation_labels")
+     (:doc "")))
+   (:group-id nil)
+   (:name "list_activation_labels")
+   (:x 318)
+   (:y 215)
+   (:w 141)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 2))
+  (:box
+   (:type :io)
+   (:reference
+    (:in
+     (:type omin)
+     (:index 3)
+     (:name "function_process_labels")
+     (:doc "")))
+   (:group-id nil)
+   (:name "function_process_labels")
+   (:x 95)
+   (:y 346)
+   (:w 161)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 3))
+  (:box
+   (:type :object)
+   (:reference textbuffer)
+   (:group-id nil)
+   (:name "TEXTBUFFER")
+   (:x 137)
+   (:y 176)
+   (:w 148)
+   (:h 82)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font (:font (:face "Calibri") (:size 12) (:style :italic)))
+   (:align :center)
+   (:display :mini-view)
+   (:showname t)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "CONTENTS")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "SELF") (:reactive nil))
+    (:output (:name "CONTENTS") (:reactive nil)))
+   (:window (:size nil) (:position nil))
+   (:edition-params (:read-mode :lines-cols))
+   (:value
+    (:object
+     (:class textbuffer)
+     (:slots ((:contents nil)))
+     (:add-slots ((:input-mode :lines-cols)))))
+   (:id 4))
+  (:box
+   (:type :special)
+   (:reference loop-list)
+   (:group-id nil)
+   (:name "list-loop")
+   (:x 141)
+   (:y 119)
+   (:w 68)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 0.82 0.85 0.7 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "list")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "i") (:reactive nil)))
+   (:id 5))
+  (:box
+   (:type :special)
+   (:reference iterate)
+   (:group-id nil)
+   (:name "iterate")
+   (:x 183)
+   (:y 503)
+   (:w 57)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 0.82 0.85 0.7 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "action")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 6))
+  (:box
+   (:type :special)
+   (:reference collect)
+   (:group-id nil)
+   (:name "collect")
+   (:x 275)
+   (:y 447)
+   (:w 57)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 0.82 0.7 0.7 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "data-in")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "push")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "init")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "collect") (:reactive nil))
+    (:output (:name "data-out") (:reactive nil))
+    (:output (:name "init") (:reactive nil)))
+   (:id 7))
+  (:box
+   (:type :function)
+   (:reference flat)
+   (:group-id nil)
+   (:name "flat")
+   (:x 276)
+   (:y 508)
+   (:w 55)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "LST")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 8))
+  (:box
+   (:type :function)
+   (:reference mapcar)
+   (:group-id nil)
+   (:name "mapcar")
+   (:x 227)
+   (:y 409)
+   (:w 132)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "FUNCTION")
+     (:value box)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LIST")
+     (:value name)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 9))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "select-labels")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size nil) (:position nil))
+     (:text
+      (:list
+       ";;; Edit a valid LAMBDA EXPRESSION"
+       ";;; e.g. (lambda (arg1 arg2 ...) ( ... ))"
+       "(lambda (lines list_activation_labels)"
+       "  (loop for line in lines "
+       "        collect (append "
+       "                 ;(list (if (> (nth 0 list_activation_labels) 0) (round (/ (- (sec->ms (second line)) (sec->ms (first line))) (nth 0 list_activation_labels))) -1))"
+       "                 ;(list (if (> (nth 0 list_activation_labels) 0) (- (sec->ms (second line)) (sec->ms (first line)))  -1))"
+       "                 ;(list (- (sec->ms (second line)) (sec->ms (first line))))"
+       "                 (list (- (second line) (first line)))"
+       "                 (loop for i from 1 to (- (length list_activation_labels) 1)"
+       "                       ;collect (if (> (nth i list_activation_labels) 0) (nth (+ i 1) line) -1)"
+       "                       collect (nth (+ i 1) line)"
+       "                       )"
+       "                 )"
+       "        into labels"
+       "        finally return labels"
+       "        )"
+       "  )"
+       ""))))
+   (:group-id nil)
+   (:name "select-labels")
+   (:x 231)
+   (:y 281)
+   (:w 170)
+   (:h 46)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "LINES")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LIST_ACTIVATION_LABELS")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 10)))
+ (:connections
+  (:connection (:from (:box 0 :out 0)) (:to (:box 5 :in 0)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 10 :in 1)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 9 :in 0)))
+  (:connection (:from (:box 4 :out 1)) (:to (:box 10 :in 0)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 4 :in 0)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 6 :in 0)))
+  (:connection (:from (:box 7 :out 1)) (:to (:box 8 :in 0)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 1 :in 0)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 7 :in 0)))
+  (:connection (:from (:box 10 :out 0)) (:to (:box 9 :in 1)))))

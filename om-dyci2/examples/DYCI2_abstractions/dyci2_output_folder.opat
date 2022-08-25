@@ -1,0 +1,381 @@
+
+(:patch
+ (:name "output_folder")
+ (:doc "")
+ (:info
+  (:created "2021/07/06 13:35:28")
+  (:modified "2022/07/13 18:21:37")
+  (:by "om-sharp")
+  (:version 1.06))
+ (:window (:size (602 533)) (:position (519 473)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 1) (:name "scen_dir") (:doc "")))
+   (:group-id nil)
+   (:name "scen_dir")
+   (:x 330)
+   (:y 190)
+   (:w 71)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 2) (:name "head_title") (:doc "")))
+   (:group-id nil)
+   (:name "head_title")
+   (:x 153)
+   (:y 153)
+   (:w 74)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 1))
+  (:box
+   (:type :io)
+   (:reference
+    (:out (:type omout) (:name "output 1") (:index 1) (:doc "")))
+   (:group-id nil)
+   (:name "output 1")
+   (:x 214)
+   (:y 388)
+   (:w 68)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 2))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 3) (:name "root_dir") (:doc "")))
+   (:group-id nil)
+   (:name "root_dir")
+   (:x 177)
+   (:y 291)
+   (:w 64)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 3))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 4) (:name "parameters_names") (:doc "")))
+   (:group-id nil)
+   (:name "parameters_names")
+   (:x 209)
+   (:y 22)
+   (:w 125)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 4))
+  (:box
+   (:type :io)
+   (:reference
+    (:in
+     (:type omin)
+     (:index 5)
+     (:name "parameters_values")
+     (:doc "")))
+   (:group-id nil)
+   (:name "parameters_values")
+   (:x 270)
+   (:y 74)
+   (:w 125)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 5))
+  (:box
+   (:type :function)
+   (:reference format)
+   (:group-id nil)
+   (:name "format")
+   (:x 121)
+   (:y 249)
+   (:w 229)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "DESTINATION")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "CONTROL-STRING")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "format-arguments")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :optional)
+     (:name "format-arguments")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 6))
+  (:box
+   (:type :value)
+   (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
+   (:group-id nil)
+   (:name "value box")
+   (:x 77)
+   (:y 208)
+   (:w 118)
+   (:h 30)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value "~a_[~A]")
+   (:id 7))
+  (:box
+   (:type :function)
+   (:reference (:symbol "OM-CREATE-DIRECTORY" "OM-API"))
+   (:group-id nil)
+   (:name "om-create-directory")
+   (:x 175)
+   (:y 358)
+   (:w 148)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "PATHNAME")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 8))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "make-local-dyci2-path")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size nil) (:position nil))
+     (:text
+      (:list
+       ";;; Edit a valid LAMBDA EXPRESSION"
+       ";;; e.g. (lambda (arg1 arg2 ...) ( ... ))"
+       "(lambda (folder results_subfolder) "
+       "  (namestring "
+       "   (merge-pathnames "
+       "   (string+ folder \"Results/\" results_subfolder \"/\") "
+       "    ;(om-user-home)"
+       "    )))"
+       ""))))
+   (:group-id nil)
+   (:name "make-local-dyci2-path")
+   (:x 168)
+   (:y 332)
+   (:w 163)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "FOLDER")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "RESULTS_SUBFOLDER")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 9))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:textfun
+     (:name "write_parameters")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size (686 562)) (:position (1507 344)))
+     (:text
+      (:list
+       ";;; Edit a valid LAMBDA EXPRESSION"
+       ";;; e.g. (lambda (arg1 arg2 ...) ( ... ))"
+       "(lambda (parameters_name parameters_values)"
+       "  (let ((res \"\"))"
+       "    (loop for i from 0 to (- (length parameters_name) 1) do"
+       "          (setf res (string+ res \"(\" (nth i parameters_name) \"=\" (write-to-string (nth i parameters_values)) \")\")) "
+       "          )res)) "
+       "  "))))
+   (:group-id nil)
+   (:name "write_parameters")
+   (:x 236)
+   (:y 114)
+   (:w 131)
+   (:h 60)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "PARAMETERS_NAME")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "PARAMETERS_VALUES")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 10))
+  (:box
+   (:type :value)
+   (:reference (:symbol "SIMPLE-TEXT-STRING" "LISPWORKS"))
+   (:group-id nil)
+   (:name "value box")
+   (:x 50)
+   (:y 73)
+   (:w 118)
+   (:h 30)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 1.0)) (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:lock nil)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "value") (:reactive nil)))
+   (:value "~a_~a_[~A][~a]")
+   (:id 11)))
+ (:connections
+  (:connection
+   (:from (:box 1 :out 0))
+   (:to (:box 6 :in 2))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 9 :in 0)))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 10 :in 0)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 10 :in 1)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 9 :in 1)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 6 :in 1)))
+  (:connection
+   (:from (:box 8 :out 0))
+   (:to (:box 2 :in 0))
+   (:attributes
+    (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 8 :in 0)))
+  (:connection
+   (:from (:box 10 :out 0))
+   (:to (:box 6 :in 3))
+   (:attributes (:color nil :style nil :modif (0 -15/58))))))

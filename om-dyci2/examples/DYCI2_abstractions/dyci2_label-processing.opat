@@ -1,13 +1,13 @@
 
 (:patch
- (:name "dyci2_dataset-processing")
+ (:name "dyci2_label-processing")
  (:doc "")
  (:info
   (:created "2022/08/23 0:47:29")
-  (:modified "2022/08/25 20:00:06")
+  (:modified "2022/08/25 19:56:52")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (938 764)) (:position (782 183)))
+ (:window (:size (938 764)) (:position (444 241)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -63,8 +63,8 @@
     (:in (:type omin) (:index 3) (:name "dimension-state") (:doc "")))
    (:group-id nil)
    (:name "dimension-state")
-   (:x 427)
-   (:y 182)
+   (:x 454)
+   (:y 205)
    (:w 110)
    (:h 42)
    (:color
@@ -81,52 +81,6 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 4) (:name "audio-file-type") (:doc "")))
-   (:group-id nil)
-   (:name "audio-file-type")
-   (:x 494)
-   (:y 230)
-   (:w 104)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
-   (:border 0)
-   (:roundness 0)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:reactive nil)
-   (:inputs)
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 3))
-  (:box
-   (:type :io)
-   (:reference
-    (:in
-     (:type omin)
-     (:index 5)
-     (:name "function_process_label")
-     (:doc "")))
-   (:group-id nil)
-   (:name "function_process_label")
-   (:x 550)
-   (:y 277)
-   (:w 144)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
-   (:border 0)
-   (:roundness 0)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:reactive nil)
-   (:inputs)
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 4))
-  (:box
-   (:type :io)
-   (:reference
     (:out
      (:type omout)
      (:name "voice-generator")
@@ -134,8 +88,8 @@
      (:doc "")))
    (:group-id nil)
    (:name "voice-generator")
-   (:x 385)
-   (:y 511)
+   (:x 422)
+   (:y 534)
    (:w 108)
    (:h 42)
    (:color
@@ -153,37 +107,11 @@
      (:value nil)
      (:reactive nil)))
    (:outputs)
-   (:id 5))
+   (:id 3))
   (:box
    (:type :io)
    (:reference
-    (:out (:type omout) (:name "sound") (:index 2) (:doc "")))
-   (:group-id nil)
-   (:name "sound")
-   (:x 394)
-   (:y 396)
-   (:w 108)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
-   (:border 0)
-   (:roundness 0)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "out-value")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs)
-   (:id 6))
-  (:box
-   (:type :io)
-   (:reference
-    (:out (:type omout) (:name "root-directory") (:index 3) (:doc "")))
+    (:out (:type omout) (:name "root-directory") (:index 2) (:doc "")))
    (:group-id nil)
    (:name "root-directory")
    (:x 229)
@@ -205,7 +133,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs)
-   (:id 7))
+   (:id 4))
   (:box
    (:library "om-dyci2")
    (:type :object)
@@ -467,7 +395,7 @@
          "(-1 d -1 -1 -1 -1)"
          "(-1 m -1 -1 -1 -1)"
          "(-1 x -1 -1 -1 -1)"))))))
-   (:id 8))
+   (:id 5))
   (:box
    (:type :function)
    (:reference (:symbol "OM-DIRECTORY" "OM-API"))
@@ -494,7 +422,7 @@
      (:reactive nil))
     (:input (:type :key) (:name "type") (:value nil) (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 9))
+   (:id 6))
   (:box
    (:type :function)
    (:reference directory-namestring)
@@ -520,32 +448,24 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 10))
+   (:id 7))
   (:box
    (:type :abstraction)
    (:reference
     (:patch-from-file
      (:pathname
       (:directory (:relative))
-      (:device :unspecific)
-      (:host :unspecific)
-      (:name "Loop_Process_Dataset")
+      (:device nil)
+      (:host nil)
+      (:name "Loop_Process_Labels")
       (:type "opat"))))
    (:group-id nil)
-   (:name "Loop_Process_Dataset")
-   (:x 424)
-   (:y 344)
-   (:w 200)
-   (:h 37)
-   (:color
-    (:color-or-nil
-     (:color
-      (:color
-       0.5019567608833313D0
-       0.9999629259109497D0
-       0.031039152294397354D0
-       0.5764706))
-     (:t-or-nil t)))
+   (:name "Loop_Process_Labels")
+   (:x 474)
+   (:y 362)
+   (:w 149)
+   (:h 60)
+   (:color nil)
    (:border nil)
    (:roundness nil)
    (:text-font nil)
@@ -568,43 +488,40 @@
      (:reactive nil))
     (:input
      (:type :standard)
-     (:name "extension_audio_files")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "function_process_label")
+     (:name "function_process_labels")
      (:value nil)
      (:reactive nil)))
-   (:outputs
-    (:output (:name "sound") (:reactive nil))
-    (:output (:name "dataset-segments") (:reactive nil))
-    (:output (:name "processed-labels") (:reactive nil)))
-   (:id 11))
-  (:comment
-   (:x 71)
-   (:y 342)
-   (:w 364)
-   (:h 68)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
+   (:outputs (:output (:name "mem") (:reactive nil)))
+   (:id 8))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 4) (:name "function_process") (:doc "")))
+   (:group-id nil)
+   (:name "function_process")
+   (:x 574)
+   (:y 264)
+   (:w 113)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
    (:text-font nil)
-   (:align nil)
-   (:text
-    "Gather and output from the leftmost outlet : [dataset audio files], from the middle outlet : [file-index onset offset] and from the rightmost outlet [active dimensions data] of all analysis files (txt) inside your directory.  ")
-   (:id 12)))
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 9)))
  (:connections
-  (:connection (:from (:box 0 :out 0)) (:to (:box 10 :in 0)))
-  (:connection (:from (:box 1 :out 0)) (:to (:box 9 :in 1)))
-  (:connection (:from (:box 2 :out 0)) (:to (:box 11 :in 1)))
-  (:connection (:from (:box 3 :out 0)) (:to (:box 11 :in 2)))
-  (:connection (:from (:box 4 :out 0)) (:to (:box 11 :in 3)))
-  (:connection (:from (:box 8 :out 0)) (:to (:box 5 :in 0)))
-  (:connection (:from (:box 9 :out 0)) (:to (:box 11 :in 0)))
-  (:connection (:from (:box 10 :out 0)) (:to (:box 9 :in 0)))
-  (:connection (:from (:box 10 :out 0)) (:to (:box 7 :in 0)))
-  (:connection (:from (:box 11 :out 0)) (:to (:box 6 :in 0)))
-  (:connection (:from (:box 11 :out 1)) (:to (:box 8 :in 1)))
-  (:connection (:from (:box 11 :out 2)) (:to (:box 8 :in 2)))))
+  (:connection (:from (:box 0 :out 0)) (:to (:box 7 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 6 :in 1)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 8 :in 1)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 3 :in 0)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 8 :in 0)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 6 :in 0)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 4 :in 0)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 5 :in 1)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 5 :in 2)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 8 :in 2)))))
