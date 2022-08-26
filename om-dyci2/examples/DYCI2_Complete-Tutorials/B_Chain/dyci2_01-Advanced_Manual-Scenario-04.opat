@@ -1,13 +1,13 @@
 
 (:patch
- (:name "dyci2_01-Advanced_Manual-Scenario-03")
+ (:name "dyci2_01-Advanced_Manual-Scenario-04")
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/08/26 13:38:26")
+  (:modified "2022/08/26 13:58:35")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1790 1027)) (:position (194 -1042)))
+ (:window (:size (1790 1027)) (:position (225 -1055)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -372,8 +372,8 @@ within a list: -1 to let one label free")
            "1-advanced-tutorials-chaining"
            "Results"
            "MyManualScenario_(dur=0)(vocal_playing_mode=1)(size=0)_[Manual_Scen][Soprano]"))
-         (:device nil)
-         (:host nil)
+         (:device :unspecific)
+         (:host :unspecific)
          (:name "Scen[L19C19]_L19_C19-Gen3_C5")
          (:type "wav")))))))
    (:id 13))
@@ -721,8 +721,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device nil)
-      (:host nil)
+      (:device :unspecific)
+      (:host :unspecific)
       (:name "Loop_Interpretations_Scenario")
       (:type "opat"))))
    (:group-id nil)
@@ -812,8 +812,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device nil)
-      (:host nil)
+      (:device :unspecific)
+      (:host :unspecific)
       (:name "dyci2_active-dimensions")
       (:type "opat"))))
    (:group-id nil)
@@ -847,8 +847,7 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:output (:name "cons") (:reactive nil))
     (:output (:name "length") (:reactive nil))
     (:output (:name "list") (:reactive nil))
-    (:output (:name "function_process_label") (:reactive nil))
-    (:output (:name "out") (:reactive nil)))
+    (:output (:name "function_process_label") (:reactive nil)))
    (:id 29))
   (:box
    (:type :abstraction)
@@ -856,8 +855,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device nil)
-      (:host nil)
+      (:device :unspecific)
+      (:host :unspecific)
       (:name "dyci2_dataset-processing")
       (:type "opat"))))
    (:group-id nil)
@@ -930,8 +929,8 @@ Here : ((ignore \"dur\") (include \"playing_mode\") (ignore \"size\") (ignore \"
     (:patch-from-file
      (:pathname
       (:directory (:relative :up :up "DYCI2_abstractions"))
-      (:device nil)
-      (:host nil)
+      (:device :unspecific)
+      (:host :unspecific)
       (:name "dyci2_output_folder")
       (:type "opat"))))
    (:group-id nil)
@@ -1309,10 +1308,11 @@ Est-ce qu'on modifie cette analyse ?")
    (:id 48))
   (:comment
    (:x 1064)
-   (:y 703)
-   (:w 418)
-   (:h 159)
-   (:fgcolor nil)
+   (:y 686)
+   (:w 421)
+   (:h 218)
+   (:fgcolor
+    (:color-or-nil (:color (:color 0.0 0.0 0.0 0.0)) (:t-or-nil t)))
    (:bgcolor
     (:color-or-nil
      (:color
@@ -1326,7 +1326,21 @@ Est-ce qu'on modifie cette analyse ?")
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:text "")
+   (:text
+    "a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+
+")
    (:id 49))
   (:comment
    (:x 14)
@@ -1367,214 +1381,7 @@ Est-ce qu'on modifie cette analyse ?")
      (:t-or-nil t)))
    (:align nil)
    (:text "11.")
-   (:id 51))
-  (:box
-   (:type :function)
-   (:reference length)
-   (:group-id nil)
-   (:name "length")
-   (:x 1226)
-   (:y 401)
-   (:w 72)
-   (:h 29)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:icon :left)
-   (:lock nil)
-   (:lambda nil)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "SEQUENCE")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 52))
-  (:box
-   (:type :function)
-   (:reference list)
-   (:group-id nil)
-   (:name "list")
-   (:x 1243)
-   (:y 562)
-   (:w 54)
-   (:h 29)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:icon :left)
-   (:lock nil)
-   (:lambda :lambda)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :optional)
-     (:name "x")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 53))
-  (:box
-   (:type :function)
-   (:reference mapcar)
-   (:group-id nil)
-   (:name "mapcar")
-   (:x 1258)
-   (:y 618)
-   (:w 77)
-   (:h 29)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:icon :left)
-   (:lock nil)
-   (:lambda nil)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "FUNCTION")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "LIST")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 54))
-  (:box
-   (:type :special)
-   (:reference loop-while)
-   (:group-id nil)
-   (:name "loop-while")
-   (:x 1357)
-   (:y 419)
-   (:w 80)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 0.82 0.85 0.7 1.0)) (:t-or-nil t)))
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "condition")
-     (:value t)
-     (:reactive nil)))
-   (:outputs (:output (:name "i") (:reactive nil)))
-   (:id 55))
-  (:box
-   (:type :special)
-   (:reference collect)
-   (:group-id nil)
-   (:name "collect")
-   (:x 1343)
-   (:y 510)
-   (:w 57)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 0.82 0.7 0.7 1.0)) (:t-or-nil t)))
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "data-in")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "push")
-     (:value t)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "init")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs
-    (:output (:name "collect") (:reactive nil))
-    (:output (:name "data-out") (:reactive nil))
-    (:output (:name "init") (:reactive nil)))
-   (:id 56))
-  (:box
-   (:type :function)
-   (:reference <)
-   (:group-id nil)
-   (:name "<")
-   (:x 1113)
-   (:y 446)
-   (:w 69)
-   (:h 29)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:icon :left)
-   (:lock nil)
-   (:lambda nil)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "NUM")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :optional)
-     (:name "args")
-     (:value nil)
-     (:reactive nil)))
-   (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 57))
-  (:box
-   (:type :special)
-   (:reference loop-for)
-   (:group-id nil)
-   (:name "loop-for")
-   (:x 1237)
-   (:y 474)
-   (:w 67)
-   (:h 42)
-   (:color
-    (:color-or-nil (:color (:color 0.82 0.85 0.7 1.0)) (:t-or-nil t)))
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align :center)
-   (:icon :top)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "from")
-     (:value 0)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "to")
-     (:value 10)
-     (:reactive nil)))
-   (:outputs (:output (:name "i") (:reactive nil)))
-   (:id 58)))
+   (:id 51)))
  (:connections
   (:connection (:from (:box 0 :out 0)) (:to (:box 27 :in 6)))
   (:connection (:from (:box 3 :out 0)) (:to (:box 27 :in 3)))
@@ -1583,7 +1390,6 @@ Est-ce qu'on modifie cette analyse ?")
   (:connection (:from (:box 8 :out 0)) (:to (:box 29 :in 0)))
   (:connection (:from (:box 8 :out 0)) (:to (:box 30 :in 2)))
   (:connection (:from (:box 8 :out 0)) (:to (:box 32 :in 4)))
-  (:connection (:from (:box 8 :out 0)) (:to (:box 52 :in 0)))
   (:connection (:from (:box 9 :out 0)) (:to (:box 30 :in 3)))
   (:connection (:from (:box 14 :out 0)) (:to (:box 13 :in 0)))
   (:connection (:from (:box 15 :out 0)) (:to (:box 32 :in 3)))
@@ -1598,10 +1404,4 @@ Est-ce qu'on modifie cette analyse ?")
   (:connection (:from (:box 30 :out 1)) (:to (:box 27 :in 5)))
   (:connection (:from (:box 32 :out 0)) (:to (:box 27 :in 7)))
   (:connection (:from (:box 33 :out 0)) (:to (:box 34 :in 0)))
-  (:connection (:from (:box 34 :out 0)) (:to (:box 32 :in 2)))
-  (:connection (:from (:box 52 :out 0)) (:to (:box 55 :in 0)))
-  (:connection (:from (:box 52 :out 0)) (:to (:box 57 :in 0)))
-  (:connection (:from (:box 52 :out 0)) (:to (:box 58 :in 1)))
-  (:connection (:from (:box 53 :out 0)) (:to (:box 54 :in 0)))
-  (:connection (:from (:box 56 :out 0)) (:to (:box 54 :in 1)))
-  (:connection (:from (:box 58 :out 0)) (:to (:box 56 :in 2)))))
+  (:connection (:from (:box 34 :out 0)) (:to (:box 32 :in 2)))))

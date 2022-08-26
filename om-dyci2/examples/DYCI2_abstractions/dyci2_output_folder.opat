@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2021/07/06 13:35:28")
-  (:modified "2022/08/25 21:28:24")
+  (:modified "2022/08/26 12:42:20")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (602 533)) (:position (519 473)))
+ (:window (:size (683 564)) (:position (704 154)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -59,8 +59,8 @@
     (:out (:type omout) (:name "output 1") (:index 1) (:doc "")))
    (:group-id nil)
    (:name "output 1")
-   (:x 214)
-   (:y 388)
+   (:x 213)
+   (:y 463)
    (:w 68)
    (:h 42)
    (:color
@@ -85,8 +85,8 @@
     (:in (:type omin) (:index 3) (:name "root_dir") (:doc "")))
    (:group-id nil)
    (:name "root_dir")
-   (:x 177)
-   (:y 291)
+   (:x 93)
+   (:y 295)
    (:w 64)
    (:h 42)
    (:color
@@ -218,8 +218,8 @@
    (:reference (:symbol "OM-CREATE-DIRECTORY" "OM-API"))
    (:group-id nil)
    (:name "om-create-directory")
-   (:x 175)
-   (:y 358)
+   (:x 174)
+   (:y 433)
    (:w 148)
    (:h 29)
    (:color nil)
@@ -265,7 +265,7 @@
    (:group-id nil)
    (:name "make-local-dyci2-path")
    (:x 168)
-   (:y 332)
+   (:y 346)
    (:w 163)
    (:h 29)
    (:color nil)
@@ -302,7 +302,7 @@
       (:modified nil)
       (:by *app-name*)
       (:version 0))
-     (:window (:size (686 562)) (:position (1507 344)))
+     (:window (:size (1015 562)) (:position (173 713)))
      (:text
       (:list
        ";;; Edit a valid LAMBDA EXPRESSION"
