@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2022/08/21 12:33:12")
-  (:modified "2022/08/22 18:24:44")
+  (:modified "2022/08/27 0:08:48")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1437 848)) (:position (266 88)))
+ (:window (:size (1437 848)) (:position (197 182)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -948,7 +948,7 @@
   (:comment
    (:x 745)
    (:y 394)
-   (:w 331)
+   (:w 157)
    (:h 38)
    (:fgcolor nil)
    (:bgcolor nil)
@@ -956,9 +956,7 @@
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:text
-    "Number of active dimensions 
-(by default Duration Pitch Energy Voice-Casting Nmf)")
+   (:text "Number of all dimensions")
    (:id 30))
   (:comment
    (:x 777)
@@ -989,15 +987,15 @@
   (:comment
    (:x 834)
    (:y 290)
-   (:w 240)
-   (:h 23)
+   (:w 250)
+   (:h 25)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
    (:roundness nil)
    (:text-font nil)
    (:align nil)
-   (:text "Generates segments from markers")
+   (:text "Look on the .txt file for selecting a label")
    (:id 33))
   (:box
    (:type :object)

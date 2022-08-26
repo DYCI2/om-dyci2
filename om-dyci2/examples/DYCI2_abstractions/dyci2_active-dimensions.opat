@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2022/08/23 0:31:46")
-  (:modified "2022/08/26 15:00:21")
+  (:modified "2022/08/26 21:38:54")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (683 630)) (:position (833 25)))
@@ -554,7 +554,7 @@
        (:reference create-list)
        (:group-id nil)
        (:name "create-list")
-       (:x 287)
+       (:x 289)
        (:y 222)
        (:w 93)
        (:h 29)
@@ -756,6 +756,7 @@
        (:to (:box 9 :in 0))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style :curved :modif nil)))
+      (:connection (:from (:box 1 :out 0)) (:to (:box 4 :in 1)))
       (:connection (:from (:box 3 :out 0)) (:to (:box 5 :in 0)))
       (:connection (:from (:box 4 :out 0)) (:to (:box 7 :in 2)))
       (:connection (:from (:box 5 :out 0)) (:to (:box 4 :in 0)))
