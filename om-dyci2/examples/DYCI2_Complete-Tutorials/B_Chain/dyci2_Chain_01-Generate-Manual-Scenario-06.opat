@@ -1,13 +1,13 @@
 
 (:patch
- (:name "dyci2_01-Advanced_Manual-Scenario-06")
+ (:name "dyci2_Chain_01-Generate-Manual-Scenario-06")
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/08/27 0:09:00")
+  (:modified "2022/09/09 18:51:12")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (1761 1027)) (:position (0 65)))
+ (:window (:size (1761 1027)) (:position (90 72)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -270,10 +270,10 @@ within a list: -1 to let one label free")
    (:text "EVALUATE (select box then press \"v\")")
    (:id 10))
   (:comment
-   (:x 494)
+   (:x 492)
    (:y 14)
-   (:w 603)
-   (:h 30)
+   (:w 625)
+   (:h 31)
    (:fgcolor nil)
    (:bgcolor
     (:color-or-nil
@@ -292,13 +292,13 @@ within a list: -1 to let one label free")
      (:t-or-nil t)))
    (:align nil)
    (:text
-    "OM-DYCI2 TUTORIAL 1: Generate a one dimension manual scenario")
+    "OM-DYCI2 TUTORIAL B.1: Generate a one dimension manual scenario")
    (:id 11))
   (:comment
    (:x 409)
    (:y 619)
    (:w 112)
-   (:h 25)
+   (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -1571,7 +1571,7 @@ p")
    (:x 1418)
    (:y 307)
    (:w 38)
-   (:h 24)
+   (:h 23)
    (:fgcolor nil)
    (:bgcolor nil)
    (:border nil)
@@ -1770,8 +1770,8 @@ c
 c")
    (:id 73))
   (:comment
-   (:x 73)
-   (:y 18)
+   (:x 72)
+   (:y 21)
    (:w 1550)
    (:h 42)
    (:fgcolor

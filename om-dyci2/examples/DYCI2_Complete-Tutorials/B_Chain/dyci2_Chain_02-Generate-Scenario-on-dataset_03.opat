@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/09/09 17:41:07")
+  (:modified "2022/09/09 18:51:48")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1498 1038)) (:position (234 25)))
@@ -13,9 +13,9 @@
  (:boxes
   (:comment
    (:x 284)
-   (:y 9)
-   (:w 824)
-   (:h 30)
+   (:y 0)
+   (:w 845)
+   (:h 36)
    (:fgcolor nil)
    (:bgcolor
     (:color-or-nil
@@ -34,7 +34,7 @@
      (:t-or-nil t)))
    (:align nil)
    (:text
-    "OM-DYCI2 TUTORIAL 2 : AUTOMATIC GENERATION OF SCENARIO ON A DATASET (CORPUS)")
+    "OM-DYCI2 TUTORIAL B.2 : AUTOMATIC GENERATION OF SCENARIO ON A DATASET (CORPUS)")
    (:id 0))
   (:comment
    (:x 150)
@@ -383,7 +383,7 @@ CMD + CLICK ON THE PATHS")
    (:x 448)
    (:y 298)
    (:w 283)
-   (:h 24)
+   (:h 22)
    (:fgcolor
     (:color-or-nil (:color (:color 0.0 0.0 0.0 1.0)) (:t-or-nil t)))
    (:bgcolor nil)

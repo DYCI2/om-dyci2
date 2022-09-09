@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2018/10/12 13:57:27")
-  (:modified "2022/09/09 18:48:40")
+  (:modified "2022/09/09 18:53:27")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1691 1027)) (:position (41 25)))
@@ -292,7 +292,7 @@ within a list: -1 to let one label free")
      (:t-or-nil t)))
    (:align nil)
    (:text
-    "OM-DYCI2 TUTORIAL 3.1: Sync dataset to scenario by segment stretching - Manual Scenario")
+    "OM-DYCI2 TUTORIAL C.1: Sync dataset to scenario by segment stretching - Manual Scenario")
    (:id 11))
   (:comment
    (:x 409)
@@ -1464,7 +1464,7 @@ a
    (:x 1170)
    (:y 102)
    (:w 430)
-   (:h 472)
+   (:h 338)
    (:fgcolor
     (:color-or-nil (:color (:color 0.0 0.0 0.0 0.0)) (:t-or-nil t)))
    (:bgcolor
