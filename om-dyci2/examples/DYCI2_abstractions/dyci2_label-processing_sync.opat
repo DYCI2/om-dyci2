@@ -1,0 +1,770 @@
+
+(:patch
+ (:name "dyci2_label-processing_sync")
+ (:doc "")
+ (:info
+  (:created "2022/08/23 0:47:29")
+  (:modified "2022/09/16 17:20:44")
+  (:by "om-sharp")
+  (:version 1.06))
+ (:window (:size (999 809)) (:position (675 200)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:type :io)
+   (:reference
+    (:in
+     (:type omin)
+     (:index 1)
+     (:name "choose-directory-dialog")
+     (:doc "")))
+   (:group-id nil)
+   (:name "choose-directory-dialog")
+   (:x 106)
+   (:y 43)
+   (:w 153)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 2) (:name "dimension-state") (:doc "")))
+   (:group-id nil)
+   (:name "dimension-state")
+   (:x 531)
+   (:y 279)
+   (:w 110)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 1))
+  (:box
+   (:type :io)
+   (:reference
+    (:in
+     (:type omin)
+     (:index 3)
+     (:name "scenario_directory")
+     (:doc "")))
+   (:group-id nil)
+   (:name "scenario_directory")
+   (:x 306)
+   (:y 174)
+   (:w 120)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 2))
+  (:box
+   (:type :io)
+   (:reference
+    (:out
+     (:type omout)
+     (:name "voice-generator")
+     (:index 1)
+     (:doc "")))
+   (:group-id nil)
+   (:name "voice-generator")
+   (:x 471)
+   (:y 677)
+   (:w 108)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 3))
+  (:box
+   (:type :io)
+   (:reference
+    (:out (:type omout) (:name "root-directory") (:index 2) (:doc "")))
+   (:group-id nil)
+   (:name "root-directory")
+   (:x 86)
+   (:y 148)
+   (:w 98)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 4))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 4) (:name "function_process") (:doc "")))
+   (:group-id nil)
+   (:name "function_process")
+   (:x 664)
+   (:y 409)
+   (:w 113)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 5))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 5) (:name "remove-scenario") (:doc "")))
+   (:group-id nil)
+   (:name "remove-scenario")
+   (:x 421)
+   (:y 324)
+   (:w 113)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 6))
+  (:box
+   (:type :io)
+   (:reference
+    (:in (:type omin) (:index 6) (:name "directory_type") (:doc "")))
+   (:group-id nil)
+   (:name "directory_type")
+   (:x 390)
+   (:y 91)
+   (:w 120)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 7))
+  (:box
+   (:type :io)
+   (:reference
+    (:out (:type omout) (:name "sound") (:index 3) (:doc "")))
+   (:group-id nil)
+   (:name "sound")
+   (:x 534)
+   (:y 557)
+   (:w 55)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "out-value")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs)
+   (:id 8))
+  (:box
+   (:library "om-dyci2")
+   (:type :object)
+   (:reference (:symbol "DYCI2GENERATOR" "DYCI2"))
+   (:group-id nil)
+   (:name nil)
+   (:x 485)
+   (:y 603)
+   (:w 223)
+   (:h 54)
+   (:color
+    (:color-or-nil
+     (:color
+      (:color
+       0.9999992847442627D0
+       0.9999744296073914D0
+       0.9999912977218628D0
+       0.4))
+     (:t-or-nil t)))
+   (:border nil)
+   (:roundness nil)
+   (:text-font
+    (:font-or-nil
+     (:font (:font (:face "Helvetica") (:size 12) (:style :bold)))
+     (:t-or-nil t)))
+   (:align :center)
+   (:display :text)
+   (:showname nil)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "MEMORY")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "LABLS")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "SELF") (:reactive nil))
+    (:output (:name "MEMORY") (:reactive nil))
+    (:output (:name "LABLS") (:reactive nil)))
+   (:window (:size nil) (:position nil))
+   (:edition-params)
+   (:value
+    (:object
+     (:class (:symbol "DYCI2GENERATOR" "DYCI2"))
+     (:slots
+      ((:memory
+        (:list
+         "(1 42226 43201)"
+         "(1 43201 44155)"
+         "(1 44155 45691)"
+         "(1 45691 48037)"
+         "(1 48037 49466)"
+         "(1 49466 49859)"
+         "(1 49859 50371)"
+         "(1 50371 50558)"
+         "(1 50558 52458)"
+         "(1 52458 54795)"
+         "(1 54795 56526)"
+         "(1 56526 57428)"
+         "(1 57428 59084)"
+         "(1 59084 59532)"
+         "(1 59532 60421)"
+         "(1 60421 62383)"
+         "(1 62383 64905)"
+         "(1 64905 65074)"
+         "(1 65074 66745)"
+         "(1 66745 67261)"
+         "(1 67261 67850)"
+         "(1 67850 68426)"
+         "(1 68426 70448)"
+         "(1 70448 72300)"
+         "(1 72300 73089)"
+         "(1 73089 74182)"
+         "(1 74182 75718)"
+         "(1 75718 75919)"
+         "(1 75919 76588)"
+         "(1 76588 78886)"
+         "(1 78886 79525)"
+         "(1 79525 81690)"
+         "(1 81690 83183)"
+         "(1 83183 83546)"
+         "(1 83546 83924)"
+         "(1 83924 84360)"
+         "(1 84360 85772)"
+         "(1 85772 86997)"
+         "(1 86997 87680)"
+         "(1 87680 89372)"
+         "(1 89372 90071)"
+         "(1 90071 92683)"
+         "(1 92683 94930)"
+         "(1 94930 96040)"
+         "(1 96040 96139)"
+         "(1 96139 97565)"
+         "(1 97565 100178)"
+         "(1 100178 101150)"
+         "(1 101150 102458)"
+         "(1 102458 104452)"
+         "(1 104452 107411)"
+         "(1 107411 108060)"
+         "(1 108060 108695)"
+         "(1 108695 110007)"
+         "(2 0 1876)"
+         "(2 1876 2398)"
+         "(2 2398 2907)"
+         "(2 2907 5108)"
+         "(2 5108 6217)"
+         "(2 6217 6991)"
+         "(2 6991 7525)"
+         "(2 7525 8164)"
+         "(2 8164 9684)"
+         "(2 9684 12561)"
+         "(2 12561 15552)"
+         "(2 15552 15791)"
+         "(2 15791 15821)"
+         "(2 15821 16699)"
+         "(2 16699 17257)"
+         "(2 17257 17894)"
+         "(2 17894 18507)"
+         "(2 18507 19081)"
+         "(2 19081 19272)"
+         "(2 19272 19330)"
+         "(2 19330 19538)"
+         "(2 19538 19638)"
+         "(2 19638 19869)"
+         "(2 19869 20169)"
+         "(2 20169 20488)"
+         "(2 20488 21170)"
+         "(2 21170 22862)"
+         "(2 22862 23504)"
+         "(2 23504 25037)"
+         "(2 25037 25037)"
+         "(2 25037 25413)"
+         "(2 25413 26853)"
+         "(2 26853 28961)"
+         "(2 28961 29150)"
+         "(2 29150 29150)"
+         "(2 29150 29150)"
+         "(2 29150 29384)"
+         "(2 29384 31478)"
+         "(2 31478 32011)"
+         "(2 32011 32650)"
+         "(2 32650 34170)"
+         "(2 34170 37048)"
+         "(2 37048 40039)"
+         "(2 40039 40308)"
+         "(2 40308 41274)"
+         "(2 41274 42226)"))
+       (:labls
+        (:list
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 b -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 b -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 f -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 b -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 b -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 f -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 f -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 b -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 b -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 c -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 a -1 -1 -1 -1)"
+         "(-1 d -1 -1 -1 -1)"
+         "(-1 m -1 -1 -1 -1)"
+         "(-1 x -1 -1 -1 -1)"))))))
+   (:id 9))
+  (:box
+   (:type :function)
+   (:reference (:symbol "OM-DIRECTORY" "OM-API"))
+   (:group-id nil)
+   (:name "om-directory")
+   (:x 196)
+   (:y 154)
+   (:w 109)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "PATH")
+     (:value nil)
+     (:reactive nil))
+    (:input (:type :key) (:name "type") (:value nil) (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 10))
+  (:box
+   (:type :function)
+   (:reference directory-namestring)
+   (:group-id nil)
+   (:name "directory-namestring")
+   (:x 106)
+   (:y 99)
+   (:w 152)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "P")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 11))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:patch-from-file
+     (:pathname
+      (:directory (:relative))
+      (:device nil)
+      (:host nil)
+      (:name "dyci2_remove-scenario-from-memory")
+      (:type "opat"))))
+   (:group-id nil)
+   (:name "dyci2_remove-scenario-from-memory")
+   (:x 312)
+   (:y 389)
+   (:w 244)
+   (:h 60)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "mem-directory")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "scenario-file")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "remove-scen-file-from-memory")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "root_dir")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "mem-corpus") (:reactive nil)))
+   (:id 12))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:patch-from-file
+     (:pathname
+      (:directory (:relative))
+      (:device nil)
+      (:host nil)
+      (:name "Loop_Process_Dataset")
+      (:type "opat"))))
+   (:group-id nil)
+   (:name "Loop_Process_Dataset")
+   (:x 533)
+   (:y 493)
+   (:w 156)
+   (:h 60)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "lab_files")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "list_activation_labels")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "extension_audio_files")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "function_process_label")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "sound") (:reactive nil))
+    (:output (:name "dataset-segments") (:reactive nil))
+    (:output (:name "processed-labels") (:reactive nil)))
+   (:id 13))
+  (:box
+   (:type :function)
+   (:reference (:symbol "OM-DIRECTORY" "OM-API"))
+   (:group-id nil)
+   (:name "om-directory")
+   (:x 320)
+   (:y 262)
+   (:w 182)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "PATH")
+     (:value nil)
+     (:reactive nil))
+    (:input (:type :key) (:name "type") (:value nil) (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 14))
+  (:box
+   (:type :function)
+   (:reference directory-namestring)
+   (:group-id nil)
+   (:name "directory-namestring")
+   (:x 290)
+   (:y 224)
+   (:w 152)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "P")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 15))
+  (:box
+   (:type :function)
+   (:reference car)
+   (:group-id nil)
+   (:name "car")
+   (:x 379)
+   (:y 296)
+   (:w 54)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "X")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 16))
+  (:box
+   (:type :io)
+   (:reference
+    (:in
+     (:type omin)
+     (:index 7)
+     (:name "audio-file-extension")
+     (:doc "")))
+   (:group-id nil)
+   (:name "audio-file-extension")
+   (:x 600)
+   (:y 374)
+   (:w 133)
+   (:h 42)
+   (:color
+    (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
+   (:border 0)
+   (:roundness 0)
+   (:text-font nil)
+   (:align :center)
+   (:icon :top)
+   (:reactive nil)
+   (:inputs)
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 17)))
+ (:connections
+  (:connection (:from (:box 0 :out 0)) (:to (:box 11 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 13 :in 1)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 12 :in 3)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 15 :in 0)))
+  (:connection (:from (:box 5 :out 0)) (:to (:box 13 :in 3)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 12 :in 2)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 14 :in 1)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 10 :in 1)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 3 :in 0)))
+  (:connection (:from (:box 10 :out 0)) (:to (:box 12 :in 0)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 10 :in 0)))
+  (:connection (:from (:box 11 :out 0)) (:to (:box 4 :in 0)))
+  (:connection (:from (:box 12 :out 0)) (:to (:box 13 :in 0)))
+  (:connection (:from (:box 13 :out 0)) (:to (:box 8 :in 0)))
+  (:connection (:from (:box 13 :out 1)) (:to (:box 9 :in 1)))
+  (:connection (:from (:box 13 :out 2)) (:to (:box 9 :in 2)))
+  (:connection (:from (:box 14 :out 0)) (:to (:box 16 :in 0)))
+  (:connection (:from (:box 15 :out 0)) (:to (:box 14 :in 0)))
+  (:connection (:from (:box 16 :out 0)) (:to (:box 12 :in 1)))
+  (:connection (:from (:box 17 :out 0)) (:to (:box 13 :in 2)))))
