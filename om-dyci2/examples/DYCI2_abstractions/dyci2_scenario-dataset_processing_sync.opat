@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2022/08/23 0:47:29")
-  (:modified "2022/09/16 17:46:40")
+  (:modified "2022/09/18 12:19:26")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (938 764)) (:position (782 183)))
@@ -483,7 +483,7 @@
    (:text-font nil)
    (:align nil)
    (:icon :left)
-   (:lock nil)
+   (:lock :eval-once)
    (:lambda nil)
    (:reactive nil)
    (:inputs
