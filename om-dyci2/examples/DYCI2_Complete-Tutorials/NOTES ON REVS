@@ -7,3 +7,23 @@ Refomuler la suite des patches dans l'ordre :
 1.load annotations
 2.preprocessing labels
 3.chaining (sync / pas sync / silence / stretch) {svp ?}
+
+
+
+1. [Dans la jungle....]
+
+2. [example avec violon (pizz, ord, etc)]
+
+3. processing labels (faire un patch focus sur prcocessing labels). Faire une fonction par le biais de la quelle on peut passer de Hz en MIDI et en modulo MIDI.
+
+4. Pas autant de files et des boites 
+
+5. Penser à avoir le generateur en premier niveau.
+
+6. Silnce / pas silence .
+
+7. "Punch Line" => titre pour chaque tuto
+
+8. Difference entre patches 1 agnet et 2 agents.
+
+9. boite .wav

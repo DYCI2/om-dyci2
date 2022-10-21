@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2022/08/23 0:31:46")
-  (:modified "2022/08/26 21:38:54")
+  (:modified "2022/10/21 13:28:20")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (683 630)) (:position (833 25)))
@@ -14,11 +14,11 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 1) (:name "dimension_state") (:doc "")))
+    (:in (:type omin) (:index 1) (:name "scenario") (:doc "")))
    (:group-id nil)
-   (:name "dimension_state")
-   (:x 240)
-   (:y 86)
+   (:name "scenario")
+   (:x 422)
+   (:y 74)
    (:w 109)
    (:h 42)
    (:color
@@ -35,12 +35,12 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 2) (:name "scenario") (:doc "")))
+    (:in (:type omin) (:index 2) (:name "dimension_state") (:doc "")))
    (:group-id nil)
-   (:name "scenario")
-   (:x 437)
-   (:y 108)
-   (:w 67)
+   (:name "dimension_state")
+   (:x 212)
+   (:y 43)
+   (:w 109)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
@@ -799,18 +799,10 @@
    (:outputs (:output (:name "output 1") (:reactive nil)))
    (:id 13)))
  (:connections
-  (:connection (:from (:box 0 :out 0)) (:to (:box 9 :in 1)))
-  (:connection (:from (:box 0 :out 0)) (:to (:box 10 :in 0)))
-  (:connection
-   (:from (:box 0 :out 0))
-   (:to (:box 13 :in 0))
-   (:attributes
-    (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-  (:connection
-   (:from (:box 1 :out 0))
-   (:to (:box 13 :in 1))
-   (:attributes
-    (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
+  (:connection (:from (:box 0 :out 0)) (:to (:box 13 :in 1)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 9 :in 1)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 10 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 13 :in 0)))
   (:connection
    (:from (:box 6 :out 0))
    (:to (:box 7 :in 0))

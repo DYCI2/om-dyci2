@@ -4,10 +4,10 @@
  (:doc "")
  (:info
   (:created "2021/07/07 16:05:44")
-  (:modified "2022/09/17 16:51:29")
+  (:modified "2022/10/21 15:57:49")
   (:by "om-sharp")
   (:version 1.06))
- (:window (:size (881 801)) (:position (0 25)))
+ (:window (:size (881 801)) (:position (891 78)))
  (:grid nil)
  (:lock nil)
  (:boxes
@@ -42,8 +42,8 @@
     (:in (:type omin) (:index 1) (:name "scen-gen") (:doc "")))
    (:group-id nil)
    (:name "scen-gen")
-   (:x 82)
-   (:y 137)
+   (:x 132)
+   (:y 203)
    (:w 72)
    (:h 42)
    (:color
@@ -59,12 +59,11 @@
    (:id 1))
   (:box
    (:type :io)
-   (:reference
-    (:in (:type omin) (:index 1) (:name "max-lbl-ct") (:doc "")))
+   (:reference (:in (:type omin) (:index 1) (:name "len") (:doc "")))
    (:group-id nil)
-   (:name "max-lbl-ct")
-   (:x 236)
-   (:y 88)
+   (:name "len")
+   (:x 229)
+   (:y 222)
    (:w 81)
    (:h 42)
    (:color
@@ -81,12 +80,12 @@
   (:box
    (:type :io)
    (:reference
-    (:in (:type omin) (:index 1) (:name "max-vc-ct") (:doc "")))
+    (:in (:type omin) (:index 1) (:name "max-lbl-ct") (:doc "")))
    (:group-id nil)
-   (:name "max-vc-ct")
-   (:x 331)
-   (:y 255)
-   (:w 79)
+   (:name "max-lbl-ct")
+   (:x 237)
+   (:y 80)
+   (:w 81)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
@@ -101,12 +100,13 @@
    (:id 3))
   (:box
    (:type :io)
-   (:reference (:in (:type omin) (:index 1) (:name "len") (:doc "")))
+   (:reference
+    (:in (:type omin) (:index 1) (:name "max-vc-ct") (:doc "")))
    (:group-id nil)
-   (:name "len")
-   (:x 243)
-   (:y 220)
-   (:w 40)
+   (:name "max-vc-ct")
+   (:x 344)
+   (:y 239)
+   (:w 79)
    (:h 42)
    (:color
     (:color-or-nil (:color (:color 1.0 1.0 1.0 0.0)) (:t-or-nil t)))
@@ -442,10 +442,10 @@
    (:id 14)))
  (:connections
   (:connection (:from (:box 1 :out 0)) (:to (:box 10 :in 0)))
-  (:connection (:from (:box 2 :out 0)) (:to (:box 9 :in 0)))
-  (:connection (:from (:box 3 :out 0)) (:to (:box 14 :in 2)))
-  (:connection (:from (:box 4 :out 0)) (:to (:box 10 :in 2)))
-  (:connection (:from (:box 4 :out 0)) (:to (:box 14 :in 0)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 10 :in 2)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 14 :in 0)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 9 :in 0)))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 14 :in 2)))
   (:connection (:from (:box 5 :out 0)) (:to (:box 14 :in 4)))
   (:connection (:from (:box 6 :out 0)) (:to (:box 14 :in 6)))
   (:connection (:from (:box 7 :out 0)) (:to (:box 14 :in 7)))
