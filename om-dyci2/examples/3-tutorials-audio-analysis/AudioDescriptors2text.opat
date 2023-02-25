@@ -4,7 +4,7 @@
  (:doc "")
  (:info
   (:created "2021/10/28 17:04:38")
-  (:modified "2023/02/25 13:07:39")
+  (:modified "2023/02/25 13:45:17")
   (:by "om-sharp")
   (:version 1.06))
  (:window (:size (1111 883)) (:position (318 60)))
@@ -995,7 +995,7 @@
       (:modified nil)
       (:by *app-name*)
       (:version 0))
-     (:window (:size (764 992)) (:position (364 25)))
+     (:window (:size (764 992)) (:position (1018 25)))
      (:grid nil)
      (:lock nil)
      (:boxes
@@ -2032,99 +2032,6 @@
       (:box
        (:type :abstraction)
        (:reference
-        (:patch-from-file
-         (:pathname
-          (:directory
-           (:relative
-            :up
-            :up
-            :up
-            :up
-            :up
-            :up
-            :up
-            "IRCAM"
-            "PROD"
-            "10001Voix"
-            "10001Voix_recs"
-            "Samples44100"
-            "GOUR_004_FRAGMENTS_LABEL"))
-          (:device nil)
-          (:host nil)
-          (:name "abs-DescriptorsToText_F0-amp_avg")
-          (:type "opat"))))
-       (:group-id nil)
-       (:name "abs-DescriptorsToText_F0-amp_avg")
-       (:x 215)
-       (:y 535)
-       (:w 234)
-       (:h 60)
-       (:color nil)
-       (:border nil)
-       (:roundness nil)
-       (:text-font nil)
-       (:align :center)
-       (:display :hidden)
-       (:pre-delay 0)
-       (:lock nil)
-       (:lambda nil)
-       (:reactive nil)
-       (:inputs
-        (:input
-         (:type :standard)
-         (:name "sound")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "liste_segments")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "freq_range_F0")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "fund_min_freq")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "fund_max_freq")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "spectrum_max_freq")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "Noise_Thresh")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "Smooth_Order")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "Sizes")
-         (:value nil)
-         (:reactive nil))
-        (:input
-         (:type :standard)
-         (:name "Step")
-         (:value nil)
-         (:reactive nil)))
-       (:outputs (:output (:name "output 1") (:reactive nil)))
-       (:id 22))
-      (:box
-       (:type :abstraction)
-       (:reference
         (:patch
          (:name "sdif2markers")
          (:doc "")
@@ -2497,7 +2404,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "output 1") (:reactive nil)))
-       (:id 23))
+       (:id 22))
       (:box
        (:type :abstraction)
        (:reference
@@ -2968,7 +2875,7 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "output 1") (:reactive nil)))
-       (:id 24))
+       (:id 23))
       (:box
        (:type :abstraction)
        (:reference
@@ -3303,6 +3210,85 @@
          (:value nil)
          (:reactive nil)))
        (:outputs (:output (:name "output 1") (:reactive nil)))
+       (:id 24))
+      (:box
+       (:type :abstraction)
+       (:reference
+        (:patch-from-file
+         (:pathname
+          (:directory (:relative))
+          (:device nil)
+          (:host nil)
+          (:name "abs-DescriptorsToText_F0-amp_avg")
+          (:type "opat"))))
+       (:group-id nil)
+       (:name "abs-DescriptorsToText_F0-amp_avg")
+       (:x 227)
+       (:y 532)
+       (:w 234)
+       (:h 60)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align :center)
+       (:display :hidden)
+       (:pre-delay 0)
+       (:lock nil)
+       (:lambda nil)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "sound")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "liste_segments")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "freq_range_F0")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "fund_min_freq")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "fund_max_freq")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "spectrum_max_freq")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "Noise_Thresh")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "Smooth_Order")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "Sizes")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "Step")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "output 1") (:reactive nil)))
        (:id 25)))
      (:connections
       (:connection (:from (:box 0 :out 0)) (:to (:box 14 :in 0)))
@@ -3310,39 +3296,39 @@
       (:connection (:from (:box 3 :out 0)) (:to (:box 15 :in 4)))
       (:connection (:from (:box 4 :out 0)) (:to (:box 15 :in 5)))
       (:connection (:from (:box 4 :out 0)) (:to (:box 15 :in 6)))
-      (:connection (:from (:box 5 :out 0)) (:to (:box 22 :in 2)))
+      (:connection (:from (:box 5 :out 0)) (:to (:box 25 :in 2)))
       (:connection (:from (:box 6 :out 0)) (:to (:box 15 :in 2)))
-      (:connection (:from (:box 6 :out 0)) (:to (:box 22 :in 3)))
-      (:connection (:from (:box 7 :out 0)) (:to (:box 22 :in 4)))
+      (:connection (:from (:box 6 :out 0)) (:to (:box 25 :in 3)))
+      (:connection (:from (:box 7 :out 0)) (:to (:box 25 :in 4)))
       (:connection (:from (:box 8 :out 0)) (:to (:box 15 :in 3)))
-      (:connection (:from (:box 8 :out 0)) (:to (:box 22 :in 5)))
-      (:connection (:from (:box 9 :out 0)) (:to (:box 22 :in 6)))
-      (:connection (:from (:box 10 :out 0)) (:to (:box 22 :in 7)))
-      (:connection (:from (:box 11 :out 0)) (:to (:box 22 :in 8)))
-      (:connection (:from (:box 12 :out 0)) (:to (:box 22 :in 9)))
+      (:connection (:from (:box 8 :out 0)) (:to (:box 25 :in 5)))
+      (:connection (:from (:box 9 :out 0)) (:to (:box 25 :in 6)))
+      (:connection (:from (:box 10 :out 0)) (:to (:box 25 :in 7)))
+      (:connection (:from (:box 11 :out 0)) (:to (:box 25 :in 8)))
+      (:connection (:from (:box 12 :out 0)) (:to (:box 25 :in 9)))
       (:connection
        (:from (:box 13 :out 0))
+       (:to (:box 23 :in 1))
+       (:attributes
+        (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
+      (:connection
+       (:from (:box 14 :out 0))
+       (:to (:box 24 :in 0))
+       (:attributes
+        (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
+      (:connection
+       (:from (:box 14 :out 0))
        (:to (:box 24 :in 1))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
       (:connection
        (:from (:box 14 :out 0))
-       (:to (:box 25 :in 0))
-       (:attributes
-        (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-      (:connection
-       (:from (:box 14 :out 0))
-       (:to (:box 25 :in 1))
-       (:attributes
-        (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-      (:connection
-       (:from (:box 14 :out 0))
-       (:to (:box 25 :in 2))
+       (:to (:box 24 :in 2))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
       (:connection
        (:from (:box 15 :out 0))
-       (:to (:box 23 :in 0))
+       (:to (:box 22 :in 0))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
       (:connection (:from (:box 16 :out 0)) (:to (:box 17 :in 0)))
@@ -3351,32 +3337,24 @@
       (:connection (:from (:box 19 :out 0)) (:to (:box 21 :in 0)))
       (:connection (:from (:box 20 :out 1)) (:to (:box 19 :in 0)))
       (:connection (:from (:box 21 :out 0)) (:to (:box 18 :in 0)))
-      (:connection (:from (:box 22 :out 0)) (:to (:box 20 :in 1)))
+      (:connection (:from (:box 22 :out 0)) (:to (:box 25 :in 1)))
       (:connection
        (:from (:box 23 :out 0))
-       (:to (:box 22 :in 1))
-       (:attributes
-        (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-      (:connection
-       (:from (:box 24 :out 0))
        (:to (:box 19 :in 1))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
       (:connection
-       (:from (:box 25 :out 0))
+       (:from (:box 24 :out 0))
        (:to (:box 15 :in 0))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
       (:connection
-       (:from (:box 25 :out 0))
-       (:to (:box 22 :in 0))
+       (:from (:box 24 :out 0))
+       (:to (:box 23 :in 0))
        (:attributes
         (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil)))
-      (:connection
-       (:from (:box 25 :out 0))
-       (:to (:box 24 :in 0))
-       (:attributes
-        (:color (:color 0.2 0.4 0.5 1.0) :style nil :modif nil))))))
+      (:connection (:from (:box 24 :out 0)) (:to (:box 25 :in 0)))
+      (:connection (:from (:box 25 :out 0)) (:to (:box 20 :in 1))))))
    (:group-id nil)
    (:name "BATCH")
    (:x 741)
